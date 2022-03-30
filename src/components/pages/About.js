@@ -1,9 +1,16 @@
 import React from 'react';
+import {Helmet} from 'react-helmet';
+
 
 export default function About() {
   return (
-    <section id="app-section">
-          <div class="food">
+    <>
+    <Helmet>
+      <title>Sweeney’s - About Us</title>
+    </Helmet>
+    <div class="back-img-about"></div>
+    <section className="about-section" >
+          <div>
             <h5>General Manager and Owner Lisa Long</h5>
             <p>
               with a degree in hospitality management, comes to Sweeney’s
@@ -19,7 +26,7 @@ export default function About() {
               area for over 15 years.
             </p>
           </div>
-          <div class="food">
+          <div>
             <h5>Managing Partner and Owner Larry Thompson</h5>
             <p>
               a former college professor, has worked extensively in the
@@ -32,7 +39,7 @@ export default function About() {
               and has lived and worked in the Dayton area since 1994.
             </p>
           </div>
-          <div class="food">
+          <div>
             <h5>Operations Partner and Owner Holley Thompson</h5>
             <p>
               is a former practicing attorney and consultant and worked
@@ -46,5 +53,6 @@ export default function About() {
             </p>
           </div>
         </section>
+        </>
   );
 }

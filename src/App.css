@@ -1,38 +1,382 @@
-.App {
-  text-align: center;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Change font family */
+/* body {
+  font-family: "Lato", sans-serif;
+} */
+
+/* background Image */
+.back-img {
+  background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../public/assets/imgs/rockfeller.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  width: 4rem;
+}
+
+.logo:hover {
+  width: 4.5rem;
+}
+
+.title-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 4rem;
+  border: 1px solid black;
+}
+
+.title-font {
+  font-size: 6rem;
+  color: #fff;
+  border: 3px s/olid green;
+  padding-top: 75px;
+  text-shadow: 5px 5px 5px black;
+  font-weight: bold;
+}
+
+
+
+.sub-title {
+  font-size: 6rem;
+  color: #fff;
+  font-style: italic;
+  padding-left: 20rem;
+  text-shadow: 6px 5px 5px black;
+}
+
+.copyright {
+  font-size: 3rem;
+  height: 5rem;
+
+  /* border: 2px solid black; */
+
+}
+
+/* Nar Bar styling */
+
+.nav {
+  height: 6rem;
+  border-bottom: 2px solid black;
+  /* background-color: #370624; */
+  background-color: #f0ece3;
+  box-shadow: 10px 5px 5px #370624;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1.2rem;
+}
+
+.nav-item {
+  list-style: none;
+  font-size: 45px;
+  color: black;
+  text-shadow: 2px 1px 3px black;
+  
+  
+}
+
+.nav-item a{
+  text-decoration: none;
+}
+.nav-item:hover {
+  font-weight: bolder;
+  
+}
+
+/* Footer styling */
+
+.footer {
+  height: 7rem;
+  background-color: #f7f4f0;
+  /* background-color: #370624; */
+}
+
+.footer-grid{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 9rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1rem;
+  color: black;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  text-shadow: 2px 1px 3px black;
+}
+
+ul li {
+  list-style: none;
+}
+
+.operation {
+  color: black;
+  font-size: 1.5rem;
+  text-shadow: 2px 1px 3px black;
+}
+
+
+
+/* Menu Styling */
+
+.bgm-img-menu {
+  background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../public/assets/imgs/DarkPic.jpg");
+  width: 100vw;
+  min-height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.menu-bgn-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #f7f4f0;
+  text-shadow: 1px 1px 1px black;
+}
+
+.menu-nav {
+  border-right: 4px solid black;
+  /* padding-top: 10px; */
+  margin-right: 60px;
+  position: sticky;
+  top: 70px;
+  height: 80vh;
+}
+
+.menu-nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  line-height: 4rem;
+  padding-top: 4rem;
 }
 
-.App-link {
-  color: #61dafb;
+.menu-nav ul li {
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.menu-nav ul li a:hover {
+  font-size: 2.3rem;
+}
+
+.menu-nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Menu section styling */
+h2 {
+  /* color: #fff; */
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 0.75rem;
+  border-bottom: 4px solid black;
+}
+
+.food-item-grid {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  /* color: #fff; */
+  color: black;
+}
+
+.food-item-grid h5 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.food-item-grid p {
+  font-size: 1.1rem;
+}
+
+.food {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 20px;
+  /* border-right: 4px solid #fff;
+  border-bottom: .3px solid #fff; */
+}
+
+.food-2 {
+  text-align: center;
+  color: black;
+  font-size: 1.3rem;
+}
+
+.food-3 {
+  font-size: 1.5rem;
+}
+
+.price-styling {
+  font-size: 1.5rem;
+}
+
+.sides-styling {
+  color: black;
+  text-align: center;
+}
+
+/* Bar Styling */
+/* background Image */
+.back-img-bar {
+  background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../public/assets/imgs/barPic.jpg");
+  width: 100vw;
+  min-height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Features Styling */
+/* bgn-img */
+.back-img-features {
+  background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../public/assets/imgs/barPic.PNG");
+  width: 100vw;
+  min-height: 80vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* About Us styling*/
+.back-img-about {
+  background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../public/assets/imgs/outsidePic.jpg");
+  width: 100vw;
+  min-height: 80vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.about-section{
+  background-color: #f7f4f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-gap: 2rem;
+  padding-top: 2rem;
+  height: 100vh;
+  padding: 20px 20px;
+  text-shadow: 0px 0px 1px black;
+  
+}
+
+.about-section h5{
+  text-align: center;
+  font-size: 1.5rem;
+  
+}
+
+.img-crop {
+  max-width: 100%;
+}
+
+/* Media Queries */
+/* Tablets */
+@media screen and (max-width: 812px) {
+  nav ul li {
+    font-size: 2rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .title-font {
+    font-size: 4rem;
+  }
+
+  .sub-title {
+    font-size: 3.5rem;
+  }
+
+  footer .contact {
+    font-size: 1.5rem;
+  }
+
+  .title-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bgm-img-menu {
+    display: none;
+  }
+
+  .back-img-bar {
+    display: none;
+  }
+
+  .back-img-about {
+    display: none;
+  }
+
+  .back-img-features {
+    display: none;
+  }
+
+  .menu-nav {
+    display: none;
+  }
+
+  .food-item-grid {
+    margin-right: 30px;
+  }
+
+  .food-2,
+  .food-3 {
+    margin-right: 30px;
+  }
+
+  .sides-styling {
+    margin-right: 30px;
+  }
+
+  .hide-img {
+    display: none;
+  }
+
+  .menu-bgn-grid {
+    display: flex;
+    margin-top: 6rem;
+  }
+}
+
+/* SmartPhones */
+@media screen and (max-width: 420px) {
+  nav {
+    display: none;
   }
 }
