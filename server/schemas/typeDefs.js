@@ -6,10 +6,6 @@ const typeDefs = gql`
     email: String
     comments: [Comment]
   }
-  type Auth {
-    token: ID!
-    user: User
-  }
   type Comment {
     _id: ID
     thoughtText: String
@@ -18,7 +14,6 @@ const typeDefs = gql`
     replyCount: Int
     replies: [Reply]
   }
-
   type Reply {
     _id: ID
     replyBody: String
@@ -31,6 +26,10 @@ const typeDefs = gql`
     user(username: String!): User
     comments(username: String): [Comment]
     comment(_id: ID!): Comment
+  }
+  type Auth {
+    token: ID!
+    user: User
   }
 `;
 // export the typeDefs
