@@ -36,6 +36,7 @@ const resolvers = {
     },
   },
   Mutation: {
+    // login to acc
     login: async (parent, { email, password }) => {
       const user = await User.findOne({ email });
 
@@ -52,12 +53,14 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
+    // add new user
     addUser: async (parent, args) => {
       const user = await User.create(args);
       const token = signToken(user);
 
       return { token, user };
     },
+    // add new comment
     addComment: async (parent, args, context) => {
       if (context.user) {
         const comment = await Comment.create({
@@ -76,6 +79,7 @@ const resolvers = {
 
       throw new AuthenticationError("You need to be logged in!");
     },
+    // add new reply
     addReply: async (parent, { commentId, replyBody }, context) => {
       if (context.user) {
         const updatedComment = await Comment.findOneAndUpdate(
