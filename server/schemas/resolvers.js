@@ -58,6 +58,14 @@ const resolvers = {
 
       return { token, user };
     },
+    addComment: async (parent, args, context) => {
+      if (context.user) {
+        const comment = await Comment.create({
+          ...args,
+          username: context.user.username,
+        });
+      }
+    },
   },
 };
 module.exports = resolvers;
