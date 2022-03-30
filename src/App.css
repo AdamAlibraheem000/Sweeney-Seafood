@@ -142,10 +142,6 @@ ul li {
 
 
 /* Menu Styling */
-.menu-color {
-  /* background-color: #370624; */
-  background-color: #f7f4f0;
-}
 
 .bgm-img-menu {
   background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
@@ -160,6 +156,8 @@ ul li {
 .menu-bgn-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  background-color: #f7f4f0;
+  text-shadow: 1px 1px 1px black;
 }
 
 .menu-nav {
@@ -274,6 +272,7 @@ h2 {
   background-attachment: fixed;
 }
 
+/* About Us styling*/
 .back-img-about {
   background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
     url("../public/assets/imgs/outsidePic.jpg");
@@ -284,7 +283,25 @@ h2 {
   background-attachment: fixed;
 }
 
-/* About Us styling & features*/
+.about-section{
+  background-color: #f7f4f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-gap: 2rem;
+  padding-top: 2rem;
+  height: 100vh;
+  padding: 20px 20px;
+  text-shadow: 0px 0px 1px black;
+  
+}
+
+.about-section h5{
+  text-align: center;
+  font-size: 1.5rem;
+  
+}
+
 .img-crop {
   max-width: 100%;
 }

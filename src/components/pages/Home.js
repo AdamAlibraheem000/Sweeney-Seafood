@@ -19,6 +19,7 @@ export default function Home() {
       <h1 className="sub-title">Bar and Grill</h1>
     </div>
     </div>
+    
     </>
   );
 }

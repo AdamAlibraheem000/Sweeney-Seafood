@@ -62,6 +62,23 @@ export default function Features() {
             </p>
           </div>
         </section>
+        {/* Routing Draft list */}
+        <h2>Rotating Craft Beers</h2>
+        <section id="your-way-section" className="food-item-grid">
+          <div className="food">
+            <h5>Narragansett</h5>
+            <p>
+              Description about the beer here 7.5
+            </p>
+          </div>
+
+          <div className="food">
+            <h5>Sweeney’s Reel 'em in IPA</h5>
+            <p>
+            Description about the beer here 7.5
+            </p>
+          </div>
+        </section>
       </article>
     </section>
     </>
