@@ -1,7 +1,12 @@
 import React from 'react';
+import {Helmet} from 'react-helmet';
 
 export default function Contact() {
   return (
+    <>
+    <Helmet>
+      <title>Sweeney’s - Dinner Menu</title>
+    </Helmet>
     <section className="menu-bgn-grid">
       <article>
         <div className="menu-nav">
@@ -392,5 +397,6 @@ export default function Contact() {
         </section>
       </article>
       </section>
+      </>
   );
 }

@@ -1,7 +1,13 @@
 import React from 'react';
+import {Helmet} from 'react-helmet';
+
 
 export default function About() {
   return (
+    <>
+    <Helmet>
+      <title>Sweeney’s - About Us</title>
+    </Helmet>
     <section id="app-section" >
           <div className="food">
             <h5>General Manager and Owner Lisa Long</h5>
@@ -46,5 +52,6 @@ export default function About() {
             </p>
           </div>
         </section>
+        </>
   );
 }

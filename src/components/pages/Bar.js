@@ -1,7 +1,12 @@
 import React from 'react';
+import {Helmet} from 'react-helmet';
 
 export default function Bar() {
   return (
+    <>
+    <Helmet>
+      <title>Sweeney’s - Doug's Bar</title>
+    </Helmet>
     <section className="menu-bgn-grid">
       <article>
         <div className="menu-nav">
@@ -266,5 +271,6 @@ export default function Bar() {
         
       </article>
     </section>
+    </>
   );
 }

@@ -25,11 +25,11 @@ body {
 }
 
 .logo {
-  width: 4.5rem;
+  width: 4rem;
 }
 
 .logo:hover {
-  width: 5rem;
+  width: 4.5rem;
 }
 
 .title-flex {
@@ -64,7 +64,9 @@ body {
   font-size: 2rem;
 }
 
-nav {
+/* Nar Bar styling */
+
+.nav {
   height: 6rem;
   border-bottom: 2px solid black;
   /* background-color: #370624; */
@@ -74,32 +76,28 @@ nav {
   top: 0;
   width: 100%;
   z-index: 3;
-}
-
-nav ul {
   display: flex;
   justify-content: space-evenly;
   padding-top: 1.2rem;
 }
 
-nav ul li {
+.nav-item {
   list-style: none;
   font-size: 45px;
+  color: black;
+  
+  
 }
 
-nav ul li a {
-  /* color: #fff; */
-  color: black;
+.nav-item a{
   text-decoration: none;
 }
-
-nav ul li a img:first-child {
-  height: 4rem;
-}
-
-nav ul li:hover {
+.nav-item:hover {
   font-weight: bolder;
+  
 }
+
+/* Footer styling */
 
 footer {
   height: 7rem;

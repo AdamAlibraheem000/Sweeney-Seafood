@@ -1,7 +1,12 @@
 import React from 'react';
+import {Helmet} from 'react-helmet';
 
 export default function Features() {
     return (
+      <>
+      <Helmet>
+        <title>Sweeney’s - Features</title>
+      </Helmet>
       <section className="menu-bgn-grid">
       <article className="hide-img">
         <div className="menu-nav">
@@ -58,5 +63,6 @@ export default function Features() {
         </section>
       </article>
     </section>
+    </>
     );
   }
