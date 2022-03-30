@@ -7,6 +7,7 @@ export default function Features() {
       <Helmet>
         <title>Sweeney’s - Features</title>
       </Helmet>
+      <div class="back-img-features"></div>
       <section className="menu-bgn-grid">
       <article className="hide-img">
         <div className="menu-nav">

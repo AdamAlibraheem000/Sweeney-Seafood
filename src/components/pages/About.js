@@ -8,6 +8,7 @@ export default function About() {
     <Helmet>
       <title>Sweeney’s - About Us</title>
     </Helmet>
+    <div class="back-img-about"></div>
     <section id="app-section" >
           <div className="food">
             <h5>General Manager and Owner Lisa Long</h5>

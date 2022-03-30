@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,16 +10,16 @@ html {
 }
 
 /* Change font family */
-body {
+/* body {
   font-family: "Lato", sans-serif;
-}
+} */
 
 /* background Image */
 .back-img {
   background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
     url("../public/assets/imgs/rockfeller.jpg");
   width: 100vw;
-  min-height: 50vh;
+  height: 100vh;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -37,31 +38,37 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 70vh;
-  padding-top: 8rem;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 4rem;
+  border: 1px solid black;
 }
 
 .title-font {
-  font-size: 8rem;
+  font-size: 6rem;
   color: #fff;
   border: 3px s/olid green;
   padding-top: 75px;
-}
-
-.title-font h1 {
   text-shadow: 5px 5px 5px black;
   font-weight: bold;
 }
+
+
 
 .sub-title {
   font-size: 6rem;
   color: #fff;
   font-style: italic;
   padding-left: 20rem;
+  text-shadow: 6px 5px 5px black;
 }
 
 .copyright {
-  font-size: 2rem;
+  font-size: 3rem;
+  height: 5rem;
+
+  /* border: 2px solid black; */
+
 }
 
 /* Nar Bar styling */
@@ -85,6 +92,7 @@ body {
   list-style: none;
   font-size: 45px;
   color: black;
+  text-shadow: 2px 1px 3px black;
   
   
 }
@@ -99,19 +107,26 @@ body {
 
 /* Footer styling */
 
-footer {
+.footer {
   height: 7rem;
-  /* background-color: #370624; */
   background-color: #f7f4f0;
+  /* background-color: #370624; */
+}
+
+.footer-grid{
   display: flex;
   justify-content: space-evenly;
   margin-top: 9rem;
 }
 
-footer .contact {
-  /* color: #fff; */
+.contact {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1rem;
   color: black;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  text-shadow: 2px 1px 3px black;
 }
 
 ul li {
@@ -121,7 +136,10 @@ ul li {
 .operation {
   color: black;
   font-size: 1.5rem;
+  text-shadow: 2px 1px 3px black;
 }
+
+
 
 /* Menu Styling */
 .menu-color {

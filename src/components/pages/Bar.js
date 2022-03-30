@@ -7,6 +7,7 @@ export default function Bar() {
     <Helmet>
       <title>Sweeney’s - Doug's Bar</title>
     </Helmet>
+    <div class="back-img-bar"></div>
     <section className="menu-bgn-grid">
       <article>
         <div className="menu-nav">

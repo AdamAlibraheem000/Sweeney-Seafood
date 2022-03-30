@@ -7,6 +7,7 @@ export default function Contact() {
     <Helmet>
       <title>Sweeney’s - Dinner Menu</title>
     </Helmet>
+    <div class="bgm-img-menu"></div>
     <section className="menu-bgn-grid">
       <article>
         <div className="menu-nav">
