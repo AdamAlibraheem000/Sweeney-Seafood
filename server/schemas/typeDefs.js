@@ -15,15 +15,22 @@ const typeDefs = gql`
     thoughtText: String
     createdAt: String
     username: String
-    reactionCount: Int
-    reactions: [Reaction]
+    replyCount: Int
+    replies: [Reply]
   }
 
-  type Reaction {
+  type Reply {
     _id: ID
-    reactionBody: String
+    replyBody: String
     createdAt: String
     username: String
+  }
+  type Query {
+    me: User
+    users: [User]
+    user(username: String!): User
+    comments(username: String): [Comment]
+    comment(_id: ID!): Comment
   }
 `;
 // export the typeDefs
