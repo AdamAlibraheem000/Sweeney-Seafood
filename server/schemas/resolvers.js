@@ -64,8 +64,19 @@ const resolvers = {
           ...args,
           username: context.user.username,
         });
+
+        await User.findByIdAndUpdate(
+          { _id: context.user._id},
+          { $push: { comments: comment._id } },
+          { new: true }
+        );
+
+        return comment;
       }
+
+      throw new AuthenticationError("You need to be logged in!");
     },
+    addReply:
   },
 };
 module.exports = resolvers;
