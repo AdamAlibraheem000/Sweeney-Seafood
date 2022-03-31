@@ -5,10 +5,11 @@ import About from './pages/About';
 import Bar from './pages/Bar';
 import Menu from './pages/Menu';
 import Feature from './pages/Features';
+import Footer from './pages/Footer';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
-
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 1200);
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
     if (currentPage === 'Home') {
@@ -26,16 +27,13 @@ export default function PortfolioContainer() {
     if (currentPage === 'Menu') {
       return <Menu />;
     }
-    return <Home />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div>
-      {/* We are passing the currentPage from state and the function to update it */}
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* Here we are calling the renderPage method which will return a component  */}
+      <NavTabs currentPage={currentPage} setCurrentPage={setCurrentPage} isDesktop={isDesktop}/>
       {renderPage()}
     </div>
   );
