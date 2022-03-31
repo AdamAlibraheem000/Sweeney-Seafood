@@ -29,10 +29,10 @@ export default function Contact() {
       <FadeIn>
     <article className="scroll-menu">
         {/* <!-- Starters --> */}
-        <h2 id="app-section">Starters</h2>
+        <h2>Starters</h2>
         <section className="food-item-grid">
           <div className="food">
-            <h5 className='food-title'>Classic Shrimp Cocktail</h5>
+            <h5>Classic Shrimp Cocktail</h5>
             <p className='food-subtitle'>Five Extra Jumbo Shrimp with House-Made Cocktail sauce 11</p>
           </div>
           <div className="food">
@@ -51,7 +51,7 @@ export default function Contact() {
             </p>
           </div>
           <div className="food">
-            <h5>Black n’ Blue Scallops</h5>
+            <h5 className='food-title'>Black n’ Blue Scallops</h5>
             <p>
               Three Jumbo Atlantic Sea Scallops blackened with House-Made Bleu
               Cheese sauce over Mixed Greens with Greek Aegean vinaigrette 14
