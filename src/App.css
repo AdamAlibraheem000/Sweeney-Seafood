@@ -9,9 +9,9 @@ html {
 }
 
 /* Change font family */
-/* body {
-  font-family: "Lato", sans-serif;
-} */
+/* body { */
+  /* font-family: "Montserrat",sans-serif; */
+/* } */
 
 /* background Image */
 .back-img {
@@ -38,12 +38,13 @@ html {
 }
 
 .brand-title{
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-style: italic;
+  font-weight: bold;
 }
 
 .brand-subTitle{
-  font-size: 2rem;
+  font-size: 1.3rem;
   padding-left: 4rem;
   font-style: italic;
 }
@@ -76,7 +77,8 @@ html {
   font-size: 6rem;
   color: #fff;
   font-style: italic;
-  padding-left: 20rem;
+  padding-left: 7rem;
+  /* padding-right: 1rem; */
   text-shadow: 6px 5px 5px black;
 }
 
@@ -182,7 +184,7 @@ ul li {
   grid-template-columns: 1fr 2fr;
   background-color: #f0ece3;
   
-  text-shadow: 1px 1px 1px black;
+  /* text-shadow: 1px 1px 1px black; */
 }
 
 .menu-nav {
@@ -207,20 +209,22 @@ ul li {
 }
 
 .menu-nav ul li a:hover {
-  font-size: 2.3rem;
+  background-color: #370624;
+  color: #fff;
 }
 
 .menu-nav ul li a {
   color: black;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 /* Menu section styling */
 h2 {
   /* color: #fff; */
-  color: black;
+  /* color: black; */
+  color: #370624;
   text-align: center;
   font-size: 3rem;
   padding-top: 0.75rem;
@@ -253,6 +257,7 @@ h2 {
   /* border-right: 4px solid #fff;
   border-bottom: .3px solid #fff; */
 }
+
 
 .food-2 {
   text-align: center;

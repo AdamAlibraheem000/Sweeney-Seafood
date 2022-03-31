@@ -32,8 +32,8 @@ export default function Contact() {
         <h2 id="app-section">Starters</h2>
         <section className="food-item-grid">
           <div className="food">
-            <h5>Classic Shrimp Cocktail</h5>
-            <p>Five Extra Jumbo Shrimp with House-Made Cocktail sauce 11</p>
+            <h5 className='food-title'>Classic Shrimp Cocktail</h5>
+            <p className='food-subtitle'>Five Extra Jumbo Shrimp with House-Made Cocktail sauce 11</p>
           </div>
           <div className="food">
             <h5>Lobster and Shrimp Rangoon Eggrolls</h5>
