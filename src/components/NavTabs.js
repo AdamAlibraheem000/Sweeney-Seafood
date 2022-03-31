@@ -1,68 +1,23 @@
 import React from 'react';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import logo from '../imgs/logoCrop.png';
-
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav">
-      {/* <li>
-          <a href="./homepage.html"
-            >></a>
-          </li> */}
-      <li className="nav-item">
-        <a
-          href="#home"
-          onClick={() => handlePageChange('Home')}
-          // This is a conditional (ternary) operator that checks to see if the current page is "Home"
-          // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
-          className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'} 
-        ><img class="logo" src={logo} alt="sweeneyLogo"></img>
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#Feature"
-          onClick={() => handlePageChange('Feature')}
-          // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === 'Feature' ? 'nav-link active' : 'nav-link'}
-        >
-          Feature
-        </a>
-      </li>
-     
-      <li className="nav-item">
-        <a
-          href="#menu"
-          onClick={() => handlePageChange('Menu')}
-          // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === 'Menu' ? 'nav-link active' : 'nav-link'}
-        >
-          Menu
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#Bar"
-          onClick={() => handlePageChange('Bar')}
-          // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === 'Bar' ? 'nav-link active' : 'nav-link'}
-        >
-          Bar
-        </a>
-      </li>
-      
-      <li className="nav-item">
-        <a
-          href="#about"
-          onClick={() => handlePageChange('About')}
-          // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-        >
-          About
-        </a>
-      </li>
-    </ul>
+    <Navbar className='nav'>
+      <Container className='justify-space-between'>
+        <Nav.Link onClick={() => handlePageChange('Home')}>
+          <img class="logo" src={logo} alt="sweeneyLogo"></img>
+        </Nav.Link>
+        <div className="d-flex flex-row jsutify-space-between">
+          <Nav.Link className='nav-item' onClick={() => handlePageChange('Features')}>Features</Nav.Link>
+          <Nav.Link className='nav-item' onClick={() => handlePageChange('Menu')}>Menu</Nav.Link>
+          <Nav.Link className='nav-item' onClick={() => handlePageChange('Bar')}>Bar</Nav.Link>
+          <Nav.Link className='nav-item' onClick={() => handlePageChange('About')}>About</Nav.Link>
+        </div>
+      </Container>
+    </Navbar>
   );
 }
 

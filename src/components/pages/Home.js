@@ -6,11 +6,11 @@ export default function Home() {
   return (
     <>
     <Helmet>
-      <title>Sweeney's Seafood Bar & Grill
-      
+      <title>
+        Sweeney's Seafood Bar & Grill 
       </title>
     </Helmet>
-    
+
     <div className="back-img">
     <div className="title-flex">
       <h1 className="title-font">
@@ -18,8 +18,7 @@ export default function Home() {
       </h1>
       <h1 className="sub-title">Bar and Grill</h1>
     </div>
-    </div>
-    
+    </div> 
     </>
   );
 }

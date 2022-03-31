@@ -4,6 +4,7 @@ import Footer from "./components/pages/Footer"
 import './App.css';
 import favicon from './imgs/favicon.ico';
 import {Helmet} from 'react-helmet';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => 
 <>

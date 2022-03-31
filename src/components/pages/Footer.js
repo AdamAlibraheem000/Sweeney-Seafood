@@ -1,9 +1,8 @@
 import React from 'react';
 
 export default function Footer(){
-    return(
-      
-    <footer   className="footer">
+    return( 
+    <footer style={{}} className="footer">
       <div className='footer-grid'>
       <ul className="contact">
         <li>Phone: (937) 291-3474</li>
@@ -17,8 +16,6 @@ export default function Footer(){
         <li>Sunday's 4pm - 8:30pm</li>
       </ul>
       </div>
-    </footer>
-    
-    
+    </footer> 
     );
 }
