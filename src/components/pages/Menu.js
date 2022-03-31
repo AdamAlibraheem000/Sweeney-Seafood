@@ -1,5 +1,6 @@
 import React from 'react';
 import {Helmet} from 'react-helmet';
+import FadeIn from 'react-fade-in/lib/FadeIn';
 
 export default function Contact() {
   return (
@@ -23,6 +24,7 @@ export default function Contact() {
           </ul>
         </div>
       </article>
+      <FadeIn>
     <article className="scroll-menu">
         {/* <!-- Starters --> */}
         <h2 id="app-section">Starters</h2>
@@ -397,6 +399,7 @@ export default function Contact() {
           </p>
         </section>
       </article>
+      </FadeIn>
       </section>
       </>
   );

@@ -1,5 +1,7 @@
 import React from 'react';
 import {Helmet} from 'react-helmet';
+import FadeIn from 'react-fade-in/lib/FadeIn';
+
 
 export default function Features() {
     return (
@@ -7,7 +9,9 @@ export default function Features() {
       <Helmet>
         <title>Sweeney’s - Features</title>
       </Helmet>
+      
       <div class="back-img-features"></div>
+      <FadeIn>
       <section className="menu-bgn-grid">
       <article className="hide-img">
         <div className="menu-nav">
@@ -81,6 +85,7 @@ export default function Features() {
         </section>
       </article>
     </section>
+    </FadeIn>
     </>
     );
   }
