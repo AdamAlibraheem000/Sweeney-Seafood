@@ -8,7 +8,9 @@ export default function Bar() {
     <Helmet>
       <title>Sweeney’s - Doug's Bar</title>
     </Helmet>
+    <FadeIn>
     <div class="back-img-bar"></div>
+    </FadeIn>
     <section className="menu-bgn-grid">
       <article>
         <div className="menu-nav">

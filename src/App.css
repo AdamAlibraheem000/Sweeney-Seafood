@@ -28,9 +28,26 @@ html {
   width: 4rem;
 }
 
-.logo:hover {
-  width: 4.5rem;
+
+/* Brand Title */
+
+.brand-grid{
+  display: flex;
+  align-items: space-evenly;
+  grid-gap: 1rem;
 }
+
+.brand-title{
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.brand-subTitle{
+  font-size: 2rem;
+  padding-left: 4rem;
+  font-style: italic;
+}
+
 
 .title-flex {
   display: flex;
@@ -50,6 +67,7 @@ html {
   padding-top: 75px;
   text-shadow: 5px 5px 5px black;
   font-weight: bold;
+  font-style: italic;
 }
 
 
@@ -73,35 +91,49 @@ html {
 /* Nar Bar styling */
 
 .nav {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  
+}
+
+.nav-2{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  
+
+}
+
+.nav-grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   height: 6rem;
   border-bottom: 2px solid black;
-  /* background-color: #370624; */
-  background-color: #f0ece3;
+  background-color: #370624;
+  /* background-color: #f0ece3; */
   box-shadow: 10px 5px 5px #370624;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 3;
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 1.2rem;
 }
 
 .nav-item {
   list-style: none;
-  font-size: 45px;
-  color: black;
+  font-size: 2rem;
   text-shadow: 2px 1px 3px black;
-
 
 }
 
 .nav-item a {
   text-decoration: none;
+  color: #fff;
 }
 
 .nav-item:hover {
-  font-weight: bolder;
+  border: 1px solid #fff;
+  background-color: grey;
 
 }
 
@@ -109,8 +141,8 @@ html {
 
 .footer {
   height: 7rem;
-  background-color: #f7f4f0;
-  /* background-color: #370624; */
+  /* background-color: #f7f4f0; */
+  background-color: #370624;
 }
 
 .footer-grid {
@@ -123,7 +155,7 @@ html {
   display: flex;
   flex-direction: column;
   grid-gap: 1rem;
-  color: black;
+  color: #fff;
   font-size: 1.5rem;
   padding-top: 1rem;
   text-shadow: 2px 1px 3px black;
@@ -134,7 +166,7 @@ ul li {
 }
 
 .operation {
-  color: black;
+  color: #fff;
   font-size: 1.5rem;
   text-shadow: 2px 1px 3px black;
 }
@@ -316,6 +348,7 @@ h2 {
 
   .title-font {
     font-size: 4rem;
+   
   }
 
   .sub-title {
