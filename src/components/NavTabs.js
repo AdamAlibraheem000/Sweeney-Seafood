@@ -88,6 +88,16 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
       <li className="nav-item">
+        <a
+          href="#reviews"
+          onClick={() => handlePageChange('Reviews')}
+          // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          className={currentPage === 'Reviews' ? 'nav-link active' : 'nav-link'}
+        >
+          Reviews
+        </a>
+      </li>
+      <li className="nav-item">
         <a href='https://www.facebook.com/sweeneysseafood/' target="_blank">
           <FaFacebookF></FaFacebookF>
         </a>
