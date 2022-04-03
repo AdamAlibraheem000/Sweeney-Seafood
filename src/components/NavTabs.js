@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../imgs/logoCrop.png';
 import { FaFacebookF } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa"
@@ -8,6 +8,17 @@ import { FaInstagram } from "react-icons/fa"
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
+  // const [navMenu, setNavMenu] = useState('inactive');
+  const [hamburger, setHamburger] = useState('inactive');
+
+  const mobileMenu = () => {
+    if (hamburger === 'active') {
+      setHamburger('inactive');
+    } else {
+      setHamburger('active');
+    }
+  }
+
   return (
    <div className='nav-grid'>
       <div>
@@ -21,7 +32,7 @@ function NavTabs({ currentPage, handlePageChange }) {
               className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'} 
             >
             <div className='brand-grid'>
-              <img class="logo" src={logo} alt="sweeneyLogo"></img>
+              <img className="logo" src={logo} alt="sweeneyLogo"></img>
               <div>
               <div className='brand-title'>Sweeney’s Seafood</div>
               <div className='brand-subTitle'>Bar & Grill</div>
@@ -86,9 +97,17 @@ function NavTabs({ currentPage, handlePageChange }) {
          <FaInstagram></FaInstagram>
         </a>
       </li>
-
     </ul>
     </div>
+    {window.innerWidth < 720 ? (
+            <nav className="navbar" onClick={mobileMenu}> 
+              <div className={`hamburger ${hamburger}`}>
+                  <span className='bar'></span>
+                  <span className='bar' ></span>
+                  <span className='bar'></span>
+              </div>
+          </nav>
+        ) : ''}
     </div>
    
   );
