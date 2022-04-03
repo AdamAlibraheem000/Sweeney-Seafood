@@ -43,7 +43,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           </ul>
           </div>
 
-      <div>
+      <div className='full-nav'>
       <ul className="nav-2" >
       <li className="nav-item">
         <a
@@ -109,6 +109,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
     </ul>
     </div>
+
     {window.innerWidth < 720 ? (
             <nav className="navbar" onClick={mobileMenu}> 
               <div className={`hamburger ${hamburger}`}>
@@ -118,8 +119,7 @@ function NavTabs({ currentPage, handlePageChange }) {
               </div>
           </nav>
         ) : ''}
-    </div>
-   
+    </div> 
   );
 }
 

@@ -415,12 +415,13 @@ h2 {
 }
 
 /* SmartPhones */
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 480px) {
   /* nav {
     display: none;
   } */
 
   .full-nav {
+    visible: hidden;
     display: none;
   }
  
