@@ -1,5 +1,6 @@
 import React from 'react';
 import {Helmet} from 'react-helmet';
+import FadeIn from 'react-fade-in/lib/FadeIn';
 
 export default function Contact() {
   return (
@@ -7,7 +8,9 @@ export default function Contact() {
     <Helmet>
       <title>Sweeney’s - Dinner Menu</title>
     </Helmet>
+    <FadeIn>
     <div class="bgm-img-menu"></div>
+    </FadeIn>
     <section className="menu-bgn-grid">
       <article>
         <div className="menu-nav">
@@ -23,13 +26,14 @@ export default function Contact() {
           </ul>
         </div>
       </article>
+      <FadeIn>
     <article className="scroll-menu">
         {/* <!-- Starters --> */}
-        <h2 id="app-section">Starters</h2>
+        <h2>Starters</h2>
         <section className="food-item-grid">
           <div className="food">
             <h5>Classic Shrimp Cocktail</h5>
-            <p>Five Extra Jumbo Shrimp with House-Made Cocktail sauce 11</p>
+            <p className='food-subtitle'>Five Extra Jumbo Shrimp with House-Made Cocktail sauce 11</p>
           </div>
           <div className="food">
             <h5>Lobster and Shrimp Rangoon Eggrolls</h5>
@@ -47,7 +51,7 @@ export default function Contact() {
             </p>
           </div>
           <div className="food">
-            <h5>Black n’ Blue Scallops</h5>
+            <h5 className='food-title'>Black n’ Blue Scallops</h5>
             <p>
               Three Jumbo Atlantic Sea Scallops blackened with House-Made Bleu
               Cheese sauce over Mixed Greens with Greek Aegean vinaigrette 14
@@ -397,6 +401,7 @@ export default function Contact() {
           </p>
         </section>
       </article>
+      </FadeIn>
       </section>
       </>
   );

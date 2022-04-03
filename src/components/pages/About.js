@@ -1,5 +1,6 @@
 import React from 'react';
 import {Helmet} from 'react-helmet';
+import FadeIn from 'react-fade-in/lib/FadeIn';
 
 
 export default function About() {
@@ -10,6 +11,7 @@ export default function About() {
     </Helmet>
     <div class="back-img-about"></div>
     <section className="about-section" >
+      <FadeIn>
           <div>
             <h5>General Manager and Owner Lisa Long</h5>
             <p>
@@ -52,6 +54,7 @@ export default function About() {
               Dayton area since 1994.
             </p>
           </div>
+          </FadeIn>
         </section>
         </>
   );

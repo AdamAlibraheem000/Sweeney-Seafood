@@ -1,5 +1,6 @@
 import React from 'react';
 import {Helmet} from 'react-helmet';
+import FadeIn from 'react-fade-in/lib/FadeIn';
 
 export default function Bar() {
   return (
@@ -7,7 +8,9 @@ export default function Bar() {
     <Helmet>
       <title>Sweeney’s - Doug's Bar</title>
     </Helmet>
+    <FadeIn>
     <div class="back-img-bar"></div>
+    </FadeIn>
     <section className="menu-bgn-grid">
       <article>
         <div className="menu-nav">
@@ -23,7 +26,7 @@ export default function Bar() {
         </div>
       </article>
       <article>
-
+      <FadeIn>
         {/* <!-- Red Wines --> */}
         <h2>Red Wines</h2>
         <section id="red-wines" className="food-item-grid">
@@ -268,10 +271,13 @@ export default function Bar() {
             <h5>Clausthaler(N/A)</h5>
           </div>
         </section>
+        </FadeIn>
 
         
       </article>
+      
     </section>
+    
     </>
   );
 }
