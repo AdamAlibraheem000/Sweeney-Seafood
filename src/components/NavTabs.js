@@ -110,15 +110,29 @@ function NavTabs({ currentPage, handlePageChange }) {
     </ul>
     </div>
 
+{/* Set this for mobile screens < 480? */}
     {window.innerWidth < 720 ? (
-            <nav className="navbar" onClick={mobileMenu}> 
+      <>
+          <nav className="navbar" onClick={mobileMenu}> 
               <div className={`hamburger ${hamburger}`}>
                   <span className='bar'></span>
                   <span className='bar' ></span>
                   <span className='bar'></span>
               </div>
           </nav>
-        ) : ''}
+            <ul className={`sidebar-menu slide-${hamburger}`} style={{color: '#fff'}}>
+              <li><a>test</a></li>
+              <li>test</li>
+              <li>test</li>
+            </ul>
+          {/* {hamburger === 'active' ? (
+            <ul className={`sidebar-menu ${hamburger}`} style={{color: '#fff'}}>
+              <li><a>test</a></li>
+              <li>test</li>
+              <li>test</li>
+            </ul>
+          ) : ''} */}
+      </>) : ''}
     </div> 
   );
 }

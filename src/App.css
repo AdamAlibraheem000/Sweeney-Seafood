@@ -519,6 +519,40 @@ h2 {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
- 
+
+    .sidebar-menu {
+      position: fixed;
+      top: 6rem;
+      right: 0;
+      width: 25%;
+      background: black;
+      box-sizing: border-box;  
+      transition: 0.5s;
+    }
+
+    .sidebar-menu li {
+      list-style: none;
+    }
+
+    .sidebar-menu li a {
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .sidebar-menu li a:hover {
+      transform: translateX(10px);
+      color: yellow;
+    }
+
+    .slide-active {
+      visible: hidden;
+    }
+
+    .slide-inactive {
+      visibile: visible;
+      right: -25%; 
+    }
+
+    /* .sidebar-menu:active ~ ul  */
     /* CSS AHBMGURDER */
 }
