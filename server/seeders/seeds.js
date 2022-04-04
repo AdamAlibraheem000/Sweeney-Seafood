@@ -17,17 +17,17 @@ db.once('open', async () => {
 
     userData.push({ username, email, password });
   }
-
+  console.log(userData)
   const createdUsers = await User.collection.insertMany(userData);
-
+  console.log(createdUsers);
 
   // create comments
   let createdComments = [];
   for (let i = 0; i < 100; i += 1) {
     const commentText = faker.lorem.words(Math.round(Math.random() * 20) + 1);
 
-    const randomUserIndex = Math.floor(Math.random() * createdUsers.ops.length);
-    const { username, _id: userId } = createdUsers.ops[randomUserIndex];
+    const randomUserIndex = Math.floor(Math.random() * userData.length);
+    const { username, _id: userId } = userData[randomUserIndex];
 
     const createdComment = await Comment.create({ commentText, username });
 
@@ -43,8 +43,8 @@ db.once('open', async () => {
   for (let i = 0; i < 100; i += 1) {
     const replyBody = faker.lorem.words(Math.round(Math.random() * 20) + 1);
 
-    const randomUserIndex = Math.floor(Math.random() * createdUsers.ops.length);
-    const { username } = createdUsers.ops[randomUserIndex];
+    const randomUserIndex = Math.floor(Math.random() * userData.length);
+    const { username } = userData[randomUserIndex];
 
     const randomCommentIndex = Math.floor(Math.random() * createdComments.length);
     const { _id: commentId } = createdComments[randomCommentIndex];
