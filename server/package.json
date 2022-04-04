@@ -2,9 +2,10 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node seeders/seeds.js"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +14,7 @@
     "apollo-server-express": "^3.6.7",
     "bcrypt": "^5.0.1",
     "express": "^4.17.3",
-    "faker": "^6.6.6",
+    "faker": "^4.1.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.9"
   },
