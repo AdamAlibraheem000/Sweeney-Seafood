@@ -16,52 +16,6 @@ export default function Home() {
       
       </title>
     </Helmet>
-    
-    {/* <div className="back-img"> 
-    <FadeIn>
-    <div className="title-flex">
-      <h1 className="title-font">
-        Rated Best Seafood
-        
-      </h1>
-      <h1 className="sub-title">In Dayton</h1>
-      
-    </div>
-    </FadeIn>
-    </div> */}
-    
-<Carousel>
-  <Carousel.Item style={{height: '90vh'}}>
-    <div style={{width: '100%', overflowY: 'auto'}}>
-      <img
-        className="d-block back-img"
-        src={fishPic}
-        style={{transition: '0.5s'}}
-        alt="First slide"
-      />
-    </div>
-  </Carousel.Item>
-  <Carousel.Item style={{height: '90vh'}}>
-    <div style={{width: '100%', overflowY: 'auto'}}>
-
-    <img
-      className="d-block back-img"
-      src ={danLance}
-      alt="Second slide"
-    />
-    </div>
-  </Carousel.Item>
-  <Carousel.Item style={{height: '90vh'}}>
-    <div style={{width: '100%', overflowY: 'auto'}}>
-    <img
-      className="d-block back-img"
-      src = {whiskey}
-      alt="Third slide"
-    />
-    </div>
-  </Carousel.Item>
-</Carousel>
-
    </>
   );
 }

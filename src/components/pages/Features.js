@@ -14,36 +14,39 @@ export default function Features() {
       <div class="back-img-features"></div>
       </FadeIn>
       <FadeIn>
-        <section>
-          <h2>Featured Appetizers</h2>
-          <div>
-          <h5>Appetizers One</h5>
-          <p>App Description</p>
-          </div>
-          <div>
-          <h5>Appetizers One</h5>
-          <p>App Description</p>
-          </div>
-          <h2>Featured Entrees</h2>
-          <div>
-          <h5>Entree One</h5>
-          <p>App Description </p>
-          </div>
-          <div>
-          <h5>Entree Two</h5>
-          <p>App Description</p>
-          </div>
-          <div>
-          <h5>Entree Three</h5>
-          <p>App Description</p>
-          </div>
-          <h2>Featured Draft List</h2>
-          <div>
-            <h5></h5>
-          </div>
-
-        </section>
-      
+        <article className='scroll-menu'>
+          <section className='food-item-grid'>
+            <div className='food'>
+              <h2 className=''>Featured Appetizers</h2>
+              <div>
+                <h5 className='food-subtitle'>Appetizers One</h5>
+                <p  className='food-subtitle'>App Description</p>
+              </div>
+            </div>
+            <div className='food'>
+              <h2 className=''>Featured Entrees</h2>
+              <div>
+                <h5 className='food-subtitle'>Entree One</h5>
+                <p  className='food-subtitle'>Entree Description</p>
+              </div>
+              <div>
+                <h5 className='food-subtitle'>Entree One</h5>
+                <p  className='food-subtitle'>Entree Description</p>
+              </div>
+              <div>
+                <h5 className='food-subtitle'>Entree One</h5>
+                <p  className='food-subtitle'>Entree Description</p>
+              </div>
+            </div>
+            <div className='food'>
+              <h2 className=''>Featured Draft List</h2>
+              <div>
+                <h5 className='food-subtitle'>Draft</h5>
+                <p  className='food-subtitle'>App Description</p>
+              </div>
+            </div>
+          </section>
+        </article> 
     </FadeIn>
     </>
     );
