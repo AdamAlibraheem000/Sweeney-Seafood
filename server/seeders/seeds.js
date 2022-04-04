@@ -1,7 +1,7 @@
 const faker = require('faker');
 
 const db = require('../config/connection');
-const { Comment, User } = require('../models');
+const { Comment, User, Feature } = require('../models');
 
 db.once('open', async () => {
   await Comment.deleteMany({});
@@ -70,7 +70,44 @@ db.once('open', async () => {
     );
   }
 
+
+  const features = await Feature.insertMany([
+    {
+      title: 'Salmon Flatbreads',
+      description: 'Four Mini Smoked Salmon Flatbreads',
+      price: 11
+    },
+    {
+      title: 'Escargot',
+      description: '6 Imported, Large, French Double Helix Snails baked in house-made Sherry, Garlic Butter served with Warm French Bread',
+      price: 9
+    },
+    {
+      title: 'Broiled Grouper',
+      description: 'topped with Citrus, Cilantro, Cracker Crust served with Medley of Fried Potatoes and a Salad',
+      price: 35
+    },
+    {
+      title: 'Seafood Newburg Pasta ',
+      description: 'Fresh Sautéed Nantucket Island Bay Scallops, Wild Shrimp, Fresh Asparagus, Mushrooms and Cavatappi Macaroni tossed in House-Made Lobster Tomato Cream Sauce and Salad',
+      price: 28
+    },
+    {
+      title: 'Bailey’s Chocolate Poke Cake',
+      description: 'Dense Moist Chocolate Cake topped with Bailey’s Irish Cream frosting drizzled with Chocolate',
+      price: 7
+    },
+    {
+      title: 'NY Cheesecake',
+      description: 'House-made New York Cheesecake with House-made 4-Berry Sauce',
+      price: 7
+    }
+  ]);
+
+  console.log('Feature Menu Seeded!')
+
   console.log('all done!');
   process.exit(0);
 });
+
 
