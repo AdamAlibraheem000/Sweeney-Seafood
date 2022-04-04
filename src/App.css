@@ -416,10 +416,6 @@ h2 {
 
 /* SmartPhones */
 @media screen and (max-width: 480px) {
-  /* nav {
-    display: none;
-  } */
-
   .full-nav {
     visible: hidden;
     display: none;
@@ -442,10 +438,6 @@ h2 {
     padding: 1rem 1.5rem;
 }
  
-.hamburger {
-    /* display: none; */
-}
- 
 .bar {
     display: block;
     width: 25px;
@@ -462,47 +454,12 @@ h2 {
     align-items: center;
     display: none;
 }
- 
-.nav-item {
-    margin-left: 5rem;
-}
- 
-.nav-link{
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: #475569;
-}
- 
-.nav-link:hover{
-    color: #482ff7;
-}
- 
+
 .nav-logo {
     font-size: 2.1rem;
     font-weight: 500;
     color: #482ff7;
 }
- .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 5rem;
-        flex-direction: column;
-        background-color: #fff;
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
-    }
- 
-    .nav-menu.active {
-        left: 0;
-    }
- 
-    .nav-item {
-        margin: 2.5rem 0;
-    }
  
     .hamburger {
         display: block;
@@ -524,24 +481,26 @@ h2 {
       position: fixed;
       top: 6rem;
       right: 0;
-      width: 25%;
-      background: black;
+      width: 27%;
+      padding-left: 1%;
+      background: #370624;
       box-sizing: border-box;  
       transition: 0.5s;
     }
 
     .sidebar-menu li {
+      margin-right: auto;
+      margin-left: auto;
       list-style: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
     }
 
     .sidebar-menu li a {
       text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .sidebar-menu li a:hover {
-      transform: translateX(10px);
-      color: yellow;
+      font-style: italic;
+      font-size: 60%;
+      color: #fff;
     }
 
     .slide-active {
@@ -550,9 +509,10 @@ h2 {
 
     .slide-inactive {
       visibile: visible;
-      right: -25%; 
+      right: -27%; 
     }
-
-    /* .sidebar-menu:active ~ ul  */
-    /* CSS AHBMGURDER */
+     .hamburger > .active ~ .overlay {
+      visibility: visibile;
+      opacity: 0.4;
+    }
 }
