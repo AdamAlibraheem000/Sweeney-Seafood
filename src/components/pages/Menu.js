@@ -29,7 +29,7 @@ export default function Contact() {
       <FadeIn>
     <article className="scroll-menu">
         {/* <!-- Starters --> */}
-        <h2>Starters</h2>
+        <h2 className='menu-title'>Starters</h2>
         <section className="food-item-grid">
           <div className="food">
             <h5>Classic Shrimp Cocktail</h5>
@@ -113,7 +113,7 @@ export default function Contact() {
         </section>
 
         {/* <!-- Seafood Your way --> */}
-        <h2 id="your-way-section">Seafood Your Way</h2>
+        <h2  className='menu-title' id="your-way-section">Seafood Your Way</h2>
         <section className="food-item-grid">
           <div className="food">
             <h5>Chilean Sea Bass</h5>
@@ -238,7 +238,7 @@ export default function Contact() {
         </section>
         {/* <!-- Steaks and Chicken --> */}
 
-        <h2 id="Steaks-chicken">Steaks and Chicken</h2>
+        <h2  className='menu-title'id="Steaks-chicken">Steaks and Chicken</h2>
         <section className="food-item-grid">
           <div className="food">
             <h5>*6 Ounce Filet Mignon</h5>
@@ -267,7 +267,7 @@ export default function Contact() {
         </div>
 
         {/* <!--Pastas and Creole --> */}
-        <h2 id="pasta-creole">Pasta, Creole and Cajun</h2>
+        <h2  className='menu-title'id="pasta-creole">Pasta, Creole and Cajun</h2>
         <section className="food-item-grid">
           <div className="food">
             <h5>Larry’s Cajun</h5>
@@ -322,7 +322,7 @@ export default function Contact() {
         </div>
 
         {/* <!-- Sandwiches --> */}
-        <h2 id="sandwiches">Specialty Sandwiches</h2>
+        <h2 className='menu-title' id="sandwiches">Specialty Sandwiches</h2>
         <section className="food-item-grid">
           <div className="food">
             <h5>Haddock Sandwich</h5>
@@ -352,7 +352,7 @@ export default function Contact() {
         </section>
 
         {/* <!-- Salads --> */}
-        <h2 id="salad">Salads and Greens</h2>
+        <h2 className='menu-title' id="salad">Salads and Greens</h2>
         <section className="food-item-grid">
           <div className="food">
             <h5>House Salad 7</h5>

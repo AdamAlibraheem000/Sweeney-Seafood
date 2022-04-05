@@ -230,10 +230,10 @@ h2 {
   text-align: center;
   font-size: 3rem;
   padding-top: 0.75rem;
-  border-bottom: 4px solid black;
-
+  /* border-bottom: 4px solid black; */
 }
 
+/*  -----------------------------------------------  */
 .food-item-grid {
   padding: 20px;
   display: grid;
@@ -242,7 +242,7 @@ h2 {
   /* color: #fff; */
   color: black;
 }
-
+/*  -----------------------------------------------------------------------------------------  */
 .food-item-grid h5 {
   font-size: 1.5rem;
   margin-bottom: 10px;
@@ -420,6 +420,28 @@ h2 {
 
 /* SmartPhones */
 @media screen and (max-width: 480px) {
+
+.menu-title {
+  color: #370624;
+  text-align: center;
+  font-size: 8vw;
+  padding-top: 0.75rem;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  border-bottom: 3px solid rgba(0,0,0, 0.6);
+}
+
+.food-item-grid {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  /* color: #fff; */
+  color: black;
+  margin: 0;
+}
+
   .mobile {
     display: inline-box;
   }
