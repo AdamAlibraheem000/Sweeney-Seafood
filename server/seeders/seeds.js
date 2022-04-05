@@ -38,6 +38,7 @@ db.once('open', async () => {
 
     createdComments.push(createdComment);
   }
+  console.log(createdComments)
 
   // create replies
   for (let i = 0; i < 100; i += 1) {
@@ -55,6 +56,8 @@ db.once('open', async () => {
       { runValidators: true }
     );
   }
+
+
 
   const features = await Feature.insertMany([
     {
@@ -89,6 +92,7 @@ db.once('open', async () => {
     }
   ]);
 
+  console.log(features);
   console.log('Feature Menu Seeded!')
 
   console.log('all done!');
