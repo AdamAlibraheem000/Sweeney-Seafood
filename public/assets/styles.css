@@ -11,6 +11,9 @@ html {
 /* Change font family */
 body {
   font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* background Image */
@@ -102,16 +105,16 @@ nav ul li:hover {
 }
 
 footer {
-  height: 7rem;
   /* background-color: #370624; */
   background-color: #f7f4f0;
-  display: flex;
+  /*display: flex;*/
   justify-content: space-evenly;
-  margin-top: 9rem;
+  margin-top: auto;
 }
 
 footer .contact {
   /* color: #fff; */
+  margin: 0;
   color: black;
   font-size: 2rem;
 }
@@ -121,8 +124,9 @@ ul li {
 }
 
 .operation {
+  margin: 0;
   color: black;
-  font-size: 1.5rem;
+  /*font-size: 1.5rem;*/
 }
 
 /* Menu Styling */
