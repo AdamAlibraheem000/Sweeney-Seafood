@@ -26,6 +26,36 @@ body{
   background-attachment: fixed;
 }
 
+.back-img-2 {
+  background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../public/assets/imgs/fishPic.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.back-img-3 {
+  background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../public/assets/imgs/DanandLance.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.back-img-4 {
+  background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../public/assets/imgs/WhiskeyPic.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .logo {
   width: 60px;
 }
@@ -136,11 +166,11 @@ body{
 /* Footer styling */
 
 .footer {
-  height: 7rem;
+  
   /* background-color: #f7f4f0; */
   background-color: #370624;
   border: 4px solid black;
-  height: 30vh;
+  /* height: 30vh; */
 }
 
 .footer-grid {
@@ -292,6 +322,28 @@ h2 {
   color: black;
   text-align: center;
 }
+
+/* Feature Styling */
+.feature-grid{
+  color: #f0ece3;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.feature-title{
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.feature-desc{
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+
 
 /* Bar Styling */
 /* background Image */
