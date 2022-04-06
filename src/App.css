@@ -53,6 +53,7 @@ body{
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  margin-top: 100px;
 
 }
 
@@ -67,7 +68,7 @@ body{
 }
 
 .logo {
-  width: 60px;
+  width: 4rem;
 }
 
 
@@ -92,8 +93,11 @@ body{
 }
 
 .carousel-flex{
-  display: relative;
-  bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  padding-bottom: 8rem;
 }
 
 
@@ -113,14 +117,11 @@ body{
 .title-font {
   font-size: 6rem;
   color: #fff;
-  border: 3px s/olid green;
   padding-top: 75px;
-  text-shadow: 5px 5px 5px black;
-  font-weight: bold;
+  text-shadow: 12px 5px 5px black;
+  /* font-weight: bold; */
   font-style: italic;
 }
-
-
 
 .sub-title {
   font-size: 6rem;
@@ -128,8 +129,24 @@ body{
   font-style: italic;
   padding-left: 7rem;
   /* padding-right: 1rem; */
-  text-shadow: 6px 5px 5px black;
+  text-shadow: 12px 5px 5px black;
 }
+
+.dan-font{
+  font-size: 4rem;
+  text-shadow: 12px 5px 5px black;
+  font-style: italic;
+}
+
+.dansub-title{
+  font-size: 4rem;
+  text-shadow: 12px 5px 5px black;
+  font-style: italic;
+}
+
+
+
+
 
 /* Nar Bar styling */
 
