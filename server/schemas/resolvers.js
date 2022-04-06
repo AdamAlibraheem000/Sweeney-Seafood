@@ -16,8 +16,8 @@ const resolvers = {
       throw new AuthenticationError("You are not logged in!");
     },
     //get all comments
-    comments: async (parent, { username }) => {
-      const params = username ? { username } : {};
+    comments: async (parent, args, context) => {
+      const params = context.user ? { _id: context.user._id } : {};
       return Comment.find(params).sort({ createdAt: -1 });
     },
     // single comment by id
