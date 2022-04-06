@@ -9,6 +9,7 @@ export default function Footer(){
         <li>Phone: (937) 291-3474</li>
         <br />
         <li>28 W Franklin St, Dayton, OH 45459</li>
+        <li>Copyright © {new Date().getFullYear()}</li>
       </ul>
       <ul className="operation">
         <li>Monday's: Closed</li>

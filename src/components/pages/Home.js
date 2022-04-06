@@ -3,6 +3,7 @@ import {Helmet} from 'react-helmet';
 import FadeIn from 'react-fade-in/lib/FadeIn';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap';
+import rockfeller from '../../imgs/rockfeller.jpg';
 import fishPic from '../../imgs/fishPic.jpg';
 import danLance from '../../imgs/DanandLance.jpg';
 import whiskey from '../../imgs/WhiskeyPic.jpg';
@@ -70,22 +71,22 @@ export default function Home() {
   </a>
 </div>  */}
 
- <Carousel>
-  <Carousel.Item>
+ <Carousel className='main-container'>
+  <Carousel.Item> 
     <img
       className="d-block w-100 back-img"
-      src="holder.js/800x400?text=First slide&bg=373940"
+      // src={rockfeller}
       alt="First slide"
     />
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    <Carousel.Caption className= "carousel-flex">
+      <h1 className="title-font">Rated Best Seafood</h1>
+      <h1 className="sub-title">In Dayton</h1>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-100"
-      src={ fishPic}
+      className="d-block w-100 back-img-2"
+      // src={ fishPic}
       alt="Second slide"
     />
 
@@ -96,20 +97,20 @@ export default function Home() {
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-100"
-      src ={danLance}
+      className="d-block w-100 back-img-3"
+      // src ={danLance}
       alt="Third slide"
     />
 
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    <Carousel.Caption className= "carousel-flex">
+      <h1 className="title-font">Come Visit Doug's Bar</h1>
+      <h1 className="sub-title">With a wide variety of Liquors and Spirits</h1>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-100"
-      src = {whiskey}
+      className="d-block w-100 back-img-4"
+      // src = {whiskey}
       alt="Third slide"
     />
 
@@ -119,6 +120,7 @@ export default function Home() {
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel> 
+
 
     </> 
   );

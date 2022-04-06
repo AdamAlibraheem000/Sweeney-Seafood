@@ -9,6 +9,9 @@ export default function Reviews() {
       <title>Sweeney’s - Customer Reviews</title>
     </Helmet>
     <div class="bgm-img-menu"></div>
+    <section className='review-grid'>
+
+    </section>
     </>
   )
 }

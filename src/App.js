@@ -17,6 +17,7 @@ const App = () =>
 <PortfolioContainer />
 <Footer/>
 </body>
+
 </>
 
 export default App;
