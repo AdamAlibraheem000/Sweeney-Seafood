@@ -15,8 +15,7 @@ const ReviewList = ({ comments, title }) => {
                         <div className="card-body">
                             <p>{comment.commentText}</p>
                             <p className="mb-0">
-                                Replies: {comment.replyCount} || Click to{' '}
-                                {comment.replyCount} the discussion!
+                                Replies: {comment.replyCount}
                             </p>
                         </div>
                     </div>
