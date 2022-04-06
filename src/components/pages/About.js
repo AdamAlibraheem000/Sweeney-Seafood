@@ -10,9 +10,9 @@ export default function About() {
       <title>Sweeney’s - About Us</title>
     </Helmet>
     <div class="back-img-about"></div>
-    <section className="about-section" >
+    <section className="about-section " >
       <FadeIn>
-          <div>
+          <div className='menu-bgn-grid'>
             <h5>General Manager and Owner Lisa Long</h5>
             <p>
               with a degree in hospitality management, comes to Sweeney’s
@@ -28,7 +28,7 @@ export default function About() {
               area for over 15 years.
             </p>
           </div>
-          <div>
+          <div className='menu-bgn-grid'>
             <h5>Managing Partner and Owner Larry Thompson</h5>
             <p>
               a former college professor, has worked extensively in the
@@ -41,7 +41,7 @@ export default function About() {
               and has lived and worked in the Dayton area since 1994.
             </p>
           </div>
-          <div>
+          <div className='menu-bgn-grid'>
             <h5>Operations Partner and Owner Holley Thompson</h5>
             <p>
               is a former practicing attorney and consultant and worked
