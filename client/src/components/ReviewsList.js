@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 
 const ReviewList = ({ comments, title }) => {
@@ -11,10 +11,18 @@ const ReviewList = ({ comments, title }) => {
             <h3>{title}</h3>
             {comments &&
                 comments.map(comment => (
-                    <div key={comment.id} className="card mb-3">
-                        <p className='card-header'></p>
+                    <div key={comment._id} className="card mb-3">
+                        <div className="card-body">
+                            <p>{comment.commentText}</p>
+                            <p className="mb-0">
+                                Replies: {comment.replyCount} || Click to{' '}
+                                {comment.replyCount} the discussion!
+                            </p>
+                        </div>
                     </div>
                 ))}
         </div>
     )
 }
+
+export default ReviewList;

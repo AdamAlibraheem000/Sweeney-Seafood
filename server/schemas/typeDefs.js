@@ -8,7 +8,7 @@ const typeDefs = gql`
   }
   type Comment {
     _id: ID
-    thoughtText: String
+    commentText: String
     createdAt: String
     username: String
     replyCount: Int
