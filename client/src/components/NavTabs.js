@@ -119,74 +119,43 @@ function NavTabs({ currentPage, handlePageChange }) {
         </ul>
       </div>
 
-      {/* Set this for mobile screens < 480? */}
-      {window.innerWidth < 720 ? (
-        <>
-          <nav className="navbar" onClick={mobileMenu}>
-            <div className={`hamburger ${hamburger}`}>
-              <span className="bar"></span>
-              <span className="bar"></span>
-              <span className="bar"></span>
-            </div>
-            <ul
-              className={`sidebar-menu slide-${hamburger}`}
-              style={{ color: "#fff", marginRight: 'auto', marginLeft: 'auto'}}
-            >
-              <li>
-                <a
-                  href="#Feature"
-                  onClick={() => handlePageChange("Feature")}  
-                >
-                  Features
-                </a>
-              </li>
-              <li>
-              <a
-                href="#menu"
-                onClick={() => handlePageChange("Menu")}
-              >
+      <nav className="navbar mobile" onClick={mobileMenu}>
+        <div className={`hamburger ${hamburger}`}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <ul
+            className={`sidebar-menu slide-${hamburger}`}
+            style={{ color: "#fff", marginRight: "auto", marginLeft: "auto" }}
+          >
+            <li>
+              <a href="#Feature" onClick={() => handlePageChange("Feature")}>
+                Features
+              </a>
+            </li>
+            <li>
+              <a href="#menu" onClick={() => handlePageChange("Menu")}>
                 Menu
               </a>
-              </li>
-              <li>
-                <a
-                  href="#Bar"
-                  onClick={() => handlePageChange("Bar")}
-                  className={
-                    currentPage === "Bar" ? "nav-link active" : "nav-link"
-                  }
-                >
-                  Bar
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  onClick={() => handlePageChange("About")}
-                  className={
-                    currentPage === "About" ? "nav-link active" : "nav-link"
-                  }
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#reviews"
-                  onClick={() => handlePageChange("Reviews")}
-                  className={
-                    currentPage === "Reviews" ? "nav-link active" : "nav-link"
-                  }
-                >
-                  Reviews
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </>
-      ) : (
-        ""
-      )}
+            </li>
+            <li>
+              <a href="#bar" onClick={() => handlePageChange("Bar")}>
+                Bar
+              </a>
+            </li>
+            <li>
+              <a href="#about" onClick={() => handlePageChange("About")}>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#reviews" onClick={() => handlePageChange("Reviews")}>
+                Reviews
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
   );
 }
