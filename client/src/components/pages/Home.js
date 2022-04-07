@@ -2,7 +2,11 @@ import React from 'react';
 import {Helmet} from 'react-helmet';
 import FadeIn from 'react-fade-in/lib/FadeIn';
 import { Carousel } from 'react-bootstrap';
+<<<<<<< HEAD
 import 'bootstrap';
+=======
+// import 'bootstrap';
+>>>>>>> 6c07ef3b20256aefa04601c29c3b5097fb36d203
 
 export default function Home() {
   return (
