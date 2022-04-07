@@ -3,12 +3,13 @@ import React from 'react';
 export default function Footer(){
     return(
       
-    <footer   className="footer">
+    <footer className="footer">
       <div className='footer-grid'>
       <ul className="contact">
         <li>Phone: (937) 291-3474</li>
         <br />
         <li>28 W Franklin St, Dayton, OH 45459</li>
+        <li>Copyright © {new Date().getFullYear()} All Rights Reserved</li>
       </ul>
       <ul className="operation">
         <li>Monday's: Closed</li>
