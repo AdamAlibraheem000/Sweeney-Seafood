@@ -5,25 +5,28 @@ import { FaInstagram } from "react-icons/fa";
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
-function NavTabs({ currentPage, handlePageChange }) {
+function NavTabs({ currentPage, handlePageChange, mobileBlur, setMobileBlur }) {
   // const [navMenu, setNavMenu] = useState('inactive');
   const [hamburger, setHamburger] = useState("inactive");
 
   const mobileMenu = () => {
     if (hamburger === "active") {
       setHamburger("inactive");
+      setMobileBlur("unblur");
     } else {
       setHamburger("active");
+      setMobileBlur("blur");
     }
   };
 
   return (
     <div className="nav-grid">
-      <div>
+      <div className={`display-mobile ${hamburger}`}>
         <ul className="nav">
-          <li className="nav-item">
+          <div className="nav-item">
             <a
               href="#home"
+              style={{ width: "" }}
               onClick={() => handlePageChange("Home")}
               className={
                 currentPage === "Home" ? "nav-link active" : "nav-link"
@@ -31,16 +34,17 @@ function NavTabs({ currentPage, handlePageChange }) {
             >
               <div className="brand-grid">
                 <img className="logo" src={logo} alt="sweeneyLogo"></img>
-                <div>
+                <div className="brand-mark">
                   <div className="brand-title">Sweeney’s Seafood</div>
                   <div className="brand-subTitle">Bar & Grill</div>
                 </div>
               </div>
             </a>
-          </li>
+          </div>
         </ul>
       </div>
 
+      {/* ----------------- Large Navbar > 820px  START ------------------------ */}
       <div className="full-nav">
         <ul className="nav-2">
           <li className="nav-item">
@@ -119,43 +123,87 @@ function NavTabs({ currentPage, handlePageChange }) {
         </ul>
       </div>
 
-      <nav className="navbar mobile" onClick={mobileMenu}>
-        <div className={`hamburger ${hamburger}`}>
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <ul
-            className={`sidebar-menu slide-${hamburger}`}
-            style={{ color: "#fff", marginRight: "auto", marginLeft: "auto" }}
-          >
-            <li>
-              <a href="#Feature" onClick={() => handlePageChange("Feature")}>
-                Features
-              </a>
-            </li>
-            <li>
-              <a href="#menu" onClick={() => handlePageChange("Menu")}>
-                Menu
-              </a>
-            </li>
-            <li>
-              <a href="#bar" onClick={() => handlePageChange("Bar")}>
-                Bar
-              </a>
-            </li>
-            <li>
-              <a href="#about" onClick={() => handlePageChange("About")}>
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#reviews" onClick={() => handlePageChange("Reviews")}>
-                Reviews
-              </a>
-            </li>
-          </ul>
+      {/* ----------------- Large Navbar > 820px  END ------------------------ */}
+
+      {/* ---------------------- Mobile Navbar --------- 820px --------------  */}
+      <nav className="navbar mobile">
+        <div onClick={mobileMenu}>
+          <div className={`hamburger ${hamburger}`}>
+            <span className={`bar ${hamburger}`}></span>
+            <span className={`bar ${hamburger}`}></span>
+            <span className={`bar ${hamburger}`}></span>
+          </div>
         </div>
+
+        <ul
+          className={`sidebar-menu slide-${hamburger}`}
+          style={{ color: "#fff", marginRight: "auto", marginLeft: "auto" }}
+        >
+          <div className="d-flex align-center space-around">
+            <div className="d-flex">
+              <div style={{marginRight: '3vw'}} className="nav-item">
+                <a style={{marginRight: '3vw'}} href="https://www.facebook.com/sweeneysseafood/" target="_blank">
+                  <FaFacebookF />
+                </a>
+                <a href="https://www.instagram.com/sweeneysbarngrill/" target="_blank">
+                  <FaInstagram />
+                </a>
+              </div>
+              <div>
+                <div className="brand-title">Sweeney’s Seafood</div>
+                <div className="brand-subTitle float-right">Bar & Grill</div>
+              </div>
+            </div>
+            <div onClick={mobileMenu} className={`hamburger ${hamburger} float-right`}>
+              <span className={`bar ${hamburger}`}></span>
+              <span className={`bar ${hamburger}`}></span>
+              <span className={`bar ${hamburger}`}></span>
+            </div>
+          </div>
+          <li></li>
+          <li>
+            <a href="#Feature" onClick={() => {
+                handlePageChange("Feature")
+                mobileMenu();
+              }}>
+              Features
+            </a>
+          </li>
+          <li>
+            <a href="#menu" onClick={() => {
+              handlePageChange("Menu")
+              mobileMenu();
+              }}>
+              Menu
+            </a>
+          </li>
+          <li>
+            <a href="#bar" onClick={() => {
+              handlePageChange("Bar")
+              mobileMenu();
+              }}>
+              Bar
+            </a>
+          </li>
+          <li>
+            <a href="#about" onClick={() => {
+              handlePageChange("About")
+              mobileMenu();
+              }}>
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#reviews" onClick={() => {
+              handlePageChange("Reviews")
+              mobileMenu();
+              }}>
+              Reviews
+            </a>
+          </li>
+        </ul>
       </nav>
+      {/* ---------------------- Mobile Navbar --------- 820px --------------  */}
     </div>
   );
 }
