@@ -57,7 +57,7 @@ const CommentForm = () => {
     };
 
     return (
-        <div>
+        <div className='card-body'>
             <p
                 className={`m-0 ${characterCount === 280 || error ? 'text-error' : ''}`}
             >
@@ -65,16 +65,16 @@ const CommentForm = () => {
                 {error && <span className="ml-2">Something went wrong...</span>}
             </p>
             <form
-                className="flex-row justify-center justify-space-between-md align-stretch"
+                className=" d-flex flex-column m-2"
                 onSubmit={handleFormSubmit}
             >
                 <textarea
-                    placeholder="Here's a new Comment..."
+                    placeholder="Write a review and share your experience..."
                     value={commentText}
                     className="form-input col-12 col-md-9"
                     onChange={handleChange}
                 ></textarea>
-                <button className="btn col-12 col-md-3" type="submit">
+                <button className="btn btn-primary col-12 col-md-3 mt-2" type="submit">
                     Submit
                 </button>
             </form>
