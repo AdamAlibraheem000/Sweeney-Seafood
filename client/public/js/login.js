@@ -11,7 +11,15 @@ async function loginHandler(e) {
 async function signupHandler(e) {
   e.preventDefault();
 
-  const username = document.querySelector();
-  const email = document.querySelector();
-  const password = document.querySelector();
+  const username = document.querySelector("username-signup");
+  const email = document.querySelector("email-signup");
+  const password = document.querySelector("password-signup");
+
+  if (username && email && password) {
+  }
 }
+
+document.querySelector(".login-form").addEventListener("submit", loginHandler);
+document
+  .querySelector(".signup-form")
+  .addEventListener("submit", signupHandler);
