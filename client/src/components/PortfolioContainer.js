@@ -6,6 +6,7 @@ import Bar from './pages/Bar';
 import Menu from './pages/Menu';
 import Feature from './pages/Features';
 import Reviews from './pages/Reviews';
+import Login from './pages/Login';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -30,6 +31,9 @@ export default function PortfolioContainer() {
     }
     if (currentPage === 'Reviews') {
       return <Reviews />;
+    }
+    if (currentPage === 'Login') {
+      return <Login />;
     }
     return <Home />;
   };

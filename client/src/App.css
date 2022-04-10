@@ -216,6 +216,21 @@ ul li {
   text-shadow: 2px 1px 3px black;
 }
 
+/* ----------------------- Login Form Style ------------- */
+.login-form {
+  margin-top: 6rem;
+  width: 75vw;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  /* background-color: #f7f4f0; */
+}
+
+.background-off-white {
+  background-color: #f7f4f0;
+}
+/* ----------------------------------------------------- */
+
 /* Menu Styling */
 
 .bgm-img-menu {
@@ -497,7 +512,7 @@ h2 {
   }
   /* ------------ HIDE MAIN NAV START ---------------  */
 
-  /* ------------------------- MAIN NAV STYLE ---------------------- */
+  /* ------------------------- MAIN NAV STYLE START---------------------- */
   .nav-grid {
     display: flex;
     height: var(--mobile-nav-height);
@@ -517,7 +532,40 @@ h2 {
     float: right;
     font-style: italic;
   }
-  /* ------------------------- MAIN NAV STYLE ---------------------- */
+  /* ------------------------- MAIN NAV STYLE END---------------------- */
+
+  /* _----------------------- LOGIN PAGE START ---------------------- */
+  .margin-mobile {
+  margin-top: var(--mobile-nav-height);
+  }
+.user-form {
+  width: 75vw;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.padding-top-bot-5 {
+  padding: 5% 0;
+}
+.login-section {
+  background-color: #f7f4f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.center-item {
+  margin-right: auto;
+  margin-left: auto;
+}
+.text-large-purple {
+  font-size: 8vw;
+  color: #370624;
+  font-style: italic;
+}
+.background-purple {
+  background-color: #370624;
+}
+  /* _----------------------- LOGIN PAGE END ---------------------- */
 
   /* ------- ABOUT STYLE START ------------------- */
   .about-section {
@@ -671,7 +719,7 @@ h2 {
     color: #fff;
   }
   .slide-inactive {
-    top: -100vw;
+    top: -150vw;
   }
 
   
