@@ -53,7 +53,6 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  margin-top: 100px;
 }
 
 .back-img-4 {
@@ -623,11 +622,7 @@ h2 {
   /* ------- ABOUT STYLE END ------------------- */
 
   /* -------- CAROUSEL STYLE START ------------------- */
-  .back-img-3 {
-    margin-top: var(--mobile-nav-height);
-  }
-
-  .title-font {
+   .title-font {
     font-size: 12vw;
     color: #fff;
     /* padding-top: 2vw; */

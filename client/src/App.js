@@ -41,10 +41,10 @@ const App = () =>
         rel="stylesheet" />
       <link rel="icon" type="image/x-icon" href={favicon} />
     </Helmet>
-    <body>
+    <div>
       <PortfolioContainer />
       <Footer />
-    </body>
+    </div>
   </ApolloProvider>
 
 export default App;
