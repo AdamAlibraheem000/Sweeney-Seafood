@@ -12,13 +12,13 @@ export const LOGIN_USER = gql`
     }
 `;
 
-export const CREATE_USER = gql`
-mutation addUser() {
-       addUser() {
-        username
-       }
-   }
-     `;
+// export const CREATE_USER = gql`
+// mutation addUser() {
+//        addUser() {
+//         username
+//        }
+//    }
+//      `;
 
 export const ADD_COMMENT = gql`
   mutation addComment($commentText: String!) {
