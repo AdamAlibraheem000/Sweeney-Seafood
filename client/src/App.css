@@ -249,7 +249,6 @@ ul li {
   grid-template-columns: 1fr 2fr;
   background-color: #f0ece3;
   flex-grow: 1;
-
   /* text-shadow: 1px 1px 1px black; */
 }
 
@@ -370,6 +369,9 @@ h2 {
   text-align: center;
   font-size: 1.5rem;
 }
+.margin-large {
+  margin-top: 6rem;
+}
 
 /* Bar Styling */
 /* background Image */
@@ -441,105 +443,17 @@ h2 {
   display: none;
 }
 
-/* Media Queries */
-/* Tablets */
-/* @media screen and (min-width: 768) and (max-width: 1200px) { */
-/* .logo {
-    width: auto;
-  } */
-
-/* .brand-grid {
-    display: flex;
-    align-items: space-evenly;
-    grid-gap: 1rem;
-  }
-  .brand-title {
-    font-size: 5vw;
-    font-style: italic;
-    font-weight: bold;
-  }
-  .brand-subTitle {
-    font-size: 3vw;
-    padding-left: 0;
-    float: right;
-    font-style: italic;
-  } */
-/* nav ul li {
-    font-size: 2rem;
-  }
-
-  .title-font {
-    font-size: 4rem;
-  }
-
-  .sub-title {
-    font-size: 3.5rem;
-  }
-
-  footer .contact {
-    font-size: 1.5rem;
-  }
-
-  .title-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .bgm-img-menu {
-    display: none;
-  }
-
-  .back-img-bar {
-    display: none;
-  }
-
-  .back-img-about {
-    display: none;
-  }
-
-  .back-img-features {
-    display: none;
-  }
-
-  .menu-nav {
-    display: none;
-  }
-
-  .food-item-grid {
-    margin-right: 30px;
-  }
-
-  .food-2,
-  .food-3 {
-    margin-right: 30px;
-  }
-
-  .sides-styling {
-    margin-right: 30px;
-  }
-
-  .hide-img {
-    display: none;
-  }
-
-  .menu-bgn-grid {
-    display: flex;
-    margin-top: 6rem;
-  } */
-/* } */
-
 /* SmartPhones */
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 992px) {
   /* ------------ HIDE MAIN NAV START ---------------  */
   .full-nav {
     visibility: hidden;
     display: none;
   }
   .full-footer {
-    /* visibility: hidden; */
     display: none;
   }
+
   /* ------------ HIDE MAIN NAV START ---------------  */
   /* ------------------------- MOBILE FOOTER START ------------------- */
   .mobile-footer {
@@ -560,10 +474,6 @@ h2 {
   }
   .operation {
     font-size: 4vw;
-  }
-  .footer-grid {
-    /* display: flex; */
-    /* justify-content: space-evenly; */
   }
   .copyright {
     color: #fff;
@@ -634,7 +544,6 @@ h2 {
   /* ------- ABOUT STYLE START ------------------- */
   .about-section {
     background-color: #f7f4f0;
-    margin-top: var(--mobile-nav-height);
     padding: 0 5%;
     align-items: center;
     text-shadow: 0px 0px 1px black;
@@ -685,10 +594,11 @@ h2 {
     margin-left: auto;
     border-bottom: 3px solid rgba(0, 0, 0, 0.6);
   }
-
+  .menu-nav {
+    display: flex;
+  }
   .menu-bgn-grid {
     display: grid;
-    margin-top: var(--mobile-nav-height);
     grid-template-columns: 1fr;
     background-color: #f0ece3;
   }
@@ -776,7 +686,9 @@ h2 {
   .slide-inactive {
     top: -150vw;
   }
-
+  .display-mobile-none {
+    display: none;
+  }
   .float-left {
     float: left;
   }

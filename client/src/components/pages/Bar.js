@@ -12,7 +12,7 @@ export default function Bar() {
     <div class="back-img-bar"></div>
     </FadeIn>
     <section className="menu-bgn-grid">
-      <article>
+      <article className='display-mobile-none'>
         <div className="menu-nav">
           <ul>
             <li><a href="#red-wines">Red Wines</a></li>

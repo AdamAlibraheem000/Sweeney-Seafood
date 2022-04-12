@@ -49,15 +49,14 @@ export default function Features() {
   // </>
   // );
   return (
-    <section className="margin-mobile background-beige">
+    <section className="margin-large margin-mobile background-beige">
       <Helmet>
         <title>Sweeney’s - Features</title>
       </Helmet>
       <FadeIn>
         <article className="scroll-menu">
-          {/* <section className='food-item-grid'> */}
           <h2 className="">Appetizers</h2>
-          <section className="food-item-grid">
+          <section>
             <div className="food">
               <div>
                 <h5 className="food-subtitle">Appetizers One</h5>
@@ -73,10 +72,14 @@ export default function Features() {
                 <h5 className="food-subtitle">Entree One</h5>
                 <p className="food-subtitle">Entree Description</p>
               </div>
+            </div>
+            <div className="food">
               <div>
                 <h5 className="food-subtitle">Entree One</h5>
                 <p className="food-subtitle">Entree Description</p>
               </div>
+            </div>
+            <div className="food">
               <div>
                 <h5 className="food-subtitle">Entree One</h5>
                 <p className="food-subtitle">Entree Description</p>
@@ -93,7 +96,6 @@ export default function Features() {
               </div>
             </div>
           </section>
-          {/* </section> */}
         </article>
       </FadeIn>
     </section>

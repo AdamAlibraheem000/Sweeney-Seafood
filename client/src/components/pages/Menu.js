@@ -12,7 +12,7 @@ export default function Contact() {
     <div class="bgm-img-menu"></div>
     </FadeIn>
     <section className="menu-bgn-grid">
-      <article>
+      <article className='display-mobile-none'>
         <div className="menu-nav">
           <ul>
             <li><a href="#starters">Starters</a></li>
