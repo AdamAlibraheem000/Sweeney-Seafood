@@ -1,3 +1,7 @@
+:root {
+  --mobile-nav-height: 15vw;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,17 +19,17 @@ body {
   flex-direction: column;
 }
 
+
 .login-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
-  min-height: 100vh;
 }
 
 .main-container {
   flex-grow: 1;
+  min-height: 100vh;
 }
 
 /* background Image */
@@ -219,6 +223,10 @@ ul li {
   color: #fff;
   font-size: 1.5rem;
   text-shadow: 2px 1px 3px black;
+}
+
+.background-off-white {
+  background-color: #f7f4f0;
 }
 
 /* Menu Styling */
@@ -420,6 +428,11 @@ h2 {
   flex-grow: 1;
 }
 
+.mobile {
+  visibility: hidden;
+  display: none;
+}
+
 /* Media Queries */
 /* Tablets */
 @media screen and (max-width: 812px) {
@@ -489,22 +502,158 @@ h2 {
 }
 
 /* SmartPhones */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
+  /* ------------ HIDE MAIN NAV START ---------------  */
   .full-nav {
     visible: hidden;
     display: none;
   }
 
+
   .logo {
     width: 4rem;
   }
+
+  /* ------------ HIDE MAIN NAV START ---------------  */
+
+  /* ------------------------- MAIN NAV STYLE START---------------------- */
+
   .nav-grid {
     display: flex;
+    height: var(--mobile-nav-height);
     justify-content: space-around;
     align-items: center;
   }
 
-  /*  CSS HAMBURDGER */
+  .brand-title {
+    font-size: 5vw;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .brand-subTitle {
+    font-size: 3vw;
+    padding-left: 0;
+    float: right;
+    font-style: italic;
+  }
+  /* ------------------------- MAIN NAV STYLE END---------------------- */
+
+  /* _----------------------- LOGIN PAGE START ---------------------- */
+  .margin-mobile {
+  margin-top: var(--mobile-nav-height);
+  }
+.user-form {
+  width: 75vw;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.padding-top-bot-5 {
+  padding: 5% 0;
+}
+.login-section {
+  background-color: #f7f4f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.center-item {
+  margin-right: auto;
+  margin-left: auto;
+}
+.text-large-purple {
+  font-size: 8vw;
+  color: #370624;
+  font-style: italic;
+}
+.background-purple {
+  background-color: #370624;
+}
+  /* _----------------------- LOGIN PAGE END ---------------------- */
+
+  /* ------- ABOUT STYLE START ------------------- */
+  .about-section {
+    background-color: #f7f4f0;
+    margin-top: var(--mobile-nav-height);
+    padding: 0 5%;
+    align-items: center;
+    text-shadow: 0px 0px 1px black;
+  }
+  /* ------- ABOUT STYLE END ------------------- */
+
+/* -------- CAROUSEL STYLE START ------------------- */
+  .back-img-3 {
+    margin-top: var(--mobile-nav-height);
+  }
+
+  .title-font {
+    font-size: 12vw;
+    color: #fff;
+    /* padding-top: 2vw; */
+    text-shadow: 12px 5px 5px black;
+    padding-right: 8vw;
+    /* font-weight: bold; */
+    font-style: italic;
+  }
+
+  .sub-title {
+    font-size: 12vw;
+    color: #fff;
+    font-style: italic;
+    padding-left: 16vw;
+    padding-right: 1vw;
+    text-shadow: 12px 5px 5px black;
+  }
+
+  .dan-font {
+    font-size: 12vw;
+    text-shadow: 12px 5px 5px black;
+    font-style: italic;
+  }
+
+  .dansub-title {
+    font-size: 12vw;
+    text-shadow: 12px 5px 5px black;
+    font-style: italic;
+  }
+/* -------- CAROUSEL STYLE END ------------------- */
+
+  /* ----------------- MENU STYLE START -------------------  */
+  .menu-title {
+    color: #370624;
+    text-align: center;
+    font-size: 8vw;
+    padding-top: 0.75rem;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.6);
+  }
+
+  .menu-bgn-grid {
+    display: grid;
+    margin-top: var(--mobile-nav-height);
+    grid-template-columns: 1fr;
+    background-color: #f0ece3;
+  }
+
+  .food-item-grid {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    color: black;
+    margin: 0;
+  }
+  /* ----------------- MENU STYLE END -------------------  */ 
+
+  /* ----------------- MOBILE NAVBAR START ------------------- */
+  .mobile {
+    visibility: visible;
+    display: inline-box;
+  }
+
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -518,23 +667,9 @@ h2 {
     height: 3px;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
     background-color: #ffffff;
   }
-
-  .nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    display: none;
-  }
-
-  .nav-logo {
-    font-size: 2.1rem;
-    font-weight: 500;
-    color: #482ff7;
-  }
-
   .hamburger {
     display: block;
     cursor: pointer;
@@ -543,6 +678,7 @@ h2 {
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
+
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
@@ -551,20 +687,32 @@ h2 {
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  .display-mobile.active {
+    transition: opacity 0.5s ease-in;
+    opacity: 0;
+  }
+  .display-mobile.inactive {
+    opacity: 1;
+    transition: opacity 0.8s ease-out;
+  }
+
   .sidebar-menu {
     position: fixed;
-    top: 6rem;
     right: 0;
-    width: 27%;
+    top: 0;
+    padding: 2% 0 0 0;
+    width: 100vw;
     padding-left: 1%;
     background: #370624;
     box-sizing: border-box;
     transition: 0.5s;
+    box-shadow: 5px 5px 5px #370624;
   }
 
   .sidebar-menu li {
     margin-right: auto;
     margin-left: auto;
+    padding: 0 0 0 3%;
     list-style: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     color: #fff;
@@ -573,20 +721,33 @@ h2 {
   .sidebar-menu li a {
     text-decoration: none;
     font-style: italic;
-    font-size: 60%;
+    font-size: 5vw;
     color: #fff;
   }
-
-  .slide-active {
-    visible: hidden;
-  }
-
   .slide-inactive {
-    visibile: visible;
-    right: -27%;
+    top: -150vw;
   }
-  .hamburger > .active ~ .overlay {
-    visibility: visibile;
-    opacity: 0.4;
+
+  
+  /* ----------------- MOBILE NAVBAR END ------------------- */
+
+  /* ---------------- MOBILE UTILS START ----------------- */
+  .float-left {
+    float: left;
   }
+  .float-right {
+    float: right;
+  }
+  .d-flex {
+    display: flex;
+  }
+
+  .align-center {
+    align-items: center;
+  }
+  .space-around {
+    justify-content: space-around;
+  }
+  /* ---------------- MOBILE UTILS END ----------------- */
 }
+

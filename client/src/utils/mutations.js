@@ -1,3 +1,4 @@
+
 // Create user
 // Create comments
 import { gql } from "@apollo/client";
@@ -7,11 +8,25 @@ export const LOGIN = gql`
     login(email: $email, password: $password) {
       token
       user {
+
+
+
+export const ADD_COMMENT = gql`
+  mutation addComment($commentText: String!) {
+    addComment(commentText: $commentText) {
+      _id
+      commentText
+      createdAt
+      username
+      replyCount
+      replies {
+
         _id
       }
     }
   }
 `;
+
 
 export const ADD_USER = gql`
   mutation addUser($userName: String!, $email: String!, $password: String!) {
@@ -23,3 +38,19 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+export const ADD_REPLY = gql`
+  mutation addReply($commentId: ID!, $replyBody: String!) {
+    addReply(commentId: $commentId, replyBody: $replyBody) {
+      _id
+      replyCount
+      replies {
+        _id
+        replyBody
+        createdAt
+        username
+      }
+    }
+  }
+  `;
+

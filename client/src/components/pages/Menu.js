@@ -15,7 +15,7 @@ export default function Contact() {
       <article>
         <div className="menu-nav">
           <ul>
-            <li><a href="#app-section">Starters</a></li>
+            <li><a href="#starters">Starters</a></li>
             <li><a href="#your-way-section">Seafood Your Way</a></li>
             <li><a href="#Steaks-chicken">Steaks and Chicken</a></li>
             <li><a href="#pasta-creole">Pastas and Creole</a></li>
@@ -29,7 +29,7 @@ export default function Contact() {
       <FadeIn>
     <article className="scroll-menu">
         {/* <!-- Starters --> */}
-        <h2>Starters</h2>
+        <h2 id='starters'>Starters</h2>
         <section className="food-item-grid">
           <div className="food">
             <h5>Classic Shrimp Cocktail</h5>

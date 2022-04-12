@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import NavTabs from "./NavTabs";
 import Home from "./pages/Home";
@@ -10,6 +11,7 @@ import Login from "./pages/Login";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("Home");
+
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
@@ -31,6 +33,7 @@ export default function PortfolioContainer() {
     if (currentPage === "Reviews") {
       return <Reviews />;
     }
+
     if (currentPage === "Login") {
       return <Login />;
     }
@@ -40,9 +43,11 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
+
     <div className="main">
+
       {/* We are passing the currentPage from state and the function to update it */}
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} mobileBlur={mobileBlur} setMobileBlur={setMobileBlur}/>
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
     </div>

@@ -1,5 +1,7 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
+import ReplyForm from './ReplyForm';
+import ReplyList from './RepliesList';
 
 const ReviewList = ({ comments, title }) => {
     if (!comments.length) {
@@ -7,19 +9,24 @@ const ReviewList = ({ comments, title }) => {
     }
 
     return (
-        <div>
-            <h3>{title}</h3>
-            {comments &&
-                comments.map(comment => (
-                    <div key={comment._id} className="card mb-3">
-                        <div className="card-body">
-                            <p>{comment.commentText}</p>
-                            <p className="mb-0">
-                                Replies: {comment.replyCount}
-                            </p>
+        <div className='card-header'>
+            <div className='card-body'>
+                <h3>{title}</h3>
+                {comments &&
+                    comments.map(comment => (
+                        <div key={comment._id} className="card mb-3">
+                            <div className="card-body">
+                                <p>{comment.commentText}</p>
+                                <p className="mb-0">
+                                    Replies: {comment.replyCount}
+                                </p>
+                                {comment.replyCount > 0 && (
+                                    <ReplyList replies={comment.replies} />
+                                )}
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+            </div>
         </div>
     )
 }
