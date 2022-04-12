@@ -1,21 +1,23 @@
-import React from 'react';
-import {Helmet} from 'react-helmet';
-import FadeIn from 'react-fade-in/lib/FadeIn';
-
+import React from "react";
+import { Helmet } from "react-helmet";
+import FadeIn from "react-fade-in/lib/FadeIn";
 
 export default function About() {
   return (
     <>
-    <Helmet>
-      <title>Sweeney’s - About Us</title>
-    </Helmet>
-    <div class="back-img-about"></div>
-    <section className="about-section" >
-      <FadeIn>
-          <div>
-            <h5>General Manager and Owner Lisa Long</h5>
+      <Helmet>
+        <title>Sweeney’s - About Us</title>
+      </Helmet>
+      <div class="back-img-about"></div>
+      <section className="about-section">
+        <FadeIn>
+          <div className="about-people">
+            <div className="d-flex justify-center align-center flex-column">
+              <h5>Lisa Long</h5>
+              <h6 className="italicized">General Manager & Owner</h6>
+            </div>
             <p>
-              with a degree in hospitality management, comes to Sweeney’s
+              With a degree in hospitality management, comes to Sweeney’s
               Seafood Bar & Grill with an exemplary history at Sycamore Creek
               Country Club. When she resigned to become the day-to-day manager
               at Sweeney’s, she was responsible for all Food & Bar programs, as
@@ -28,10 +30,13 @@ export default function About() {
               area for over 15 years.
             </p>
           </div>
-          <div>
-            <h5>Managing Partner and Owner Larry Thompson</h5>
+          <div className="about-people">
+            <div className="d-flex justify-center align-center flex-column">
+              <h5>Larry Thompson</h5>
+              <h6 className="italicized">Managing Partner and Owner</h6>
+            </div>
             <p>
-              a former college professor, has worked extensively in the
+              A former college professor, has worked extensively in the
               legal/business publishing field (with McGraw-Hill, LexisNexis and
               Bloomberg Law). He held many positions within LexisNexis and
               retired as Senior Vice President and Global Marketing Officer for
@@ -41,10 +46,15 @@ export default function About() {
               and has lived and worked in the Dayton area since 1994.
             </p>
           </div>
-          <div>
-            <h5>Operations Partner and Owner Holley Thompson</h5>
+          <div className="about-people">
+            <div className="d-flex justify-center align-center flex-column">
+              <h5>Holley Thompson</h5>
+              <h6 className="italicized">
+                Operations Partner and Owner
+              </h6>
+            </div>
             <p>
-              is a former practicing attorney and consultant and worked
+              Is a former practicing attorney and consultant and worked
               extensively in the legal/business publishing field (LexisNexis).
               She has held many positions within LexisNexis and retired as
               Senior Vice President, US Marketing in 2006. She has sat on the
@@ -54,8 +64,8 @@ export default function About() {
               Dayton area since 1994.
             </p>
           </div>
-          </FadeIn>
-        </section>
-        </>
+        </FadeIn>
+      </section>
+    </>
   );
 }

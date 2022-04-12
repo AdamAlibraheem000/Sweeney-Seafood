@@ -423,7 +423,19 @@ h2 {
   text-align: center;
   font-size: 1.5rem;
 }
-
+.about-people {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 20px;
+  border-right: 3px solid black;
+  border-bottom: 1px solid black;
+  padding-bottom: 1px;
+  padding-right: 2px;
+}
+.about-container {
+  width: 80vw; 
+}
 .img-crop {
   max-width: 100%;
 }
@@ -433,14 +445,32 @@ h2 {
   flex-grow: 1;
 }
 
+/* ------------ Utils --------------- */
 .mobile {
   visibility: hidden;
   display: none;
 }
-
 .mobile-footer {
   visibility: hidden;
   display: none;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.italicized {
+  font-style: italic;
+}
+.m-left {
+  margin-left: 1vw;
+}
+.m-bot-0 {
+  margin-bottom: 0;
+}
+.flex-column {
+  flex-direction: column;
 }
 
 /* SmartPhones */
