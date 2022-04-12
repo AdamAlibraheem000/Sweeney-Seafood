@@ -19,8 +19,17 @@ body {
   flex-direction: column;
 }
 
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-container {
   flex-grow: 1;
+  min-height: 100vh;
 }
 
 /* background Image */
@@ -216,20 +225,9 @@ ul li {
   text-shadow: 2px 1px 3px black;
 }
 
-/* ----------------------- Login Form Style ------------- */
-.login-form {
-  margin-top: 6rem;
-  width: 75vw;
-  align-items: center;
-  margin-right: auto;
-  margin-left: auto;
-  /* background-color: #f7f4f0; */
-}
-
 .background-off-white {
   background-color: #f7f4f0;
 }
-/* ----------------------------------------------------- */
 
 /* Menu Styling */
 
@@ -510,9 +508,16 @@ h2 {
     visible: hidden;
     display: none;
   }
+
+
+  .logo {
+    width: 4rem;
+  }
+
   /* ------------ HIDE MAIN NAV START ---------------  */
 
   /* ------------------------- MAIN NAV STYLE START---------------------- */
+
   .nav-grid {
     display: flex;
     height: var(--mobile-nav-height);
@@ -648,6 +653,7 @@ h2 {
     visibility: visible;
     display: inline-box;
   }
+
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -744,3 +750,4 @@ h2 {
   }
   /* ---------------- MOBILE UTILS END ----------------- */
 }
+

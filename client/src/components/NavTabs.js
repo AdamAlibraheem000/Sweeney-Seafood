@@ -107,14 +107,17 @@ function NavTabs({ currentPage, handlePageChange }) {
           </li>
           <li className="nav-item">
             <a
-              href="#login"
+              href="#Login"
               onClick={() => handlePageChange("Login")}
-              // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+              // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+
               className={
                 currentPage === "Login" ? "nav-link active" : "nav-link"
               }
             >
              Login 
+            </a>
+          </li>
             </a>
           </li>
           <li className="nav-item">
@@ -132,6 +135,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           </li>
         </ul>
       </div>
+
 
       {/* ----------------- Large Navbar > 820px  END ------------------------ */}
 
