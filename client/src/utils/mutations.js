@@ -8,7 +8,11 @@ export const LOGIN = gql`
     login(email: $email, password: $password) {
       token
       user {
-
+        _id
+      }
+    }
+  }
+  `;
 
 
 export const ADD_COMMENT = gql`
