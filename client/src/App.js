@@ -12,7 +12,6 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-
 //database
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -41,10 +40,10 @@ const App = () =>
         rel="stylesheet" />
       <link rel="icon" type="image/x-icon" href={favicon} />
     </Helmet>
-    <div>
+    <body>
       <PortfolioContainer />
       <Footer />
-    </div>
+    </body>
   </ApolloProvider>
 
 export default App;

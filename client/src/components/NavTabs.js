@@ -30,12 +30,12 @@ function NavTabs({ currentPage, handlePageChange }) {
                 currentPage === "Home" ? "nav-link active" : "nav-link"
               }
             >
-              <div className="brand-grid">
-                <img className="logo" src={logo} alt="sweeneyLogo"></img>
-                <div className="brand-mark">
-                  <div className="brand-title">Sweeney’s Seafood</div>
-                  <div className="brand-subTitle">Bar & Grill</div>
-                </div>
+              <div className="brand-grid middle-man">
+                  <img className="logo" src={logo} alt="sweeneyLogo"></img>
+                  <div className="brand-mark">
+                    <div className="brand-title">Sweeney’s Seafood</div>
+                    <div className="brand-subTitle">Bar & Grill</div>
+                  </div>
               </div>
             </a>
           </div>

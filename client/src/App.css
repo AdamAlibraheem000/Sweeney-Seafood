@@ -443,8 +443,28 @@ h2 {
 
 /* Media Queries */
 /* Tablets */
-@media screen and (max-width: 812px) {
-  nav ul li {
+/* @media screen and (min-width: 768) and (max-width: 1200px) { */
+/* .logo {
+    width: auto;
+  } */
+
+/* .brand-grid {
+    display: flex;
+    align-items: space-evenly;
+    grid-gap: 1rem;
+  }
+  .brand-title {
+    font-size: 5vw;
+    font-style: italic;
+    font-weight: bold;
+  }
+  .brand-subTitle {
+    font-size: 3vw;
+    padding-left: 0;
+    float: right;
+    font-style: italic;
+  } */
+/* nav ul li {
     font-size: 2rem;
   }
 
@@ -506,11 +526,11 @@ h2 {
   .menu-bgn-grid {
     display: flex;
     margin-top: 6rem;
-  }
-}
+  } */
+/* } */
 
 /* SmartPhones */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
   /* ------------ HIDE MAIN NAV START ---------------  */
   .full-nav {
     visibility: hidden;
@@ -622,7 +642,7 @@ h2 {
   /* ------- ABOUT STYLE END ------------------- */
 
   /* -------- CAROUSEL STYLE START ------------------- */
-   .title-font {
+  .title-font {
     font-size: 12vw;
     color: #fff;
     /* padding-top: 2vw; */
@@ -696,7 +716,7 @@ h2 {
   }
   .bar {
     display: block;
-    width: 25px;
+    width: 5vw;
     height: 3px;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
