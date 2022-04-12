@@ -36,4 +36,44 @@ const Signup = () => {
       console.error(e);
     }
   };
+
+  return (
+    <>
+      <div className="Signup-form">
+        <h4>Signup</h4>
+        <div>
+          <form onSubmit={handleFormSubmit}>
+            <input
+              placeholder="username"
+              name="username"
+              type="username"
+              id="username"
+              value={formState.username}
+              onChange={handleChange}
+            />
+            <input
+              placeholder="email"
+              name="email"
+              type="email"
+              id="email"
+              value={formState.email}
+              onChange={handleChange}
+            />
+            <input
+              placeholder="******"
+              name="password"
+              type="password"
+              id="password"
+              value={formState.password}
+              onChange={handleChange}
+            />
+            <button type="submit">Submit</button>
+          </form>
+          {error && <div>Signup failed</div>}
+        </div>
+      </div>
+    </>
+  );
 };
+
+export default Signup;
