@@ -19,8 +19,8 @@ body {
   flex-direction: column;
 }
 
-
 .login-form {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -432,7 +432,7 @@ h2 {
   padding-right: 2px;
 }
 .about-container {
-  width: 80vw; 
+  width: 80vw;
 }
 .img-crop {
   max-width: 100%;
