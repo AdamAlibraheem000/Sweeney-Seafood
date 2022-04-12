@@ -12,7 +12,6 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-
 //database
 const httpLink = createHttpLink({
   uri: '/graphql',

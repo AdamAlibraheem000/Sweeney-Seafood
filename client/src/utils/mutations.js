@@ -11,7 +11,12 @@ export const LOGIN = gql`
       }
     }
   }
+<<<<<<< HEAD
 `;
+=======
+  `;
+
+>>>>>>> a76cf7995856abff41aae8f2fd3f4d052f62bece
 
 export const ADD_COMMENT = gql`
   mutation addComment($commentText: String!) {

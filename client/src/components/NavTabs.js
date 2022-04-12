@@ -5,17 +5,15 @@ import { FaInstagram } from "react-icons/fa";
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
-function NavTabs({ currentPage, handlePageChange, mobileBlur, setMobileBlur }) {
+function NavTabs({ currentPage, handlePageChange }) {
   // const [navMenu, setNavMenu] = useState('inactive');
   const [hamburger, setHamburger] = useState("inactive");
 
   const mobileMenu = () => {
     if (hamburger === "active") {
       setHamburger("inactive");
-      setMobileBlur("unblur");
     } else {
       setHamburger("active");
-      setMobileBlur("blur");
     }
   };
 
@@ -32,12 +30,12 @@ function NavTabs({ currentPage, handlePageChange, mobileBlur, setMobileBlur }) {
                 currentPage === "Home" ? "nav-link active" : "nav-link"
               }
             >
-              <div className="brand-grid">
-                <img className="logo" src={logo} alt="sweeneyLogo"></img>
-                <div className="brand-mark">
-                  <div className="brand-title">Sweeney’s Seafood</div>
-                  <div className="brand-subTitle">Bar & Grill</div>
-                </div>
+              <div className="brand-grid middle-man">
+                  <img className="logo" src={logo} alt="sweeneyLogo"></img>
+                  <div className="brand-mark">
+                    <div className="brand-title">Sweeney’s Seafood</div>
+                    <div className="brand-subTitle">Bar & Grill</div>
+                  </div>
               </div>
             </a>
           </div>
@@ -120,8 +118,6 @@ function NavTabs({ currentPage, handlePageChange, mobileBlur, setMobileBlur }) {
              Login 
             </a>
           </li>
-            </a>
-          </li>
           <li className="nav-item">
             <a href="https://www.facebook.com/sweeneysseafood/" target="_blank">
               <FaFacebookF></FaFacebookF>
@@ -155,76 +151,87 @@ function NavTabs({ currentPage, handlePageChange, mobileBlur, setMobileBlur }) {
           className={`sidebar-menu slide-${hamburger}`}
           style={{ color: "#fff", marginRight: "auto", marginLeft: "auto" }}
         >
-          <div className="d-flex align-center space-around">
-            <div className="d-flex">
-              <div style={{marginRight: '3vw'}} className="nav-item">
-                <a style={{marginRight: '3vw'}} href="https://www.facebook.com/sweeneysseafood/" target="_blank">
-                  <FaFacebookF />
-                </a>
-                <a href="https://www.instagram.com/sweeneysbarngrill/" target="_blank">
-                  <FaInstagram />
-                </a>
-              </div>
-              <div>
-                <div className="brand-title">Sweeney’s Seafood</div>
-                <div className="brand-subTitle float-right">Bar & Grill</div>
-              </div>
-            </div>
-            <div onClick={mobileMenu} className={`hamburger ${hamburger} float-right`}>
+          <div className="d-flex align-center" style={{justifyContent: 'end', marginRight: '5%', marginTop: '3%'}}>
+
+            <div
+              onClick={mobileMenu}
+              className={`hamburger ${hamburger} float-right`} 
+            >
               <span className={`bar ${hamburger}`}></span>
               <span className={`bar ${hamburger}`}></span>
               <span className={`bar ${hamburger}`}></span>
             </div>
           </div>
-          <li></li>
           <li>
-            <a href="#Feature" onClick={() => {
-                handlePageChange("Feature")
+            <a
+              href="#Feature"
+              onClick={() => {
+                handlePageChange("Feature");
                 mobileMenu();
-              }}>
+              }}
+            >
               Features
             </a>
           </li>
           <li>
-            <a href="#menu" onClick={() => {
-              handlePageChange("Menu")
-              mobileMenu();
-              }}>
+            <a
+              href="#menu"
+              onClick={() => {
+                handlePageChange("Menu");
+                mobileMenu();
+              }}
+            >
               Menu
             </a>
           </li>
           <li>
-            <a href="#bar" onClick={() => {
-              handlePageChange("Bar")
-              mobileMenu();
-              }}>
+            <a
+              href="#bar"
+              onClick={() => {
+                handlePageChange("Bar");
+                mobileMenu();
+              }}
+            >
               Bar
             </a>
           </li>
           <li>
-            <a href="#about" onClick={() => {
-              handlePageChange("About")
-              mobileMenu();
-              }}>
+            <a
+              href="#about"
+              onClick={() => {
+                handlePageChange("About");
+                mobileMenu();
+              }}
+            >
               About
             </a>
           </li>
           <li>
-            <a href="#reviews" onClick={() => {
-              handlePageChange("Reviews")
-              mobileMenu();
-              }}>
+            <a
+              href="#reviews"
+              onClick={() => {
+                handlePageChange("Reviews");
+                mobileMenu();
+              }}
+            >
               Reviews
             </a>
           </li>
-          <li>
-            <a href="#login" onClick={() => {
-              handlePageChange("Login")
-              mobileMenu();
-              }}>
-               Login 
-            </a>
-          </li>
+            <div style={{ marginRight: "3vw", justifyContent: 'end'}} className="nav-item d-flex">
+              <a
+                style={{ marginRight: "3vw" }}
+                href="https://www.facebook.com/sweeneysseafood/"
+                target="_blank"
+              >
+                <FaFacebookF />
+              </a>
+              <a
+                href="https://www.instagram.com/sweeneysbarngrill/"
+                target="_blank"
+              >
+                <FaInstagram />
+              </a>
+            </div>
         </ul>
       </nav>
       {/* ---------------------- Mobile Navbar --------- 820px --------------  */}
