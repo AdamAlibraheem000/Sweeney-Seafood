@@ -118,8 +118,6 @@ function NavTabs({ currentPage, handlePageChange }) {
              Login 
             </a>
           </li>
-            </a>
-          </li>
           <li className="nav-item">
             <a href="https://www.facebook.com/sweeneysseafood/" target="_blank">
               <FaFacebookF></FaFacebookF>
