@@ -4,25 +4,31 @@
   padding: 0;
 }
 
-
 html {
   scroll-behavior: smooth;
   /* height: 100%; */
 }
 
-body{
+body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-.main-container{
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  min-height: 100vh;
+}
+
+.main-container {
   flex-grow: 1;
 }
 
-
 /* background Image */
-
 
 .back-img {
   background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
@@ -32,7 +38,6 @@ body{
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
- 
 }
 
 .back-img-2 {
@@ -54,7 +59,6 @@ body{
   background-size: cover;
   background-attachment: fixed;
   margin-top: 100px;
-
 }
 
 .back-img-4 {
@@ -71,28 +75,27 @@ body{
   width: 4rem;
 }
 
-
 /* Brand Title */
 
-.brand-grid{
+.brand-grid {
   display: flex;
   align-items: space-evenly;
   grid-gap: 1rem;
 }
 
-.brand-title{
+.brand-title {
   font-size: 1.7rem;
   font-style: italic;
   font-weight: bold;
 }
 
-.brand-subTitle{
+.brand-subTitle {
   font-size: 1.3rem;
   padding-left: 4rem;
   font-style: italic;
 }
 
-.carousel-flex{
+.carousel-flex {
   display: flex;
   flex-direction: column;
   /* justify-content: center;
@@ -129,13 +132,13 @@ body{
   text-shadow: 12px 5px 5px black;
 }
 
-.dan-font{
+.dan-font {
   font-size: 4rem;
   text-shadow: 12px 5px 5px black;
   font-style: italic;
 }
 
-.dansub-title{
+.dansub-title {
   font-size: 4rem;
   text-shadow: 12px 5px 5px black;
   font-style: italic;
@@ -146,17 +149,16 @@ body{
 .nav {
   padding-top: 1rem;
   padding-left: 1rem;
-  
 }
 
-.nav-2{
+.nav-2 {
   display: flex;
   justify-content: space-evenly;
   padding-top: 2rem;
   padding-right: 2rem;
 }
 
-.nav-grid{
+.nav-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
   height: 6rem;
@@ -173,21 +175,17 @@ body{
   list-style: none;
   font-size: 2rem;
   text-shadow: 2px 1px 3px black;
-
 }
 
 .nav-item a {
   text-decoration: none;
   color: #fff;
-  
 }
 
 .nav-item:hover {
   border: 1px solid #fff;
   background-color: grey;
   color: #fff;
-  
-
 }
 
 /* Footer styling */
@@ -223,8 +221,6 @@ ul li {
   text-shadow: 2px 1px 3px black;
 }
 
-
-
 /* Menu Styling */
 
 .bgm-img-menu {
@@ -242,7 +238,7 @@ ul li {
   grid-template-columns: 1fr 2fr;
   background-color: #f0ece3;
   flex-grow: 1;
-  
+
   /* text-shadow: 1px 1px 1px black; */
 }
 
@@ -265,7 +261,6 @@ ul li {
 
 .menu-nav ul li {
   list-style: none;
-  
 }
 
 .menu-nav ul li a:hover {
@@ -291,7 +286,6 @@ h2 {
   font-size: 3rem;
   padding-top: 0.75rem;
   border-bottom: 4px solid black;
-
 }
 
 .food-item-grid {
@@ -323,7 +317,6 @@ h2 {
   padding-right: 2px;
 }
 
-
 .food-2 {
   text-align: center;
   color: black;
@@ -334,7 +327,7 @@ h2 {
   font-size: 1.5rem;
 }
 
-.food-title{
+.food-title {
   text-align: left;
 }
 
@@ -348,27 +341,24 @@ h2 {
 }
 
 /* Feature Styling */
-.feature-grid{
+.feature-grid {
   color: #f0ece3;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-
 }
 
-.feature-title{
+.feature-title {
   color: black;
   text-align: center;
   font-size: 2rem;
 }
 
-.feature-desc{
+.feature-desc {
   color: black;
   text-align: center;
   font-size: 1.5rem;
 }
-
-
 
 /* Bar Styling */
 /* background Image */
@@ -403,7 +393,6 @@ h2 {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  
 }
 
 .about-section {
@@ -415,23 +404,19 @@ h2 {
   padding-top: 2rem;
   flex-grow: 1;
   text-shadow: 0px 0px 1px black;
-  
-
 }
 
 .about-section h5 {
   text-align: center;
   font-size: 1.5rem;
-
 }
 
 .img-crop {
   max-width: 100%;
 }
 
-
 /* Reviews styling  */
-.review-grid{
+.review-grid {
   flex-grow: 1;
 }
 
@@ -444,7 +429,6 @@ h2 {
 
   .title-font {
     font-size: 4rem;
-   
   }
 
   .sub-title {
@@ -510,7 +494,7 @@ h2 {
     visible: hidden;
     display: none;
   }
- 
+
   .logo {
     width: 4rem;
   }
@@ -519,90 +503,90 @@ h2 {
     justify-content: space-around;
     align-items: center;
   }
- 
-/*  CSS HAMBURDGER */
-.navbar {
+
+  /*  CSS HAMBURDGER */
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
-}
- 
-.bar {
+  }
+
+  .bar {
     display: block;
     width: 25px;
     height: 3px;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #FFFFFF;
-}
- 
-.nav-menu {
+    background-color: #ffffff;
+  }
+
+  .nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     display: none;
-}
+  }
 
-.nav-logo {
+  .nav-logo {
     font-size: 2.1rem;
     font-weight: 500;
     color: #482ff7;
-}
- 
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-   
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
- 
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
+  }
 
-    .sidebar-menu {
-      position: fixed;
-      top: 6rem;
-      right: 0;
-      width: 27%;
-      padding-left: 1%;
-      background: #370624;
-      box-sizing: border-box;  
-      transition: 0.5s;
-    }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
 
-    .sidebar-menu li {
-      margin-right: auto;
-      margin-left: auto;
-      list-style: none;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      color: #fff;
-    }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
 
-    .sidebar-menu li a {
-      text-decoration: none;
-      font-style: italic;
-      font-size: 60%;
-      color: #fff;
-    }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 
-    .slide-active {
-      visible: hidden;
-    }
+  .sidebar-menu {
+    position: fixed;
+    top: 6rem;
+    right: 0;
+    width: 27%;
+    padding-left: 1%;
+    background: #370624;
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
 
-    .slide-inactive {
-      visibile: visible;
-      right: -27%; 
-    }
-     .hamburger > .active ~ .overlay {
-      visibility: visibile;
-      opacity: 0.4;
-    }
+  .sidebar-menu li {
+    margin-right: auto;
+    margin-left: auto;
+    list-style: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+
+  .sidebar-menu li a {
+    text-decoration: none;
+    font-style: italic;
+    font-size: 60%;
+    color: #fff;
+  }
+
+  .slide-active {
+    visible: hidden;
+  }
+
+  .slide-inactive {
+    visibile: visible;
+    right: -27%;
+  }
+  .hamburger > .active ~ .overlay {
+    visibility: visibile;
+    opacity: 0.4;
+  }
 }

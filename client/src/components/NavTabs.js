@@ -104,6 +104,18 @@ function NavTabs({ currentPage, handlePageChange }) {
             </a>
           </li>
           <li className="nav-item">
+            <a
+              href="#Login"
+              onClick={() => handlePageChange("Login")}
+              // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+              className={
+                currentPage === "Login" ? "nav-link active" : "nav-link"
+              }
+            >
+              Login
+            </a>
+          </li>
+          <li className="nav-item">
             <a href="https://www.facebook.com/sweeneysseafood/" target="_blank">
               <FaFacebookF></FaFacebookF>
             </a>
@@ -130,23 +142,17 @@ function NavTabs({ currentPage, handlePageChange }) {
             </div>
             <ul
               className={`sidebar-menu slide-${hamburger}`}
-              style={{ color: "#fff", marginRight: 'auto', marginLeft: 'auto'}}
+              style={{ color: "#fff", marginRight: "auto", marginLeft: "auto" }}
             >
               <li>
-                <a
-                  href="#Feature"
-                  onClick={() => handlePageChange("Feature")}  
-                >
+                <a href="#Feature" onClick={() => handlePageChange("Feature")}>
                   Features
                 </a>
               </li>
               <li>
-              <a
-                href="#menu"
-                onClick={() => handlePageChange("Menu")}
-              >
-                Menu
-              </a>
+                <a href="#menu" onClick={() => handlePageChange("Menu")}>
+                  Menu
+                </a>
               </li>
               <li>
                 <a

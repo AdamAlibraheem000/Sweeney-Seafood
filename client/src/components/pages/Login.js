@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { useMutation } from "@apollo/client";
-import { LOGIN } from "../utils/mutations";
-import Auth from "../utils/auth";
-import FadeIn from "react-fade-in/lib/FadeIn";
+import { LOGIN } from "../../utils/mutations";
+import Auth from "../../utils/auth";
 
 function Login(props) {
   const [formState, setFormState] = useState({ email: "", password: "" });
@@ -30,8 +29,8 @@ function Login(props) {
   };
   return (
     <>
-      <div>
-        <form class="login-form" onSubmit={handleFormSubmit}>
+      <div className="login-form">
+        <form onSubmit={handleFormSubmit}>
           <div>
             <label for="email">email:</label>
             <input type="text" id="email-log" onChange={handleChange} />
