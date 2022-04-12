@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { useMutation } from "@apollo/client";
 import { LOGIN } from "../../utils/mutations";
@@ -31,45 +30,32 @@ function Login(props) {
   return (
     <>
       <div className="login-form">
-        <form onSubmit={handleFormSubmit}>
-          <div>
-            <label for="email">email:</label>
-            <input type="text" id="email-log" onChange={handleChange} />
-          </div>
-          <div>
-            <label for="password">password:</label>
-            <input type="password" id="password-log" onChange={handleChange} />
-          </div>
-          {error ? (
-            <div>
-              <p className="error-text">
-                The provided credentials are incorrect
-              </p>
-            </div>
-          ) : null}
-          <div>
-            <button type="submit" class="login-btn"></button>
-          </div>
-        </form>
-        <form class="signup-form">
-          <div>
-            <label for="username">username:</label>
-            <input type="text" id="username-signup" />
-          </div>
-          <div>
-            <label for="email">email:</label>
-            <input type="text" id="email-signup" />
-          </div>
-          <div>
-            <label for="password">password:</label>
-            <input type="password" id="password-signup" />
-          </div>
-          <button type="submit" class="signup-btn"></button>
-        </form>
+        <h4>Login</h4>
+        <div>
+          <form onSubmit={handleFormSubmit}>
+            <input
+              placeholder="Your email"
+              name="email"
+              type="email"
+              id="email"
+              value={formState.email}
+              onChange={handleChange}
+            />
+            <input
+              placeholder="******"
+              name="password"
+              type="password"
+              id="password"
+              value={formState.password}
+              onChange={handleChange}
+            />
+            <button type="submit">Submit</button>
+          </form>
+          {error && <div>Login failed</div>}
+        </div>
       </div>
     </>
   );
 }
 
 export default Login;
-
