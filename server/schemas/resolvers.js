@@ -1,4 +1,4 @@
-const { User, Comment } = require("../models");
+const { User, Comment, Feature } = require("../models");
 const { AuthenticationError } = require("apollo-server-express");
 const { signToken } = require("../utils/auth");
 
@@ -33,7 +33,11 @@ const resolvers = {
       return User.findOne({ username })
         .select("-__v -password")
         .populate("comments");
+
     },
+    features: async (parent, args) => {
+      return Feature.find()
+    }
   },
   Mutation: {
     // login to acc

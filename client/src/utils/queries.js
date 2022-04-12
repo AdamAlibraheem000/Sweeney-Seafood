@@ -40,4 +40,12 @@ export const QUERY_ME = gql`
   }
 `;
 
-
+export const QUERY_FEATURES = gql`
+query Features {
+  features {
+    title
+    description
+    price
+  }
+}
+`;

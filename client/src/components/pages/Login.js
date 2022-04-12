@@ -30,7 +30,7 @@ function Login(props) {
   };
   return (
     <>
-      <div className="login-form">
+      <div className="login-form vh-100">
         <form onSubmit={handleFormSubmit}>
           <div>
             <label for="email">email:</label>
