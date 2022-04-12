@@ -6,9 +6,11 @@ import Bar from "./pages/Bar";
 import Menu from "./pages/Menu";
 import Feature from "./pages/Features";
 import Reviews from "./pages/Reviews";
+import Login from "./pages/Login";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("Home");
+
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
@@ -31,14 +33,18 @@ export default function PortfolioContainer() {
       return <Reviews />;
     }
 
+    if (currentPage === "Login") {
+      return <Login />;
+    }
     return <Home />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    // div contains extra white space at bottom of page for contained elements. work around to obtain full page background color
-    <div className="background-beige">
+
+    <div className="main">
+
       {/* We are passing the currentPage from state and the function to update it */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}

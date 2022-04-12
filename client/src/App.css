@@ -19,8 +19,17 @@ body {
   flex-direction: column;
 }
 
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-container {
   flex-grow: 1;
+  min-height: 100vh;
 }
 
 /* background Image */
@@ -217,20 +226,9 @@ ul li {
   text-shadow: 2px 1px 3px black;
 }
 
-/* ----------------------- Login Form Style ------------- */
-.login-form {
-  margin-top: 6rem;
-  width: 75vw;
-  align-items: center;
-  margin-right: auto;
-  margin-left: auto;
-  /* background-color: #f7f4f0; */
-}
-
 .background-off-white {
   background-color: #f7f4f0;
 }
-/* ----------------------------------------------------- */
 
 /* Menu Styling */
 
@@ -648,6 +646,7 @@ h2 {
     visibility: visible;
     display: block;
   }
+
   .navbar {
     display: flex;
     justify-content: space-between;

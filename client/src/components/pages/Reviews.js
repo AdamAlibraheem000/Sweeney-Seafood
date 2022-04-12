@@ -4,6 +4,7 @@ import FadeIn from 'react-fade-in/lib/FadeIn';
 import ReviewList from '../ReviewsList';
 import { useQuery } from '@apollo/client';
 import { QUERY_COMMENTS } from '../../utils/queries';
+import CommentForm from '../CommentForm';
 
 export default function Reviews() {
   const { loading, data } = useQuery(QUERY_COMMENTS);
@@ -22,9 +23,12 @@ export default function Reviews() {
         <div>loading</div>
       ) :
         (
-          <ReviewList
-            comments={comments}
-          />
+          <div>
+            <CommentForm />
+            <ReviewList
+              comments={comments}
+            />
+          </div>
         )
       }
     </div>
