@@ -1,4 +1,4 @@
-<p align="center"><img width=200px height=200px alt="Project logo" src="public/assets/imgs/SLogo.jpg" alt="Sweeney's Logo"></p>
+<p align="center"><img width=200px height=200px alt="Project logo" src="./client/src/imgs/SLogo.jpg" alt="Sweeney's Logo"></p>
 
 <h1 align="center">Sweeney's Seafood</h1>
 
