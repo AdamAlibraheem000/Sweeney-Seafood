@@ -48,3 +48,5 @@
 For quesstions regarding this repository or website, please feel free to contact the owner of the repo or open a new issue.
 
 ## <img id="screenshots" src="https://github.com/teamjuli0/readme-badges/blob/main/themes/clean-dark/menu-categories/screenshots.png?raw=true" style="height: 40px">
+
+<img style="margin: 0 0 15px 0" src="./client/src/imgs/final-ss.jpg" />
