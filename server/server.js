@@ -21,7 +21,7 @@ const startServer = async () => {
   console.log(`Use GraphQL at http://localhost:${PORT}`);
 };
 
-startServer()
+startServer();
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());

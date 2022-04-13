@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../imgs/logoCrop.png";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import Auth from "../utils/auth";
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
@@ -17,30 +18,37 @@ function NavTabs({ currentPage, handlePageChange }) {
     }
   };
 
+  const logout = (event) => {
+    event.preventDefault();
+    Auth.logout();
+  };
+
   return (
     <div className="nav-grid">
-      <div>
+      <div className={`display-mobile ${hamburger}`}>
         <ul className="nav">
-          <li className="nav-item">
+          <div className="nav-item">
             <a
               href="#home"
+              style={{ width: "" }}
               onClick={() => handlePageChange("Home")}
               className={
                 currentPage === "Home" ? "nav-link active" : "nav-link"
               }
             >
-              <div className="brand-grid">
+              <div className="brand-grid middle-man">
                 <img className="logo" src={logo} alt="sweeneyLogo"></img>
-                <div>
+                <div className="brand-mark">
                   <div className="brand-title">Sweeney’s Seafood</div>
                   <div className="brand-subTitle">Bar & Grill</div>
                 </div>
               </div>
             </a>
-          </li>
+          </div>
         </ul>
       </div>
 
+      {/* ----------------- Large Navbar > 820px  START ------------------------ */}
       <div className="full-nav">
         <ul className="nav-2">
           <li className="nav-item">
@@ -103,6 +111,44 @@ function NavTabs({ currentPage, handlePageChange }) {
               Reviews
             </a>
           </li>
+
+          {Auth.loggedIn() ? (
+            <li className="nav-item">
+              <a href="/" onClick={logout}>
+                Logout
+              </a>
+            </li>
+          ) : (
+            <>
+              <li className="nav-item">
+                <a
+                  href="#Login"
+                  onClick={() => handlePageChange("Login")}
+                  // Check to see if the currentPage is `Login`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+
+                  className={
+                    currentPage === "Login" ? "nav-link active" : "nav-link"
+                  }
+                >
+                  Login
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  href="#Signup"
+                  onClick={() => handlePageChange("Signup")}
+                  // Check to see if the currentPage is `Login`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+
+                  className={
+                    currentPage === "Signup" ? "nav-link active" : "nav-link"
+                  }
+                >
+                  Signup
+                </a>
+              </li>
+            </>
+          )}
+
           <li className="nav-item">
             <a href="https://www.facebook.com/sweeneysseafood/" target="_blank">
               <FaFacebookF></FaFacebookF>
@@ -119,74 +165,115 @@ function NavTabs({ currentPage, handlePageChange }) {
         </ul>
       </div>
 
-      {/* Set this for mobile screens < 480? */}
-      {window.innerWidth < 720 ? (
-        <>
-          <nav className="navbar" onClick={mobileMenu}>
-            <div className={`hamburger ${hamburger}`}>
-              <span className="bar"></span>
-              <span className="bar"></span>
-              <span className="bar"></span>
-            </div>
-            <ul
-              className={`sidebar-menu slide-${hamburger}`}
-              style={{ color: "#fff", marginRight: 'auto', marginLeft: 'auto'}}
+      {/* ----------------- Large Navbar > 820px  END ------------------------ */}
+
+      {/* ---------------------- Mobile Navbar --------- 820px --------------  */}
+      <nav className="navbar mobile">
+        <div onClick={mobileMenu}>
+          <div className={`hamburger ${hamburger}`}>
+            <span className={`bar ${hamburger}`}></span>
+            <span className={`bar ${hamburger}`}></span>
+            <span className={`bar ${hamburger}`}></span>
+          </div>
+        </div>
+
+        <ul
+          className={`sidebar-menu slide-${hamburger}`}
+          style={{ color: "#fff", marginRight: "auto", marginLeft: "auto" }}
+        >
+          <div
+            className="d-flex align-center"
+            style={{
+              justifyContent: "end",
+              marginRight: "5%",
+              marginTop: "3%",
+            }}
+          >
+            <div
+              onClick={mobileMenu}
+              className={`hamburger ${hamburger} float-right`}
             >
-              <li>
-                <a
-                  href="#Feature"
-                  onClick={() => handlePageChange("Feature")}  
-                >
-                  Features
-                </a>
-              </li>
-              <li>
-              <a
-                href="#menu"
-                onClick={() => handlePageChange("Menu")}
-              >
-                Menu
-              </a>
-              </li>
-              <li>
-                <a
-                  href="#Bar"
-                  onClick={() => handlePageChange("Bar")}
-                  className={
-                    currentPage === "Bar" ? "nav-link active" : "nav-link"
-                  }
-                >
-                  Bar
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  onClick={() => handlePageChange("About")}
-                  className={
-                    currentPage === "About" ? "nav-link active" : "nav-link"
-                  }
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#reviews"
-                  onClick={() => handlePageChange("Reviews")}
-                  className={
-                    currentPage === "Reviews" ? "nav-link active" : "nav-link"
-                  }
-                >
-                  Reviews
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </>
-      ) : (
-        ""
-      )}
+              <span className={`bar ${hamburger}`}></span>
+              <span className={`bar ${hamburger}`}></span>
+              <span className={`bar ${hamburger}`}></span>
+            </div>
+          </div>
+          <li>
+            <a
+              href="#Feature"
+              onClick={() => {
+                handlePageChange("Feature");
+                mobileMenu();
+              }}
+            >
+              Features
+            </a>
+          </li>
+          <li>
+            <a
+              href="#menu"
+              onClick={() => {
+                handlePageChange("Menu");
+                mobileMenu();
+              }}
+            >
+              Menu
+            </a>
+          </li>
+          <li>
+            <a
+              href="#bar"
+              onClick={() => {
+                handlePageChange("Bar");
+                mobileMenu();
+              }}
+            >
+              Bar
+            </a>
+          </li>
+          <li>
+            <a
+              href="#about"
+              onClick={() => {
+                handlePageChange("About");
+                mobileMenu();
+              }}
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#reviews"
+              onClick={() => {
+                handlePageChange("Reviews");
+                mobileMenu();
+              }}
+            >
+              Reviews
+            </a>
+          </li>
+          <div
+            style={{ marginRight: "3vw", justifyContent: "end" }}
+            className="nav-item d-flex"
+          >
+            <a
+              style={{ marginRight: "3vw" }}
+              href="https://www.facebook.com/sweeneysseafood/"
+              target="_blank"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              href="https://www.instagram.com/sweeneysbarngrill/"
+              target="_blank"
+            >
+              <FaInstagram />
+            </a>
+          </div>
+        </ul>
+      </nav>
+      {/* ---------------------- Mobile Navbar --------- 820px --------------  */}
     </div>
   );
 }

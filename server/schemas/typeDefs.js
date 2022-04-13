@@ -20,9 +20,15 @@ const typeDefs = gql`
     createdAt: String
     username: String
   }
+  type Feature {
+    title: String
+    description: String
+    price: Int
+  }
   type Query {
     me: User
     users: [User]
+    features: [Feature]
     user(username: String!): User
     comments: [Comment]
     comment(_id: ID!): Comment
