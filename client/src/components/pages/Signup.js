@@ -1,45 +1,58 @@
 import React, { useState } from "react";
 import { useMutation } from "@apollo/client";
-import { LOGIN } from "../../utils/mutations";
+import { ADD_USER } from "../../utils/mutations";
+
 import Auth from "../../utils/auth";
 
-function Login(props) {
-  const [formState, setFormState] = useState({ email: "", password: "" });
-  const [login, { error }] = useMutation(LOGIN);
+const Signup = () => {
+  const [formState, setFormState] = useState({
+    username: "",
+    email: "",
+    password: "",
+  });
+  const [addUser, { error }] = useMutation(ADD_USER);
 
+  // state update
   const handleChange = (event) => {
     const { name, value } = event.target;
+
     setFormState({
       ...formState,
       [name]: value,
     });
   };
 
+  // submit form
   const handleFormSubmit = async (event) => {
     event.preventDefault();
+
     try {
-      const { data } = await login({
+      const { data } = await addUser({
         variables: { ...formState },
       });
-      Auth.login(data.login.token);
-    } catch (e) {
-      console.log(e);
-    }
 
-    setFormState({
-      email: "",
-      password: "",
-    });
+      Auth.login(data.addUser.token);
+    } catch (e) {
+      console.error(e);
+    }
   };
 
   return (
     <>
-      <div className="login-form">
-        <h4>Login</h4>
+      <div className="Signup-form">
+        <h4>Signup</h4>
         <div>
           <form onSubmit={handleFormSubmit}>
             <input
-              placeholder="Your email"
+              placeholder="username"
+              name="username"
+              type="username"
+              id="username"
+              value={formState.username}
+              onChange={handleChange}
+            />
+            <input
+              placeholder="email"
               name="email"
               type="email"
               id="email"
@@ -56,11 +69,11 @@ function Login(props) {
             />
             <button type="submit">Submit</button>
           </form>
-          {error && <div>Login failed</div>}
+          {error && <div>Signup failed</div>}
         </div>
       </div>
     </>
   );
-}
+};
 
-export default Login;
+export default Signup;

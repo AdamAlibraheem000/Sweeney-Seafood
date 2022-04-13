@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 export const QUERY_COMMENTS = gql`
   query comments {
@@ -49,3 +49,4 @@ query Features {
   }
 }
 `;
+
