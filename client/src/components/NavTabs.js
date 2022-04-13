@@ -31,11 +31,11 @@ function NavTabs({ currentPage, handlePageChange }) {
               }
             >
               <div className="brand-grid middle-man">
-                  <img className="logo" src={logo} alt="sweeneyLogo"></img>
-                  <div className="brand-mark">
-                    <div className="brand-title">Sweeney’s Seafood</div>
-                    <div className="brand-subTitle">Bar & Grill</div>
-                  </div>
+                <img className="logo" src={logo} alt="sweeneyLogo"></img>
+                <div className="brand-mark">
+                  <div className="brand-title">Sweeney’s Seafood</div>
+                  <div className="brand-subTitle">Bar & Grill</div>
+                </div>
               </div>
             </a>
           </div>
@@ -109,13 +109,26 @@ function NavTabs({ currentPage, handlePageChange }) {
             <a
               href="#Login"
               onClick={() => handlePageChange("Login")}
-              // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+              // Check to see if the currentPage is `Login`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
 
               className={
                 currentPage === "Login" ? "nav-link active" : "nav-link"
               }
             >
-             Login 
+              Login
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              href="#Signup"
+              onClick={() => handlePageChange("Signup")}
+              // Check to see if the currentPage is `Login`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+
+              className={
+                currentPage === "Signup" ? "nav-link active" : "nav-link"
+              }
+            >
+              Signup
             </a>
           </li>
           <li className="nav-item">
@@ -134,7 +147,6 @@ function NavTabs({ currentPage, handlePageChange }) {
         </ul>
       </div>
 
-
       {/* ----------------- Large Navbar > 820px  END ------------------------ */}
 
       {/* ---------------------- Mobile Navbar --------- 820px --------------  */}
@@ -151,11 +163,17 @@ function NavTabs({ currentPage, handlePageChange }) {
           className={`sidebar-menu slide-${hamburger}`}
           style={{ color: "#fff", marginRight: "auto", marginLeft: "auto" }}
         >
-          <div className="d-flex align-center" style={{justifyContent: 'end', marginRight: '5%', marginTop: '3%'}}>
-
+          <div
+            className="d-flex align-center"
+            style={{
+              justifyContent: "end",
+              marginRight: "5%",
+              marginTop: "3%",
+            }}
+          >
             <div
               onClick={mobileMenu}
-              className={`hamburger ${hamburger} float-right`} 
+              className={`hamburger ${hamburger} float-right`}
             >
               <span className={`bar ${hamburger}`}></span>
               <span className={`bar ${hamburger}`}></span>
@@ -217,21 +235,24 @@ function NavTabs({ currentPage, handlePageChange }) {
               Reviews
             </a>
           </li>
-            <div style={{ marginRight: "3vw", justifyContent: 'end'}} className="nav-item d-flex">
-              <a
-                style={{ marginRight: "3vw" }}
-                href="https://www.facebook.com/sweeneysseafood/"
-                target="_blank"
-              >
-                <FaFacebookF />
-              </a>
-              <a
-                href="https://www.instagram.com/sweeneysbarngrill/"
-                target="_blank"
-              >
-                <FaInstagram />
-              </a>
-            </div>
+          <div
+            style={{ marginRight: "3vw", justifyContent: "end" }}
+            className="nav-item d-flex"
+          >
+            <a
+              style={{ marginRight: "3vw" }}
+              href="https://www.facebook.com/sweeneysseafood/"
+              target="_blank"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              href="https://www.instagram.com/sweeneysbarngrill/"
+              target="_blank"
+            >
+              <FaInstagram />
+            </a>
+          </div>
         </ul>
       </nav>
       {/* ---------------------- Mobile Navbar --------- 820px --------------  */}
