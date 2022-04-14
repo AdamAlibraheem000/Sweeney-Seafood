@@ -10,7 +10,8 @@ const ReplyList = ({ replies }) => {
         {replies &&
           replies.map((reply) => (
             <p className="pill mb-3" key={reply._id}>
-              {reply.replyBody} // <p>{reply.username}</p>
+             <p> {reply.replyBody}</p>
+               <p>{reply.username}</p>
               <p>{reply.createdAt}</p>
             </p>
           ))}

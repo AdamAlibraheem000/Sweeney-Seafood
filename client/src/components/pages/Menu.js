@@ -22,7 +22,7 @@ export default function Contact() {
             <li><a href="#sandwiches">Sandwiches</a></li>
             <li><a href="#salad">Salads and Greens</a></li>
             <li><a href="#sides-section">House-Made Sides</a></li>
-            <li><a href="">House-Made Desserts</a></li>
+            <li><a href="#sides-section">House-Made Desserts</a></li>
           </ul>
         </div>
       </article>

@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Helmet } from 'react-helmet';
-import FadeIn from 'react-fade-in/lib/FadeIn';
 import ReviewList from '../ReviewsList';
 import { useQuery } from '@apollo/client';
 import { QUERY_COMMENTS } from '../../utils/queries';

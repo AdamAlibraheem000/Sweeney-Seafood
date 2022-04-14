@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import ReplyForm from './ReplyForm';
 import ReplyList from './RepliesList';
 
 const ReviewList = ({ comments, title }) => {
