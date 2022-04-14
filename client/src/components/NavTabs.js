@@ -150,14 +150,14 @@ function NavTabs({ currentPage, handlePageChange }) {
           )}
 
           <li className="nav-item">
-            <a href="https://www.facebook.com/sweeneysseafood/" target="_blank">
+            <a href="https://www.facebook.com/sweeneysseafood/" >
               <FaFacebookF></FaFacebookF>
             </a>
           </li>
           <li className="nav-item">
             <a
               href="https://www.instagram.com/sweeneysbarngrill/"
-              target="_blank"
+              
             >
               <FaInstagram></FaInstagram>
             </a>
@@ -260,13 +260,13 @@ function NavTabs({ currentPage, handlePageChange }) {
             <a
               style={{ marginRight: "3vw" }}
               href="https://www.facebook.com/sweeneysseafood/"
-              target="_blank"
+              
             >
               <FaFacebookF />
             </a>
             <a
               href="https://www.instagram.com/sweeneysbarngrill/"
-              target="_blank"
+              
             >
               <FaInstagram />
             </a>
