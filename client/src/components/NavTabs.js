@@ -100,56 +100,6 @@ function NavTabs({ currentPage, handlePageChange }) {
             </a>
           </li>
           <li className="nav-item">
-            <a
-              href="#reviews"
-              onClick={() => handlePageChange("Reviews")}
-              // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-              className={
-                currentPage === "Reviews" ? "nav-link active" : "nav-link"
-              }
-            >
-              Reviews
-            </a>
-          </li>
-
-          {Auth.loggedIn() ? (
-            <li className="nav-item">
-              <a href="/" onClick={logout}>
-                Logout
-              </a>
-            </li>
-          ) : (
-            <>
-              <li className="nav-item">
-                <a
-                  href="#Login"
-                  onClick={() => handlePageChange("Login")}
-                  // Check to see if the currentPage is `Login`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-
-                  className={
-                    currentPage === "Login" ? "nav-link active" : "nav-link"
-                  }
-                >
-                  Login
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  href="#Signup"
-                  onClick={() => handlePageChange("Signup")}
-                  // Check to see if the currentPage is `Login`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-
-                  className={
-                    currentPage === "Signup" ? "nav-link active" : "nav-link"
-                  }
-                >
-                  Signup
-                </a>
-              </li>
-            </>
-          )}
-
-          <li className="nav-item">
             <a href="https://www.facebook.com/sweeneysseafood/" >
               <FaFacebookF></FaFacebookF>
             </a>
