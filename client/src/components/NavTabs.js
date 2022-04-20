@@ -192,17 +192,6 @@ function NavTabs({ currentPage, handlePageChange }) {
               About
             </a>
           </li>
-          <li>
-            <a
-              href="#reviews"
-              onClick={() => {
-                handlePageChange("Reviews");
-                mobileMenu();
-              }}
-            >
-              Reviews
-            </a>
-          </li>
           <div
             style={{ marginRight: "3vw", justifyContent: "end" }}
             className="nav-item d-flex"

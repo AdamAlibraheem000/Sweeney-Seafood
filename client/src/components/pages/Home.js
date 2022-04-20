@@ -15,7 +15,7 @@ export default function Home() {
         <Carousel className="main-container carousel-fade" data-interval="5">
           <Carousel.Item>
             <img
-              className="d-block  back-img"
+              className="d-block back-img img-responsive"
               alt="Sweeney's Rockfeller Dish"
             />
             <Carousel.Caption className="carousel-flex">
