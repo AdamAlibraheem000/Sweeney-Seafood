@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import FadeIn from "react-fade-in/lib/FadeIn";
 import { Carousel } from "react-bootstrap";
+import rockfeller from '../../imgs/rockfeller.jpg';
 // import 'bootstrap';
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
         <Carousel className="main-container carousel-fade" data-interval="5">
           <Carousel.Item>
             <img
-              className="d-block back-img img-responsive"
+              className="d-block back-img"  
               alt="Sweeney's Rockfeller Dish"
             />
             <Carousel.Caption className="carousel-flex">
@@ -37,7 +38,7 @@ export default function Home() {
 
           <Carousel.Item>
             <img
-              className="d-block w-100 h-90 back-img-3"
+              className="d-block   back-img-3"
               aria-label="Locals at Sweeneys Bar"
               // alt="Locals at Sweeney's Bar"
             />

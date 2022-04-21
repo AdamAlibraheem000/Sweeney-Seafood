@@ -22,7 +22,8 @@ export default function Contact() {
             <li><a href="#sandwiches">Sandwiches</a></li>
             <li><a href="#salad">Salads and Greens</a></li>
             <li><a href="#sides-section">House-Made Sides</a></li>
-            <li><a href="#sides-section">House-Made Desserts</a></li>
+            <li><a href="#desserts-section">House-Made Desserts</a></li>
+            <li><a href='#Childrens Menu'>Children’s Menu</a></li>
           </ul>
         </div>
       </article>
@@ -47,11 +48,11 @@ export default function Contact() {
             <h5>Steamed Fresh Prince Edward Island Mussels</h5>
             <p>
               1 Pound, Freshly cooked to order with House-Made Garlic Sherry
-              sauce 11
+              sauce 12
             </p>
           </div>
           <div className="food">
-            <h5 className='food-title'>Black n’ Blue Scallops</h5>
+            <h5>Black n’ Blue Scallops</h5>
             <p>
               Three Jumbo Atlantic Sea Scallops blackened with House-Made Bleu
               Cheese sauce over Mixed Greens with Greek Aegean vinaigrette 14
@@ -72,14 +73,14 @@ export default function Contact() {
             <h5>*Fresh Raw ‘Chokers’</h5>
             <p>
               Large Chesapeake Bay Extra Select Oysters on the Half Shell with
-              Cocktail sauce and Horseradish 2.5 each
+              Cocktail sauce and Horseradish 2.75 each
             </p>
           </div>
           <div className="food">
             <h5>*Pan Seared Sushi-Grade Ahi Tuna</h5>
             <p>
               Sliced Sashimi Style, with Soy Lime Syrup, Pickled Ginger & Wasabi
-              13
+              14
             </p>
           </div>
           <div className="food">
@@ -93,7 +94,7 @@ export default function Contact() {
             <h5>Oysters Rockefeller</h5>
             <p>
               Four Chesapeake Bay Oysters with Seasoned Spinach, Bacon, Pernod
-              and House-Made Asiago Cheese sauce 14
+              and House-Made Asiago Cheese sauce 15
             </p>
           </div>
           <div className="food">
@@ -119,7 +120,7 @@ export default function Contact() {
             <h5>Chilean Sea Bass</h5>
             <p>
               Broiled Chilean Sea Bass topped with House-Made Honey Ginger Soy
-              Glaze served with Fresh Sautéed Snow Peas and Carrots 39
+              Glaze served with Fresh Sautéed Snow Peas and Carrots 42
             </p>
           </div>
 
@@ -127,7 +128,7 @@ export default function Contact() {
             <h5>*B and W Sesame Seed Encrusted Sushi-Grade Yellowfin Tuna</h5>
             <p>
               Pan seared to your preference, topped with Creamy Wasabi Aioli and
-              Soy Lime Syrup with Sesame Oil Broccoli
+              Soy Lime Syrup with Sesame Oil Broccoli 26
             </p>
           </div>
 
@@ -135,14 +136,14 @@ export default function Contact() {
             <h5>Red Snapper</h5>
             <p>
               Cajun-Rubbed Red Snapper topped with House-Made Creole sauce
-              served with White Truffle Oil Mashed Potatoes 27
+              served with White Truffle Oil Mashed Potatoes 28
             </p>
           </div>
           <div className="food">
             <h5>*Organic Bourbon BBQ Faroe Salmon</h5>
             <p>
               Grilled, topped with House-Made Bourbon BBQ sauce and Sweet Potato
-              Fries 23
+              Fries 24
             </p>
           </div>
           <div className="food">
@@ -153,28 +154,28 @@ export default function Contact() {
             <h5>Fresh Idaho Boneless Rainbow Trout</h5>
             <p>
               Dredged in Flour and Sliced Almonds, with Almond Butter sauce and
-              Rice Pilaf 23
+              Rice Pilaf 24
             </p>
           </div>
           <div className="food">
             <h5>Black and Bleu Tilapia</h5>
             <p>
               Seasoned & Blackened, topped with House-Made Melted Bleu Cheese
-              sauce and Sautéed Garlic Spinach 18
+              sauce and Sautéed Garlic Spinach 20
             </p>
           </div>
           <div className="food">
             <h5>Frog Legs</h5>
             <p>
               3 Pairs of Premium, Extra-Large Frog Legs breaded and fried and
-              served with one side 18
+              served with one side 19
             </p>
           </div>
           <div className="food">
             <h5>Fish & Chips</h5>
             <p>
               Fried and Battered Haddock with Sweeney’s Pub Fries and House-Made
-              Coleslaw 18
+              Coleslaw 20
             </p>
           </div>
           <div className="food">
@@ -183,13 +184,13 @@ export default function Contact() {
               Pick Your Favorite Two, Three or Four! (Shrimp, Tilapia, Bay
               Scallops, Haddock, Frog Legs, Salmon, Cod, Calamari or Oysters)
               Fried, Blackened or Broiled and one side Two Favorites 28; Three
-              Favorites 32; Four Favorites 36
+              Favorites 34; Four Favorites 38
             </p>
           </div>
           <div className="food">
             <h5>Large Extra Select Chesapeake Bay Oysters</h5>
             <p>
-              Your Way with House-Made Cocktail or Tartar sauce and one side 23
+              Your Way with House-Made Cocktail or Tartar sauce and one side 24
             </p>
           </div>
           <div className="food">
@@ -244,14 +245,14 @@ export default function Contact() {
             <h5>*6 Ounce Filet Mignon</h5>
             <p>
               Char-Grilled Center Cut USDA Choice Beef with Onion Straws and
-              White Truffle Oil Mashed Potatoes 32
+              White Truffle Oil Mashed Potatoes 34
             </p>
           </div>
           <div className="food">
             <h5>*New York Center Cut USDA Choice 10 Ounce Strip</h5>
             <p>
               Char-Grilled with Onion Straws and White Truffle Oil Mashed
-              Potatoes 31
+              Potatoes 33
             </p>
           </div>
         </section>
@@ -262,7 +263,7 @@ export default function Contact() {
             Your Choice of a 5 Ounce Canadian Lobster Tail or .75 Pounds of Snow
             Crab AND Your Choice of a 6 Ounce Filet Mignon or a 10 Ounce New
             York Center Cut USDA Choice Strip with White Truffle Oil Mashed
-            Potatoes 48
+            Potatoes 50
           </p>
         </div>
 
@@ -310,7 +311,7 @@ export default function Contact() {
             <h5>Creole Jambalaya</h5>
             <p>
               Sweeney’s Secret ;Creole Sauce with Andouille Sausage, Chicken and
-              Shrimp with Rice 21
+              Shrimp with Rice 22
             </p>
           </div>
         </section>
@@ -328,7 +329,7 @@ export default function Contact() {
             <h5>Haddock Sandwich</h5>
             <p>
               Fillet lightly breaded battered, broiled or blackened, fried with
-              House-Made Tartar sauce 12
+              House-Made Tartar sauce 14
             </p>
           </div>
           <div className="food">
@@ -342,13 +343,6 @@ export default function Contact() {
             <h5>*Black Angus Burger</h5>
             <p>Grilled 8 Ounce Beef Patty 12 Add bacon or cheese +.50 each</p>
           </div>
-          <div className="food">
-            <h5>Cajun Chicken Breast Alfredo</h5>
-            <p>
-              Linguini, Cajun seasoning and House-Made Creamy Asiago Alfredo
-              sauce 18
-            </p>
-          </div>
         </section>
 
         {/* <!-- Salads --> */}
@@ -358,14 +352,14 @@ export default function Contact() {
             <h5>House Salad 7</h5>
             <p>
               Add Chicken +6 or Add Organic Faroe Island Salmon, Tilapia or Ahi
-              Tuna +10
+              Tuna +11
             </p>
           </div>
           <div className="food">
-            <h5>classNameic Caesar Salad 7</h5>
+            <h5>Classic Caesar Salad 7</h5>
             <p>
               Add Chicken +6 or Add Organic Faroe Island Salmon, Tilapia or Ahi
-              Tuna +10
+              Tuna +11
             </p>
           </div>
           <div className="food">
@@ -374,7 +368,16 @@ export default function Contact() {
               Mixed Greens, Bleu Cheese Crumbles, Praline Pecans, Apples and
               dried Cranberries served with House-Made Apple Cider Vinaigrette
               10 Add Chicken +6 or Add Organic Faroe Island Salmon, Tilapia or
-              Ahi Tuna +10
+              Ahi Tuna +11
+            </p>
+          </div>
+          <div className="food">
+            <h5>House-Made Soups</h5>
+            <p>
+            New England Clam Chowder   Cup  7    Bowl  10 
+            </p>
+            <p>
+            Lobster Bisque    Cup  7    Bowl  10
             </p>
           </div>
         </section>
@@ -400,7 +403,34 @@ export default function Contact() {
             Salad, Fried Green Beans +1, Caesar Salad +2, All Soups +3 Per Cup
           </p>
         </section>
+        <section id="desserts-section" className="food-title">
+          <h2>
+            HOUSE-MADE Desserts <span className="price-styling"> 7 each</span>
+          </h2>
+          <p className="sides-styling">
+          Creme Brulee, Caramel Cheesecake, Chocolate Peanut Butter Pie, Keylime Pie, Check Features for Seasonal Desserts!
+          </p>
+        </section>
+        <section id="Childrens Menu" className="food-title">
+          <h2>
+            Children’s Menu <span className="price-styling"> $5.95 each</span>
+          </h2>
+          <p className="sides-styling">
+          Crabby Patty,
+          Hand-cut Fish “Sticks”,
+          Fried Popcorn Shrimp,
+          Chicken Tenders,
+          Hamburger,
+          Pasta Marinara,
+          Pasta Alfredo,
+          Fried Clam Strips,
+          All items come with a beverage (Fountain sodas or Milk only)
+          </p>
+        </section>
       </article>
+      <div>
+
+      </div>
       </FadeIn>
       </section>
       </>
