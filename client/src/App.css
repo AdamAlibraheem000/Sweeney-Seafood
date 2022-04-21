@@ -446,6 +446,11 @@ h2 {
   max-width: 100%;
 }
 
+.btn-flex{
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* Reviews styling  */
 .review-grid {
   flex-grow: 1;

@@ -96,17 +96,44 @@ function NavTabs({ currentPage, handlePageChange }) {
                 currentPage === "About" ? "nav-link active" : "nav-link"
               }
             >
-              About
+              Hours/About
             </a>
           </li>
+          {Auth.loggedIn() ? (
+            <li className="nav-item">
+              <a href="/" onClick={logout}>
+                Logout
+              </a>
+            </li>
+          ) : (
+            <>
+              <li className="nav-item">
+                <a
+                  href="#Login"
+                  onClick={() => handlePageChange("Login")}
+                  // Check to see if the currentPage is `Login`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+
+                  className={
+                    currentPage === "Login" ? "nav-link active" : "nav-link"
+                  }
+                >
+                  Login
+                </a>
+              </li>
+              
+              
+            </>
+          )}
+          
+          
           <li className="nav-item">
-            <a href="https://www.facebook.com/sweeneysseafood/" >
+            <a href="https://www.facebook.com/sweeneysseafood/" target="_blank" rel="noopener noreferrer">
               <FaFacebookF></FaFacebookF>
             </a>
           </li>
           <li className="nav-item">
             <a
-              href="https://www.instagram.com/sweeneysbarngrill/"
+              href="https://www.instagram.com/sweeneysbarngrill/" target="_blank" rel="noopener noreferrer"
               
             >
               <FaInstagram></FaInstagram>
@@ -189,7 +216,7 @@ function NavTabs({ currentPage, handlePageChange }) {
                 mobileMenu();
               }}
             >
-              About
+              Hours/About
             </a>
           </li>
           <div

@@ -63,7 +63,12 @@ export default function About() {
               Metro Library Foundation Board. She has lived and worked in the
               Dayton area since 1994.
             </p>
+            
           </div>
+          <div className="btn-flex">
+          <button>Login</button>
+          </div>
+          
         </FadeIn>
       </section>
     </>
