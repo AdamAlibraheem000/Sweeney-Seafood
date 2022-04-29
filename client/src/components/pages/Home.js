@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import FadeIn from "react-fade-in/lib/FadeIn";
 import { Carousel } from "react-bootstrap";
-import rockfeller from '../../imgs/rockfeller.jpg';
+// import rockfeller from '../../imgs/rockfeller.jpg';
 // import 'bootstrap';
 
 export default function Home() {
