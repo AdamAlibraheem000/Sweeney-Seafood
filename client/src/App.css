@@ -191,13 +191,22 @@ body {
 .nav-item a {
   text-decoration: none;
   color: #fff;
+  
+
 }
 
 .nav-item:hover {
   border: 1px solid #fff;
   background-color: grey;
-  color: #fff;
+  /* color: #fff; */
+
 }
+
+.ham-icon{
+  border: 5 px solid black;
+}
+
+
 
 /* Footer styling */
 

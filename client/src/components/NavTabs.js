@@ -96,10 +96,10 @@ function NavTabs({ currentPage, handlePageChange }) {
                 currentPage === "About" ? "nav-link active" : "nav-link"
               }
             >
-              Hours/About
+              About
             </a>
           </li>
-          {Auth.loggedIn() ? (
+          {/* {Auth.loggedIn() ? (
             <li className="nav-item">
               <a href="/" onClick={logout}>
                 Logout
@@ -123,7 +123,7 @@ function NavTabs({ currentPage, handlePageChange }) {
               
               
             </>
-          )}
+          )} */}
           
           
           <li className="nav-item">
@@ -216,11 +216,11 @@ function NavTabs({ currentPage, handlePageChange }) {
                 mobileMenu();
               }}
             >
-              Hours/About
+              About
             </a>
           </li>
           <div
-            style={{ marginRight: "3vw", justifyContent: "end" }}
+            style={{ marginRight: "3vw", justifyContent: "space-evenly", fontSize:"4rem" }}
             className="nav-item d-flex"
           >
             <a
@@ -230,13 +230,18 @@ function NavTabs({ currentPage, handlePageChange }) {
             >
               <FaFacebookF />
             </a>
-            <a
+            {/* </div>
+            <div
+            style={{ marginRight: "3vw", justifyContent: "center", fontSize:"3rem" }}
+            className="nav-item d-flex"> */}
+            <a 
               href="https://www.instagram.com/sweeneysbarngrill/"
               
             >
               <FaInstagram />
             </a>
-          </div>
+            </div>
+          
         </ul>
       </nav>
       {/* ---------------------- Mobile Navbar --------- 820px --------------  */}

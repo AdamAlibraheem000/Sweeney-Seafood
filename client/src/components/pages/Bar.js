@@ -9,7 +9,7 @@ export default function Bar() {
       <title>Sweeney’s - Doug's Bar</title>
     </Helmet>
     <FadeIn>
-    <div class="back-img-bar"></div>
+    <div className="back-img-bar"></div>
     </FadeIn>
     <section className="menu-bgn-grid">
       <article className='display-mobile-none'>
