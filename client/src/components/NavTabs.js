@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../imgs/logoCrop.png";
+import logo from "../imgs/logoCropWebP.webp";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 // import Auth from "../utils/auth";
