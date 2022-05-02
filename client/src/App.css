@@ -44,7 +44,7 @@ body {
 
 .back-img {
   background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../src/imgs/rockfellerWebP.webp");
+    url("../src/imgs/rockfeller.jpg");
   min-width: 100vw;
   min-height: 100vh;
   background-position: center;
@@ -54,7 +54,7 @@ body {
 
 .back-img-2 {
   background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../src/imgs/fishPicWebP.webp");
+    url("../src/imgs/fishPic.jpg");
   width: 100vw;
   height: 100vh;
   background-position: center;
@@ -64,7 +64,7 @@ body {
 
 .back-img-3 {
   background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../src/imgs/DanandLanceWebP.webp");
+    url("../src/imgs/DanandLance.jpg");
   width: 100vw;
   height: 100vh;
   background-position: center;
@@ -74,7 +74,7 @@ body {
 
 .back-img-4 {
   background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../src/imgs/WhiskeyPicWebP.webp");
+    url("../src/imgs/WhiskeyPic.jpg");
   width: 100vw;
   height: 100vh;
   background-position: center;
@@ -252,7 +252,7 @@ ul li {
 
 .bgm-img-menu {
   background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../src/imgs/DarkPicWebP.webp");
+    url("../src/imgs/DarkPic.jpg");
   /* width: 100vw; */
   min-height: 70vh;
   background-position: center;
@@ -394,7 +394,7 @@ h2 {
 /* background Image */
 .back-img-bar {
   background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../src/imgs/barPicWebP.webp");
+    url("../src/imgs/barPic.jpg");
   /* width: 100vw; */
   min-height: 70vh;
   background-position: center;
@@ -417,7 +417,7 @@ h2 {
 /* About Us styling*/
 .back-img-about {
   background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../src/imgs/outsidePicWebP.webp");
+    url("../src/imgs/outsidePic.jpg");
   /* width: 100vw; */
   min-height: 80vh;
   background-position: center;
