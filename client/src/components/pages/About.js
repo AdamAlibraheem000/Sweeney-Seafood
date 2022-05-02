@@ -1,8 +1,13 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import FadeIn from "react-fade-in/lib/FadeIn";
+import Auth from "../../utils/auth";
 
-export default function About() {
+export default function About({ currentPage, handlePageChange }) {
+  const logout = (event) => {
+    event.preventDefault();
+    Auth.logout();
+  };
   return (
     <>
       <Helmet>
@@ -49,9 +54,7 @@ export default function About() {
           <div className="about-people">
             <div className="d-flex justify-center align-center flex-column">
               <h5>Holley Thompson</h5>
-              <h6 className="italicized">
-                Operations Partner and Owner
-              </h6>
+              <h6 className="italicized">Operations Partner and Owner</h6>
             </div>
             <p>
               Is a former practicing attorney and consultant and worked
@@ -63,12 +66,33 @@ export default function About() {
               Metro Library Foundation Board. She has lived and worked in the
               Dayton area since 1994.
             </p>
-            
           </div>
           <div className="btn-flex">
-          <button>Login</button>
+            {/* <button id="login">Login</button> */}
+            {Auth.loggedIn() ? (
+              <li className="nav-item">
+                <a href="/" onClick={logout}>
+                  Logout
+                </a>
+              </li>
+            ) : (
+              <>
+                <li className="nav-item">
+                  <a
+                    href="#Login"
+                    onClick={() => handlePageChange("Login")}
+                    // Check to see if the currentPage is `Login`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+
+                    className={
+                      currentPage === "Login" ? "nav-link active" : "nav-link"
+                    }
+                  >
+                    Login
+                  </a>
+                </li>
+              </>
+            )}
           </div>
-          
         </FadeIn>
       </section>
     </>

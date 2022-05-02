@@ -124,17 +124,21 @@ function NavTabs({ currentPage, handlePageChange }) {
               
             </>
           )} */}
-          
-          
+
           <li className="nav-item">
-            <a href="https://www.facebook.com/sweeneysseafood/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.facebook.com/sweeneysseafood/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaFacebookF></FaFacebookF>
             </a>
           </li>
           <li className="nav-item">
             <a
-              href="https://www.instagram.com/sweeneysbarngrill/" target="_blank" rel="noopener noreferrer"
-              
+              href="https://www.instagram.com/sweeneysbarngrill/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaInstagram></FaInstagram>
             </a>
@@ -220,13 +224,16 @@ function NavTabs({ currentPage, handlePageChange }) {
             </a>
           </li>
           <div
-            style={{ marginRight: "3vw", justifyContent: "space-evenly", fontSize:"4rem" }}
+            style={{
+              marginRight: "3vw",
+              justifyContent: "space-evenly",
+              fontSize: "4rem",
+            }}
             className="nav-item d-flex"
           >
             <a
               style={{ marginRight: "3vw" }}
               href="https://www.facebook.com/sweeneysseafood/"
-              
             >
               <FaFacebookF />
             </a>
@@ -234,14 +241,10 @@ function NavTabs({ currentPage, handlePageChange }) {
             <div
             style={{ marginRight: "3vw", justifyContent: "center", fontSize:"3rem" }}
             className="nav-item d-flex"> */}
-            <a 
-              href="https://www.instagram.com/sweeneysbarngrill/"
-              
-            >
+            <a href="https://www.instagram.com/sweeneysbarngrill/">
               <FaInstagram />
             </a>
-            </div>
-          
+          </div>
         </ul>
       </nav>
       {/* ---------------------- Mobile Navbar --------- 820px --------------  */}
