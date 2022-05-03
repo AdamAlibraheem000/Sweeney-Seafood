@@ -773,7 +773,7 @@ h2 {
     background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
     url("../src/imgs/rockfellerSmall.jpg");
   width: 100vw;
-  height: 100vh;
+  height: 50vh;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -783,7 +783,7 @@ h2 {
     background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
       url("../src/imgs/fishPicSmall.jpg");
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -793,7 +793,7 @@ h2 {
     background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
       url("../src/imgs/DanandLanceSmall.jpg");
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -803,7 +803,7 @@ h2 {
     background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
       url("../src/imgs/WhiskeyPicSmall.jpg");
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
