@@ -253,7 +253,7 @@ ul li {
 .bgm-img-menu {
   background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
     url("../src/imgs/DarkPic.jpg");
-  /* width: 100vw; */
+  width: 100vw;
   height: 70vh;
   background-position: center;
   background-size: cover;
@@ -418,7 +418,7 @@ h2 {
 .back-img-about {
   background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
     url("../src/imgs/outsidePic.jpg");
-  /* width: 100vw; */
+  width: 100vw;
   height: 80vh;
   background-position: center;
   background-size: cover;
@@ -505,15 +505,6 @@ h2 {
   .full-footer {
     display: none;
   }
-
-  .back-img{
-    background-attachment: scroll;
-  }
-
-
-
-  
-
 
   /* ------------ HIDE MAIN NAV START ---------------  */
   /* ------------------------- MOBILE FOOTER START ------------------- */
@@ -774,5 +765,78 @@ h2 {
     background-color: #f7f4f0;
   }
   /* ---------------- MOBILE UTILS END ----------------- */
+}
+
+/* Media Query */
+@media screen and (max-width: 450px){
+  .back-img{
+    background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../src/imgs/rockfellerSmall.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  }
+
+  .back-img-2 {
+    background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../src/imgs/fishPicSmall.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .back-img-3 {
+    background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../src/imgs/DanandLanceSmall.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .back-img-4 {
+    background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../src/imgs/WhiskeyPicSmall.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .bgm-img-menu {
+    background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../src/imgs/DarkPicSmall.jpg");
+    width: 100vw;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .back-img-about {
+    background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../src/imgs/outsidePicSmall.jpg");
+    width: 100vw;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .back-img-bar {
+    background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../src/imgs/barPicSmall.jpg");
+    width: 100vw;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
 }
 
