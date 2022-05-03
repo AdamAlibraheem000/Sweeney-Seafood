@@ -768,7 +768,7 @@ h2 {
 }
 
 /* Media Query */
-@media screen and (max-width: 450px){
+@media screen and (max-width: 600px){
   .back-img{
     background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
     url("../src/imgs/rockfellerSmall.jpg");
