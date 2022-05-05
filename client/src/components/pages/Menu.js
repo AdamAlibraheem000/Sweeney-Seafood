@@ -9,7 +9,10 @@ export default function Contact() {
       <title>Sweeney’s - Dinner Menu</title>
     </Helmet>
     <FadeIn>
-    <div className="bgm-img-menu"></div>
+      <div>
+        <img className="bgm-img-menu"></img>
+      </div>
+    {/* <div className="bgm-img-menu"></div> */}
     </FadeIn>
     <section className="menu-bgn-grid">
       <article className='display-mobile-none'>
