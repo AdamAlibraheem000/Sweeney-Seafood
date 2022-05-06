@@ -771,7 +771,7 @@ h2 {
 @media screen and (max-width: 600px){
   .back-img{
     background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../src/imgs/rockfellerSmall.jpg");
+    url("../src/imgs/rockfellerPNG.png");
   width: 100vw;
   height: 100vh;
   background-position: center;
@@ -781,7 +781,7 @@ h2 {
 
   .back-img-2 {
     background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../src/imgs/fishPicSmall.jpg");
+      url("../src/imgs/fishPicPNG.png");
     width: 100vw;
     height: 100vh;
     background-position: center;
@@ -791,7 +791,7 @@ h2 {
   
   .back-img-3 {
     background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../src/imgs/DanandLanceSmall.jpg");
+      url("../src/imgs/DanandLancePNG.png");
     width: 100vw;
     height: 100vh;
     background-position: center;
@@ -801,7 +801,7 @@ h2 {
   
   .back-img-4 {
     background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../src/imgs/WhiskeyPicSmall.jpg");
+      url("../src/imgs/WhiskeyPicPNG.png");
     width: 100vw;
     height: 100vh;
     background-position: center;
@@ -811,7 +811,7 @@ h2 {
 
   .bgm-img-menu {
     background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../src/imgs/DarkPicSmall.jpg");
+      url("../src/imgs/DarkPicPNG.png");
     width: 100vw;
     height: 70vh;
     background-position: center;
@@ -821,7 +821,7 @@ h2 {
 
   .back-img-about {
     background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../src/imgs/outsidePicSmall.jpg");
+      url("../src/imgs/outsidePicPNG.png");
     width: 100vw;
     height: 80vh;
     background-position: center;
@@ -831,7 +831,7 @@ h2 {
 
   .back-img-bar {
     background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../src/imgs/barPicSmall.jpg");
+      url("../src/imgs/barPicPNG.png");
     width: 100vw;
     height: 70vh;
     background-position: center;
