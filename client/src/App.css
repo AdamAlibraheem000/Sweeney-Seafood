@@ -771,7 +771,7 @@ h2 {
 @media screen and (max-width: 600px){
   .back-img{
     background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../src/imgs/rockfellerPNG.png");
+    url("../src/imgs/outsidePicPNG.png");
   width: 100vw;
   height: 100vh;
   background-position: center;
@@ -791,7 +791,7 @@ h2 {
   
   .back-img-3 {
     background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../src/imgs/DanandLancePNG.png");
+      url("../src/imgs/barIPAHandle.PNG");
     width: 100vw;
     height: 100vh;
     background-position: center;

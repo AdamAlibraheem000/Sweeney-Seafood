@@ -2,8 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import FadeIn from "react-fade-in/lib/FadeIn";
 import { Carousel } from "react-bootstrap";
-// import rockfeller from '../../imgs/rockfeller.jpg';
-// import 'bootstrap';
+
 
 export default function Home() {
   return (
@@ -15,7 +14,7 @@ export default function Home() {
       <FadeIn>
         <Carousel className="main-container carousel-fade" data-interval="5">
           <Carousel.Item>
-            <img
+            <img 
               className="d-block back-img"  
               alt="Sweeney's Rockfeller Dish"
             />

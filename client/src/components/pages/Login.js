@@ -3,7 +3,8 @@ import { useMutation } from "@apollo/client";
 import { LOGIN } from "../../utils/mutations";
 import Auth from "../../utils/auth";
 
-function Login(props) {
+
+function Login({currentPage, handlePageChange}) {
   const [formState, setFormState] = useState({ email: "", password: "" });
   const [login, { error }] = useMutation(LOGIN);
 
@@ -55,7 +56,7 @@ function Login(props) {
               value={formState.password}
               onChange={handleChange}
             />
-            <button type="submit">Submit</button>
+            <button type="submit" >Submit</button>
           </form>
           {error && <div>Login failed</div>}
         </div>
