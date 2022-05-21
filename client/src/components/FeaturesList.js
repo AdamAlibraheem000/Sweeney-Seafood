@@ -7,13 +7,14 @@ const FeatureList = ({ features }) => {
 
             {features &&
                 features.map(feature => (
-                    <div>
-                        <div  className='feature-flex food'  >
+                    
+                        <div key={feature._id} className='food'  >
+                            console.log(feature._id);
                             <h5 className='feature-title ' >{feature.title}</h5>
                             <p className='feature-desc' >{feature.description}</p>
                             <p className='feature-title' >${feature.price}</p>
                         </div>
-                    </div>
+                    
                 ))}
         </section>
     )

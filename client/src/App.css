@@ -35,6 +35,31 @@ body {
   align-items: center;
 }
 
+.update-grid{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.update-form {
+  height: 100vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.update-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+}
+
 .main-container {
   flex-grow: 1;
   min-height: 100vh;
@@ -191,7 +216,7 @@ body {
 .nav-item a {
   text-decoration: none;
   color: #fff;
-  
+
 
 }
 
@@ -202,7 +227,7 @@ body {
 
 }
 
-.ham-icon{
+.ham-icon {
   border: 5 px solid black;
 }
 
@@ -231,9 +256,11 @@ body {
   padding-top: 1rem;
   text-shadow: 2px 1px 3px black;
 }
+
 .full-footer {
   visibility: visible;
 }
+
 ul li {
   list-style: none;
 }
@@ -373,12 +400,14 @@ h2 {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  height: 100vh;
 }
 
 .feature-title {
   color: black;
   text-align: center;
   font-size: 2rem;
+
 }
 
 .feature-desc {
@@ -386,6 +415,7 @@ h2 {
   text-align: center;
   font-size: 1.5rem;
 }
+
 .margin-large {
   margin-top: 6rem;
 }
@@ -440,6 +470,7 @@ h2 {
   text-align: center;
   font-size: 1.5rem;
 }
+
 .about-people {
   display: flex;
   flex-direction: column;
@@ -450,16 +481,25 @@ h2 {
   padding-bottom: 1px;
   padding-right: 2px;
 }
+
 .about-container {
   width: 80vw;
 }
+
 .img-crop {
   max-width: 100%;
 }
 
-.btn-flex{
+.btn-flex {
   display: flex;
   justify-content: flex-end;
+}
+
+
+
+.text {
+  color: black;
+  border: 3px solid black;
 }
 
 /* Reviews styling  */
@@ -472,36 +512,45 @@ h2 {
   visibility: hidden;
   display: none;
 }
+
 .mobile-footer {
   visibility: hidden;
   display: none;
 }
+
 .justify-center {
   justify-content: center;
 }
+
 .align-center {
   align-items: center;
 }
+
 .italicized {
   font-style: italic;
 }
+
 .m-left {
   margin-left: 1vw;
 }
+
 .m-bot-0 {
   margin-bottom: 0;
 }
+
 .flex-column {
   flex-direction: column;
 }
 
 /* SmartPhones */
 @media screen and (max-width: 992px) {
+
   /* ------------ HIDE MAIN NAV START ---------------  */
   .full-nav {
     visibility: hidden;
     display: none;
   }
+
   .full-footer {
     display: none;
   }
@@ -512,6 +561,7 @@ h2 {
     display: flex;
     visibility: visible;
   }
+
   .contact {
     /* display: flex; */
     /* flex-direction: column; */
@@ -521,16 +571,20 @@ h2 {
     /* padding-top: 1rem; */
     text-shadow: 2px 1px 3px black;
   }
+
   .width-half {
     width: 50vw;
   }
+
   .operation {
     font-size: 4vw;
   }
+
   .copyright {
     color: #fff;
     font-size: 3vw;
   }
+
   /*  --------------------------- MOBILE FOOTER END ----------------------------- */
   /* ------------------------- MAIN NAV STYLE START---------------------- */
 
@@ -558,39 +612,47 @@ h2 {
     float: right;
     font-style: italic;
   }
+
   /* ------------------------- MAIN NAV STYLE END---------------------- */
 
   /* _----------------------- LOGIN PAGE START ---------------------- */
   .margin-mobile {
     margin-top: var(--mobile-nav-height);
   }
+
   .user-form {
     width: 75vw;
     align-items: center;
     margin-right: auto;
     margin-left: auto;
   }
+
   .padding-top-bot-5 {
     padding: 5% 0;
   }
+
   .login-section {
     background-color: #f7f4f0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
   }
+
   .center-item {
     margin-right: auto;
     margin-left: auto;
   }
+
   .text-large-purple {
     font-size: 8vw;
     color: #370624;
     font-style: italic;
   }
+
   .background-purple {
     background-color: #370624;
   }
+
   /* _----------------------- LOGIN PAGE END ---------------------- */
 
   /* ------- ABOUT STYLE START ------------------- */
@@ -600,6 +662,7 @@ h2 {
     align-items: center;
     text-shadow: 0px 0px 1px black;
   }
+
   /* ------- ABOUT STYLE END ------------------- */
 
   /* -------- CAROUSEL STYLE START ------------------- */
@@ -633,6 +696,7 @@ h2 {
     text-shadow: 12px 5px 5px black;
     font-style: italic;
   }
+
   /* -------- CAROUSEL STYLE END ------------------- */
 
   /* ----------------- MENU STYLE START -------------------  */
@@ -646,15 +710,17 @@ h2 {
     margin-left: auto;
     border-bottom: 3px solid rgba(0, 0, 0, 0.6);
   }
+
   .menu-nav {
     display: flex;
-    
+
   }
+
   .menu-bgn-grid {
     display: grid;
     grid-template-columns: 1fr;
     background-color: #f0ece3;
-    
+
   }
 
   .food-item-grid {
@@ -665,6 +731,7 @@ h2 {
     color: black;
     margin: 0;
   }
+
   /* ----------------- MENU STYLE END -------------------  */
 
   /* ----------------- MOBILE NAVBAR START ------------------- */
@@ -679,6 +746,7 @@ h2 {
     align-items: center;
     padding: 1rem 1.5rem;
   }
+
   .bar {
     display: block;
     width: 5vw;
@@ -688,27 +756,34 @@ h2 {
     transition: all 0.5s ease-in-out;
     background-color: #ffffff;
   }
+
   .hamburger {
     display: block;
     cursor: pointer;
   }
+
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
+
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
+
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
   .display-mobile.active {
     transition: opacity 0.5s ease-in;
     opacity: 0;
   }
+
   .display-mobile.inactive {
     opacity: 1;
     transition: opacity 0.8s ease-out;
   }
+
   .sidebar-menu {
     position: fixed;
     right: 0;
@@ -721,6 +796,7 @@ h2 {
     transition: 0.5s;
     box-shadow: 5px 5px 5px #370624;
   }
+
   .sidebar-menu li {
     margin-right: auto;
     margin-left: auto;
@@ -729,27 +805,33 @@ h2 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     color: #fff;
   }
+
   .sidebar-menu li a {
     text-decoration: none;
     font-style: italic;
     font-size: 15vw;
     color: #fff;
   }
+
   /* ----------------- MOBILE NAVBAR END ------------------- */
 
   /* ---------------- MOBILE UTILS START ----------------- */
   .slide-inactive {
     top: -150vw;
   }
+
   .display-mobile-none {
     display: none;
   }
+
   .float-left {
     float: left;
   }
+
   .float-right {
     float: right;
   }
+
   .d-flex {
     display: flex;
   }
@@ -757,6 +839,7 @@ h2 {
   .align-center {
     align-items: center;
   }
+
   .space-around {
     justify-content: space-around;
   }
@@ -764,19 +847,20 @@ h2 {
   .background-beige {
     background-color: #f7f4f0;
   }
+
   /* ---------------- MOBILE UTILS END ----------------- */
 }
 
 /* Media Query */
-@media screen and (max-width: 600px){
-  .back-img{
+@media screen and (max-width: 600px) {
+  .back-img {
     background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../src/imgs/outsidePicPNG.png");
-  width: 100vw;
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+      url("../src/imgs/outsidePicPNG.png");
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   .back-img-2 {
@@ -788,7 +872,7 @@ h2 {
     background-size: cover;
     background-attachment: fixed;
   }
-  
+
   .back-img-3 {
     background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
       url("../src/imgs/barIPAHandle.PNG");
@@ -798,7 +882,7 @@ h2 {
     background-size: cover;
     background-attachment: fixed;
   }
-  
+
   .back-img-4 {
     background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
       url("../src/imgs/WhiskeyPicPNG.png");
@@ -839,4 +923,3 @@ h2 {
     background-attachment: fixed;
   }
 }
-
