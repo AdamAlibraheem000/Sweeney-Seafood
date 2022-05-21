@@ -5,6 +5,8 @@ import Auth from "../../utils/auth";
 
 const form = document.querySelector('.element-form');
 
+// counter to add unique id name plus number
+// idname ${i}
 let i = 0;
 
 function Login() {
@@ -44,9 +46,9 @@ function Login() {
         newDiv.append(titleValue," ",newBtn);
 
        divCont.append(newDiv);
+      //  Event listener to remove dynamic elements
        document.querySelector('#delete-item' + i).addEventListener("click", function(){
          let removeEl = this.parentElement;
-        //  console.log(removeEl);
         divCont.removeChild(removeEl);
        })
 
