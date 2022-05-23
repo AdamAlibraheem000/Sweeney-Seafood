@@ -1,7 +1,11 @@
 import React, { useState } from "react";
+import { useForm } from "react-hook-form";
 import { useMutation } from "@apollo/client";
 import { LOGIN } from "../../utils/mutations";
 import Auth from "../../utils/auth";
+import { ADD_FEATURE } from "../../utils/mutations";
+
+// const [addFeature] = useMutation(ADD_FEATURE);
 
 const form = document.querySelector('.element-form');
 
@@ -14,6 +18,7 @@ function Login() {
     const [title, setTitle] = React.useState("");
     const [desc, setDesc] = React.useState("")
     const [price, setPrice] = React.useState("")
+    const formInput = document.querySelector(".task-form");
     
 
     const divCont = document.getElementById("data-elements");
@@ -52,7 +57,13 @@ function Login() {
         divCont.removeChild(removeEl);
        })
 
+
        i++;
+      //  Clear form values
+      setTitle('');
+      setDesc('');
+      setPrice('');
+      
        
     }
 
