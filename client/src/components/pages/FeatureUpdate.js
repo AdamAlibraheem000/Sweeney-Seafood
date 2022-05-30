@@ -5,8 +5,6 @@ import { LOGIN } from "../../utils/mutations";
 import Auth from "../../utils/auth";
 import { ADD_FEATURE } from "../../utils/mutations";
 
-// const [addFeature] = useMutation(ADD_FEATURE);
-
 const form = document.querySelector('.element-form');
 
 // counter to add unique id name plus number
@@ -18,6 +16,7 @@ function Login() {
     const [title, setTitle] = React.useState("");
     const [desc, setDesc] = React.useState("")
     const [price, setPrice] = React.useState("")
+    const [addFeature, { error }] = useMutation(ADD_FEATURE);
     const formInput = document.querySelector(".task-form");
     
 
@@ -35,10 +34,18 @@ function Login() {
       }
     }
 
-    function addElements(title, desc, price){
+    const addElements = async (title, desc, price) => {
         let titleValue = title;
-        // let descValue = desc;
-        // let priceValue = price;
+        let descValue = desc;
+        let priceValue = price;
+
+        try {
+           await addFeature({
+              variables: { titleValue, descValue, priceValue },
+          });
+      } catch (e) {
+          console.error(e);
+      }
 
         
         let newDiv = document.createElement('div');

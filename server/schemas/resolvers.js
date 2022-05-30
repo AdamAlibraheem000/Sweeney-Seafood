@@ -41,12 +41,12 @@ const resolvers = {
   },
   Mutation: {
     // add new user
-    addUser: async (parent, args) => {
-      const user = await User.create(args);
-      const token = signToken(user);
+    // addUser: async (parent, args) => {
+    //   const user = await User.create(args);
+    //   const token = signToken(user);
 
-      return { token, user };
-    },
+    //   return { token, user };
+    // },
     // login to acc
     login: async (parent, { email, password }) => {
       const user = await User.findOne({ email });
@@ -102,6 +102,19 @@ const resolvers = {
 
       throw new AuthenticationError("You need to be logged in!");
     },
+
+    // Add New Feature
+  addFeature: async (parent, {title, description, price}) => {
+    const newFeature = await addFeature.create({title, description, price});
+
+    return newFeature;
   },
+
+    
+  },
+  
 };
+
+
+
 module.exports = resolvers;

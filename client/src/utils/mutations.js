@@ -58,7 +58,7 @@ export const ADD_REPLY = gql`
 
 export const ADD_FEATURE = gql`
   mutation addFeature($title: String!, $description
-: String!, $price: String!) {
+: String!, $price: Number!) {
     addFeature(title: $title, description: $description, price: $price) {
       title
       description
