@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { useForm } from "react-hook-form";
-import { useMutation } from "@apollo/client";
-import { LOGIN } from "../../utils/mutations";
 import Auth from "../../utils/auth";
-import { ADD_FEATURE } from "../../utils/mutations";
+// const mongoose = require('mongoose');
+// const features = require('../../../../server/models/Features');
+
 
 const form = document.querySelector('.element-form');
 
@@ -16,7 +15,6 @@ function Login() {
     const [title, setTitle] = React.useState("");
     const [desc, setDesc] = React.useState("")
     const [price, setPrice] = React.useState("")
-    const [addFeature, { error }] = useMutation(ADD_FEATURE);
     const formInput = document.querySelector(".task-form");
     
 
@@ -39,13 +37,11 @@ function Login() {
         let descValue = desc;
         let priceValue = price;
 
-        try {
-           await addFeature({
-              variables: { titleValue, descValue, priceValue },
-          });
-      } catch (e) {
-          console.error(e);
-      }
+      //   try {
+      //      await features.create(titleValue, descValue,priceValue);
+      // } catch (e) {
+      //     console.error(e);
+      // }
 
         
         let newDiv = document.createElement('div');
