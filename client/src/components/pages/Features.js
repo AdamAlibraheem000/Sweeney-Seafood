@@ -12,8 +12,7 @@ export default function Features() {
 
   const { data } = useQuery(QUERY_FEATURES)
   const features = data?.features || [];
-
-
+  
   return (
     <section className="margin-large margin-mobile background-beige">
       <Helmet>

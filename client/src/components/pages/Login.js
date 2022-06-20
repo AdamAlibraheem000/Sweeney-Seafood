@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useMutation } from "@apollo/client";
 import { LOGIN } from "../../utils/mutations";
 import Auth from "../../utils/auth";
+import {Navigate} from 'react-router-dom'
+import FeatureUpdate from './FeatureUpdate.js';
 
 
 function Login({currentPage, handlePageChange}) {
@@ -24,6 +26,7 @@ function Login({currentPage, handlePageChange}) {
         variables: { ...formState },
       });
       Auth.login(data.login.token);
+      return <Navigate to="/FeatureUpdate"></Navigate>
     } catch (e) {
       console.log(e);
     }
