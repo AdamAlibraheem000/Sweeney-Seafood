@@ -545,6 +545,18 @@ h2 {
 /* SmartPhones */
 @media screen and (max-width: 992px) {
 
+  .bgm-img-menu{
+    display: none;
+  }
+
+  .back-img-about{
+    display: none;
+  }
+
+  .back-img-bar{
+    display: none;
+  }
+
   /* ------------ HIDE MAIN NAV START ---------------  */
   .full-nav {
     visibility: hidden;
