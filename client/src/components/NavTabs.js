@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import logo from "../imgs/logoCrop.png";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-// import Auth from "../utils/auth";
+import Auth from "../utils/auth";
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
@@ -18,10 +18,10 @@ function NavTabs({ currentPage, handlePageChange }) {
     }
   };
 
-  // const logout = (event) => {
-  //   event.preventDefault();
-  //   Auth.logout();
-  // };
+  const logout = (event) => {
+    event.preventDefault();
+    Auth.logout();
+  };
 
   return (
     <div className="nav-grid">
@@ -99,7 +99,7 @@ function NavTabs({ currentPage, handlePageChange }) {
               About
             </a>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <a
               href="#update"
               onClick={() => handlePageChange("Update")}
@@ -110,13 +110,23 @@ function NavTabs({ currentPage, handlePageChange }) {
             >
               Update
             </a>
-          </li>
-          {/* {Auth.loggedIn() ? (
+          </li> */}
+          {Auth.loggedIn() ? (
+            <>
             <li className="nav-item">
-              <a href="/" onClick={logout}>
-                Logout
+              <a href="#update" onClick={() => handlePageChange("Update")}
+              className={
+                currentPage === "Update" ? "nav-link active" : "nav-link"
+              } >
+                Update
               </a>
             </li>
+            <li className="nav-item">
+            <a href="/" onClick={logout}>
+              Logout
+            </a>
+          </li>
+          </>
           ) : (
             <>
               <li className="nav-item">
@@ -135,7 +145,7 @@ function NavTabs({ currentPage, handlePageChange }) {
               
               
             </>
-          )} */}
+          )}
           {/* <li className="nav-item">
             <a
               href="#about"

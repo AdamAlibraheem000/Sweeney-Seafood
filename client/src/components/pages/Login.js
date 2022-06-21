@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useMutation } from "@apollo/client";
 import { LOGIN } from "../../utils/mutations";
 import Auth from "../../utils/auth";
-import {Navigate} from 'react-router-dom'
+import {Routes, Route, Navigate} from 'react-router-dom'
 import FeatureUpdate from './FeatureUpdate.js';
 
 
@@ -10,23 +10,35 @@ function Login({currentPage, handlePageChange}) {
   const [formState, setFormState] = useState({ email: "", password: "" });
   const [login, { error }] = useMutation(LOGIN);
 
+  // const changePage = () => {
+  //   <Navigate to="/update"></Navigate>
+  // }
+
   const handleChange = (event) => {
+    event.preventDefault();
     const { name, value } = event.target;
     setFormState({
       ...formState,
       [name]: value,
     });
+    
   };
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    console.log(formState)
+    
+    
     try {
       const { data } = await login({
         variables: { ...formState },
+        
       });
       Auth.login(data.login.token);
-      return <Navigate to="/FeatureUpdate"></Navigate>
+      console.log(formState);
+      
+      
+     
+      
     } catch (e) {
       console.log(e);
     }
