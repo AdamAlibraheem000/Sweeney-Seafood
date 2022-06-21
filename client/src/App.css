@@ -432,17 +432,6 @@ h2 {
   background-attachment: fixed;
 }
 
-/* Features Styling */
-/* bgn-img */
-/* .back-img-features {
-  background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../public/assets/imgs/barPic.PNG");
-  width: 100vw;
-  min-height: 80vh;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-} */
 
 /* About Us styling*/
 .back-img-about {
@@ -905,33 +894,4 @@ h2 {
     background-attachment: fixed;
   }
 
-  .bgm-img-menu {
-    background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../src/imgs/DarkPicPNG.png");
-    width: 100vw;
-    height: 70vh;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-
-  .back-img-about {
-    background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../src/imgs/outsidePicPNG.png");
-    width: 100vw;
-    height: 80vh;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-
-  .back-img-bar {
-    background-image: linear-gradient(rgba(37, 15, 15, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../src/imgs/barPicPNG.png");
-    width: 100vw;
-    height: 70vh;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import PortfolioContainer from "./components/PortfolioContainer";
+import NavTabs from "./components/NavTabs";
 import Footer from "./components/pages/Footer"
 import './App.css';
 import favicon from './imgs/favicon.ico';
@@ -41,6 +42,7 @@ const App = () =>
       <link rel="icon" type="image/x-icon" href={favicon} />
     </Helmet>
     <body>
+      <NavTabs/>
       <PortfolioContainer />
       <Footer />
     </body>
