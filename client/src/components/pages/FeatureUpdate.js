@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Auth from "../../utils/auth";
-// const mongoose = require('mongoose');
-// const features = require('../../../../server/models/Features');
-
+import { useQuery } from '@apollo/client';
+import { QUERY_FEATURES } from '../../utils/queries';
 
 const form = document.querySelector('.element-form');
 
@@ -70,13 +69,14 @@ function Login() {
        
     }
 
-    
+    const { data } = useQuery(QUERY_FEATURES)
+    const features = data?.features || [];
 
-    
-  
-    
-  
 
+    function removeItem(e){
+      e.removeChild();
+    }
+    
   return (
     <>
     <div className="update-grid">
@@ -124,6 +124,18 @@ function Login() {
       </div>
         <div id="data-elements" >
             {/* Dynamic items go here */}
+            {features &&
+                features.map(feature => (
+                    
+                        <div key={feature._id}>
+                            
+                            <h5  >{feature.title}</h5>
+                            <p  >{feature.description}</p>
+                            <p  >${feature.price}</p>
+                            <button onClick={removeItem}>Delete Me</button>
+                        </div>
+                    
+                ))}
         </div>
       </div>
     </>
