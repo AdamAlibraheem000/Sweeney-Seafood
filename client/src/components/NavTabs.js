@@ -146,7 +146,7 @@ function NavTabs({ currentPage, handlePageChange }) {
               
             </>
           )}
-          {/* <li className="nav-item">
+          <li className="nav-item">
             <a
               href="#about"
               onClick={() => handlePageChange("Signup")}
@@ -157,7 +157,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             >
               Signup
             </a>
-          </li> */}
+          </li>
           <li className="nav-item">
             <a
               href="https://www.facebook.com/sweeneysseafood/"

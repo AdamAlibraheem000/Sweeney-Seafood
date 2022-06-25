@@ -2,80 +2,88 @@ import React, { useState } from "react";
 import Auth from "../../utils/auth";
 import { useQuery } from '@apollo/client';
 import { QUERY_FEATURES } from '../../utils/queries';
+import { useMutation } from "@apollo/client";
+import { ADD_FEATURE } from "../../utils/mutations";
 
-const form = document.querySelector('.element-form');
 
-// counter to add unique id name plus number
-// idname ${i}
-let i = 0;
 
-function Login() {
+const Update = () => {
+  const [formState, setFormState] = useState({
+    title: "",
+    desc: "",
+    price: "",
+  });
+  const [addFeature, { error }] = useMutation(ADD_FEATURE);
+
+  // state update
+  const handleChange = (event) => {
+    const { name, desc, value } = event.target;
+    console.log(event.target)
+
+    setFormState({
+      ...formState,
+      [name]: value,
+    });
+  };
+
+  // submit form
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      const { data } = await addFeature({
+        variables: { ...formState },
+      });
+
+     
+    } catch (e) {
+      console.error(e);
+    }
+  };
   
-    const [title, setTitle] = React.useState("");
-    const [desc, setDesc] = React.useState("")
-    const [price, setPrice] = React.useState("")
-    const formInput = document.querySelector(".task-form");
+    // const [title, setTitle] = React.useState("");
+    // const [desc, setDesc] = React.useState("")
+    // const [price, setPrice] = React.useState("")
+    // const formInput = document.querySelector(".task-form");
     
 
-    const divCont = document.getElementById("data-elements");
+    // const divCont = document.getElementById("data-elements");
 
-    function handleSubmit (e) {
-        e.preventDefault();
-        addElements(title, desc, price);
+    // function handleSubmit (e) {
+    //     e.preventDefault();
+    //     addElements(title, desc, price);
 
-    }
+    // }
 
-    function removeElement(e){
-      if(e.target.parentElement.classList.contains("delete-item")){
-        console.log(e.target);
-      }
-    }
+   
 
-    const addElements = async (title, desc, price) => {
-        let titleValue = title;
-        let descValue = desc;
-        let priceValue = price;
-
-      //   try {
-      //      await features.create(titleValue, descValue,priceValue);
-      // } catch (e) {
-      //     console.error(e);
-      // }
-
+    // const addElements = async (title, desc, price) => {
+    //     let titleValue = title;
+    //     let descValue = desc;
+    //     let priceValue = price;
         
-        let newDiv = document.createElement('div');
+
+    //     //  Clear form values
+    //   setTitle('');
+    //   setDesc('');
+    //   setPrice('');
         
+    //    }
+    
+
+
        
-        let newBtn = document.createElement('button');
-        newBtn.className = "delete-item";
-        newBtn.id = `delete-item${i}`;
-        newBtn.textContent = "DeleteMe";
-        newDiv.append(titleValue," ",newBtn);
-
-       divCont.append(newDiv);
-      //  Event listener to remove dynamic elements
-       document.querySelector('#delete-item' + i).addEventListener("click", function(){
-         let removeEl = this.parentElement;
-        divCont.removeChild(removeEl);
-       })
-
-
-       i++;
-      //  Clear form values
-      setTitle('');
-      setDesc('');
-      setPrice('');
+      
       
        
-    }
+    
 
+    // Query database for features
     const { data } = useQuery(QUERY_FEATURES)
     const features = data?.features || [];
 
 
-    function removeItem(e){
-      e.removeChild();
-    }
+    
     
   return (
     <>
@@ -84,25 +92,25 @@ function Login() {
         <h4>Add Feature:</h4>
         <div className="update-flex">
             
-          <form className="task-form" onSubmit={handleSubmit}>
+          <form className="task-form" onSubmit={handleFormSubmit}>
           <div>
             <input
               placeholder="Add Title"
               name="title"
               type="text"
               id="title"
-              value={title}
-              onChange={e => setTitle(e.target.value)}
+              value={formState.title}
+              onChange={handleChange}
             />
             </div>
             <div>
             <input
               placeholder="Add Description"
-              name="Desc"
+              name="desc"
               type="text"
               id="description"
-              value={desc}
-              onChange={e => setDesc(e.target.value)}
+              value={formState.desc}
+              onChange={handleChange}
             />
             </div>
             <div>
@@ -111,8 +119,8 @@ function Login() {
               name="price"
               type="text"
               id="price"
-              value={price}
-              onChange={e => setPrice(e.target.value)}
+              value={formState.price}
+              onChange={handleChange}
             />
             </div>
             <div>
@@ -132,7 +140,7 @@ function Login() {
                             <h5  >{feature.title}</h5>
                             <p  >{feature.description}</p>
                             <p  >${feature.price}</p>
-                            <button onClick={removeItem}>Delete Me</button>
+                            <button>Delete Me</button>
                         </div>
                     
                 ))}
@@ -142,4 +150,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Update;
