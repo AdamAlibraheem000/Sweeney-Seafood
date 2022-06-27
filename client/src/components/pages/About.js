@@ -1,13 +1,10 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import FadeIn from "react-fade-in/lib/FadeIn";
-import Auth from "../../utils/auth";
 
-export default function About({ currentPage, handlePageChange }) {
-  const logout = (event) => {
-    event.preventDefault();
-    Auth.logout();
-  };
+
+export default function About() {
+  
   return (
     <>
       <Helmet>
@@ -66,32 +63,6 @@ export default function About({ currentPage, handlePageChange }) {
               Metro Library Foundation Board. She has lived and worked in the
               Dayton area since 1994.
             </p>
-          </div>
-          <div className="btn-flex">
-            {/* <button id="login">Login</button> */}
-            {Auth.loggedIn() ? (
-              <li className="nav-item">
-                <a href="/" onClick={logout}>
-                  Logout
-                </a>
-              </li>
-            ) : (
-              <>
-                <li className="nav-item">
-                  <a
-                    href="#Login"
-                    onClick={() => handlePageChange("Login")}
-                    // Check to see if the currentPage is `Login`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-
-                    className={
-                      currentPage === "Login" ? "nav-link active" : "nav-link"
-                    }
-                  >
-                    Login
-                  </a>
-                </li>
-              </>
-            )}
           </div>
         </FadeIn>
       </section>

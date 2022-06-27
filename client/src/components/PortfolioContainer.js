@@ -5,10 +5,7 @@ import About from "./pages/About";
 import Bar from "./pages/Bar";
 import Menu from "./pages/Menu";
 import Feature from "./pages/Features";
-import Reviews from "./pages/Reviews";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import Update from "./pages/FeatureUpdate"
+
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("Home");
@@ -30,18 +27,7 @@ export default function PortfolioContainer() {
     if (currentPage === "Menu") {
       return <Menu />;
     }
-    if (currentPage === "Reviews") {
-      return <Reviews />;
-    }
-    if (currentPage === "Login") {
-      return <Login />;
-    }
-    if (currentPage === "Signup") {
-      return <Signup />;
-    }
-    if (currentPage === "Update") {
-      return <Update />;
-    }
+    
     return <Home />;
   };
 

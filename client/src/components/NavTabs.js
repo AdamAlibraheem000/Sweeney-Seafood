@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import logo from "../imgs/logoCrop.png";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-// import Auth from "../utils/auth";
+
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
-  // const [navMenu, setNavMenu] = useState('inactive');
+
   const [hamburger, setHamburger] = useState("inactive");
 
   const mobileMenu = () => {
@@ -18,10 +18,7 @@ function NavTabs({ currentPage, handlePageChange }) {
     }
   };
 
-  // const logout = (event) => {
-  //   event.preventDefault();
-  //   Auth.logout();
-  // };
+  
 
   return (
     <div className="nav-grid">
@@ -111,43 +108,7 @@ function NavTabs({ currentPage, handlePageChange }) {
               Update
             </a>
           </li>
-          {/* {Auth.loggedIn() ? (
-            <li className="nav-item">
-              <a href="/" onClick={logout}>
-                Logout
-              </a>
-            </li>
-          ) : (
-            <>
-              <li className="nav-item">
-                <a
-                  href="#Login"
-                  onClick={() => handlePageChange("Login")}
-                  // Check to see if the currentPage is `Login`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-
-                  className={
-                    currentPage === "Login" ? "nav-link active" : "nav-link"
-                  }
-                >
-                  Login
-                </a>
-              </li>
-              
-              
-            </>
-          )} */}
-          {/* <li className="nav-item">
-            <a
-              href="#about"
-              onClick={() => handlePageChange("Signup")}
-              // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-              className={
-                currentPage === "About" ? "nav-link active" : "nav-link"
-              }
-            >
-              Signup
-            </a>
-          </li> */}
+          
           <li className="nav-item">
             <a
               href="https://www.facebook.com/sweeneysseafood/"

@@ -1,21 +1,22 @@
 import React from "react";
+import spinner from '../../src/imgs/spinner.gif'
 
 const FeatureList = ({ features }) => {
 
     return (
         <section className='feature-grid'>
-
-            {features &&
-                features.map(feature => (
-                    
-                        <div key={feature._id} className='food'  >
-                            console.log(feature._id);
-                            <h5 className='feature-title ' >{feature.title}</h5>
-                            <p className='feature-desc' >{feature.description}</p>
-                            <p className='feature-title' >${feature.price}</p>
-                        </div>
-                    
-                ))}
+       {!features.length ? (
+       <img src={spinner} alt="loading"/>
+       ) : (
+    features.map((article, key) => (
+        <div className='container'>
+        <h2>{article.title}</h2>
+        <p>{article.article}</p>
+        <p>
+            {article.authorname}
+        </p>
+        </div>
+    )))}  
         </section>
     )
 }

@@ -1,19 +1,23 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Helmet } from "react-helmet";
 import FadeIn from "react-fade-in/lib/FadeIn";
 import FeatureList from "../FeaturesList";
+import axios from 'axios';
 
-import { useQuery } from '@apollo/client';
-import { QUERY_FEATURES } from '../../utils/queries';
+
 
 
 export default function Features() {
 
+  const [features, setFeatures] = useState([]);
 
-  const { data } = useQuery(QUERY_FEATURES)
-  const features = data?.features || [];
+  useEffect(()=> {
+    axios.get('/articles')
+    .then(res => setFeatures(res.data))
+    .catch(error => console.log(error));
+  })
 
-
+  
   return (
     <section className="margin-large margin-mobile background-beige">
       <Helmet>
