@@ -1,25 +1,28 @@
 const express = require('express');
-const connectDB = require('./config/db');
+const mongoose = require('mongoose');
+const cors = require('cors');
+
+require('dotenv').config();
 
 const app = express();
-
-// commit test
-
-// Connect database
-connectDB();
-
-// Init Middleware for body parser
-// Allows you to get data from req.body
-app.use(express.json({extended: false}));
-
-app.get('/', (req, res) => res.send('API running'));
-
-// Define routes
-app.use('/api/users', require('./routes/api/users'));
-app.use('/api/auth', require('./routes/api/auth'));
-app.use('/api/features', require('./routes/api/features'));
-
-const PORT = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 
 
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+app.use(cors());
+app.use(express.json());
+
+
+const uri = process.env.ATLAS_URI;
+
+mongoose.connect(uri, {
+    useNewUrlParser: true
+})
+
+const connection = mongoose.connection;
+connection.once("open", () => 
+ console.log("Mongo connected"))
+
+ const articlesRouter = require('./routes/articles');
+ app.use('/articles',articlesRouter);
+
+ app.listen(port, () => console.log(`App running on port ${port}`));
