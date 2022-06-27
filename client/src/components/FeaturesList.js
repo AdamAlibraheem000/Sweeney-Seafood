@@ -9,10 +9,10 @@ const FeatureList = ({ features }) => {
        <img src={spinner} alt="loading"/>
        ) : (
     features.map((article, key) => (
-        <div className='container'>
-        <h2>{article.title}</h2>
-        <p>{article.article}</p>
-        <p>
+        <div >
+        <h2 className="feature-title">{article.title}</h2>
+        <p className="feature-desc">{article.article}</p>
+        <p className="feature-desc">
             {article.authorname}
         </p>
         </div>
