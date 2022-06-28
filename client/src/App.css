@@ -36,12 +36,11 @@ body {
 }
 
 .update-grid{
+  display: grid;
+  grid-template-columns: 1rf 1rf;
   height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6rem;
+ 
+  
 }
 
 .update-form {
@@ -546,6 +545,9 @@ h2 {
 @media screen and (max-width: 992px) {
 
   /* ------------ HIDE MAIN NAV START ---------------  */
+  
+
+
   .full-nav {
     visibility: hidden;
     display: none;
@@ -851,6 +853,8 @@ h2 {
   /* ---------------- MOBILE UTILS END ----------------- */
 }
 
+
+
 /* Media Query */
 @media screen and (max-width: 600px) {
   .back-img {
@@ -922,4 +926,6 @@ h2 {
     background-size: cover;
     background-attachment: fixed;
   }
+
+
 }

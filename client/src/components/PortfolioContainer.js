@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Bar from "./pages/Bar";
 import Menu from "./pages/Menu";
 import Feature from "./pages/Features";
+import Update from "./pages/Update";
 
 
 export default function PortfolioContainer() {
@@ -26,6 +27,9 @@ export default function PortfolioContainer() {
     }
     if (currentPage === "Menu") {
       return <Menu />;
+    }
+    if (currentPage === "Update") {
+      return <Update />;
     }
     
     return <Home />;
