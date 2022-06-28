@@ -9,11 +9,11 @@ import axios from 'axios';
 
 export default function Features() {
 
-  const [features, setFeatures] = useState([]);
+  const [articles, setArticles] = useState([]);
 
   useEffect(()=> {
     axios.get('/articles')
-    .then(res => setFeatures(res.data))
+    .then(res => setArticles(res.data))
     .catch(error => console.log(error));
   })
 
@@ -24,7 +24,7 @@ export default function Features() {
         <title>Sweeney’s - Features</title>
       </Helmet>
       <FadeIn>
-        <FeatureList features={features} />
+        <FeatureList articles={articles} />
       </FadeIn>
     </section>
   );

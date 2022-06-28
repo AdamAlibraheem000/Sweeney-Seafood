@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Articles = require('../models/articles');
 
+// GET all articles
 router.get('/', (req, res) => {
     Articles.find()
     .then(article => res.json(article))
