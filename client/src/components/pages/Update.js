@@ -1,10 +1,26 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import axios from 'axios';
+import spinner from '../../imgs/spinner.gif'
 
 function Update() {
   const[title, setTitle] = useState('');
   const[article, setArticle] = useState('');
   const[authorname, setAuthorName] = useState('');
+
+  const [features, setFeatures] = useState([]);
+
+  useEffect(()=> {
+    axios.get('/articles')
+    .then(res => setFeatures(res.data))
+    .catch(error => console.log(error));
+  })
+
+  // Delete article by ID
+  const deleteArticle = id  => {
+    axios.delete(`/articles/${id}`)
+    .then(res => console.log(res.data))
+    setArticle(article.filter(elem => elem._id !== IDBCursor))
+  }
 
   const changeOnClick = e => {
     e.preventDefault();
@@ -66,6 +82,23 @@ function Update() {
   <button type="submit" className="btn btn-primary">Post Article</button>
 </form>
 </section>
+<section className='update-list'>
+       {!features.length ? (
+       <img src={spinner} alt="loading"/>
+       ) : (
+    features.map((article, key) => (
+        <div className='feature-border'>
+        <p >{article.title}</p>
+        <p >{article.article}</p>
+        <p >
+            {article.authorname}
+        </p>
+        <button onClick={() => deleteArticle(article._id)}>Delete</button>
+        
+        </div>
+    )))}  
+        </section>
+
 </div>
 
   )
