@@ -10,7 +10,7 @@ export default function Contact() {
     </Helmet>
     <FadeIn>
       <div>
-        <img className="bgm-img-menu" alt='background-img'></img>
+        <img className="bgm-img-menu" ></img>
       </div>
     {/* <div className="bgm-img-menu"></div> */}
     </FadeIn>

@@ -28,7 +28,7 @@ export default function Bar() {
       <article>
       <FadeIn>
         {/* <!-- Red Wines --> */}
-        <h2>Red Wines</h2>
+        <h2 className="menu-title" >Red Wines</h2>
         <section id="red-wines" className="food-item-grid">
           <div className="food">
             <h5>Mark West</h5>
@@ -89,7 +89,7 @@ export default function Bar() {
         </section>
 
         {/* <!-- White Wines --> */}
-        <h2>White Wines</h2>
+        <h2 className="menu-title">White Wines</h2>
         <section id="white-wines" className="food-item-grid">
           <div className="food">
             <h5>Bieler Pere and Fils</h5>
@@ -152,7 +152,7 @@ export default function Bar() {
         </section>
         
         {/* <!-- Champagne & Sparkling Wines --> */}
-        <h2>Champagne and Sparkling Wines</h2>
+        <h2 className="menu-title">Champagne and Sparkling Wines</h2>
         <section id="champagne" className="food-item-grid">
           <div className="food">
             <h5>Pol Clement</h5>
@@ -173,7 +173,7 @@ export default function Bar() {
         </section>
 
         {/* <!--Ports --> */}
-        <h2>Port</h2>
+        <h2 className="menu-title">Port</h2>
         <section id="port" className="food-item-grid">
           <div className="food">
             <h5>Cockburn’s Fine Ruby</h5>
@@ -190,7 +190,7 @@ export default function Bar() {
         </div>
 
         {/* <!-- Specialty Beers--> */}
-        <h2>Specialty Beers</h2>
+        <h2 className="menu-title">Specialty Beers</h2>
         <section id="specialty-beers" className="food-item-grid">
           <div className="food">
             <h5>Anchor Steamer 5</h5>
@@ -213,7 +213,7 @@ export default function Bar() {
         </section>
 
         {/* <!-- Domestic --> */}
-        <h2>Domestic Beers 3.75</h2>
+        <h2 className="menu-title">Domestic Beers 3.75</h2>
         <section id="salad" className="food-item-grid">
           <div className="food">
             <h5>Budweiser</h5>
@@ -249,7 +249,7 @@ export default function Bar() {
         </section>
 
         {/* <!-- Import --> */}
-        <h2>Import Beers 4.75</h2>
+        <h2 className="menu-title">Import Beers 4.75</h2>
         <section id="salad" className="food-item-grid">
           <div className="food">
             <h5>Amstel Light</h5>
