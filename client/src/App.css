@@ -334,9 +334,7 @@ ul li {
 }
 
 /* Menu section styling */
-h2 {
-  /* color: #fff; */
-  /* color: black; */
+.menu-title {
   color: #370624;
   text-align: center;
   font-size: 3rem;
@@ -403,20 +401,37 @@ h2 {
   flex-direction: column;
   flex-grow: 1;
   min-height: 100vh;
+  
 }
 
-.feature-title {
-  color: black;
+.feature-title{
+  margin: 0 17rem;
+}
+
+.feature-title h1{
+  color: #370624;
   text-align: center;
-  font-size: 2rem;
-
+  font-size: 4rem;
+  padding-top: 0.75rem;
+  border-bottom: 4px solid black;
+  
 }
 
-.feature-desc {
-  color: black;
+.feature-list{
+  margin: 0 17rem;
+  border-right: 5px solid black;
+  border-bottom: 3px solid black;
+  margin-bottom: 1.5rem;
+}
+
+.feature-list p{
+  color: #370624;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
+
+
+
 
 .margin-large {
   margin-top: 6rem;
