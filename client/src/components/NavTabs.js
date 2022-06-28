@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom'
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
-function NavTabs({ currentPage, handlePageChange }) {
+function NavTabs() {
 
   const [hamburger, setHamburger] = useState("inactive");
 
@@ -27,12 +27,6 @@ function NavTabs({ currentPage, handlePageChange }) {
         <ul className="nav">
           <div className="nav-item">
             <Link to='/'
-              // href="#home"
-              // style={{ width: "" }}
-              // onClick={() => handlePageChange("Home")}
-              // className={
-              //   currentPage === "Home" ? "nav-link active" : "nav-link"
-              // }
             >
               <div className="brand-grid middle-man">
                 <img className="logo" src={logo} alt="sweeneyLogo"></img>
@@ -51,12 +45,6 @@ function NavTabs({ currentPage, handlePageChange }) {
         <ul className="nav-2">
           <li className="nav-item">
             <Link to='/features'
-              // href="#Feature"
-              // onClick={() => handlePageChange("Feature")}
-              // // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-              // className={
-              //   currentPage === "Feature" ? "nav-link active" : "nav-link"
-              // }
             >
               Features
             </Link>
@@ -64,22 +52,12 @@ function NavTabs({ currentPage, handlePageChange }) {
 
           <li className="nav-item">
             <Link to='/menu'
-              // href="#menu"
-              // onClick={() => handlePageChange("Menu")}
-              // // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-              // className={
-              //   currentPage === "Menu" ? "nav-link active" : "nav-link"
-              // }
             >
               Menu
             </Link>
           </li>
           <li className="nav-item">
             <Link to='/bar'
-              // href="#Bar"
-              // onClick={() => handlePageChange("Bar")}
-              // // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-              // className={currentPage === "Bar" ? "nav-link active" : "nav-link"}
             >
               Bar
             </Link>
@@ -87,24 +65,12 @@ function NavTabs({ currentPage, handlePageChange }) {
 
           <li className="nav-item">
             <Link to='/about'
-              // href="#about"
-              // onClick={() => handlePageChange("About")}
-              // // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-              // className={
-              //   currentPage === "About" ? "nav-link active" : "nav-link"
-              // }
             >
                Hours/Info
             </Link>
           </li>
           <li className="nav-item">
             <Link to='update'
-              // href="#update"
-              // onClick={() => handlePageChange("Update")}
-              // // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-              // className={
-              //   currentPage === "Update" ? "nav-link active" : "nav-link"
-              // }
             >
               Update
             </Link>

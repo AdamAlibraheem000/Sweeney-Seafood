@@ -35,28 +35,18 @@ body {
   align-items: center;
 }
 
-.update-grid{
-  display: grid;
-  grid-template-columns: 1rf 1rf;
-  height: 100vh;
- 
-  
+/* Update Features styling */
+
+.update-container{
+  flex-grow: 1;
+  min-height: 100vh;
 }
 
-.update-form {
-  height: 100vh;
-  width: 20vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-}
-
-.update-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  
+.update-form-styling{
+  margin-top: 7rem;
+  margin-left: 2rem;
+  min-height: 60vh;
+  width: 40vw;
 }
 
 .main-container {
