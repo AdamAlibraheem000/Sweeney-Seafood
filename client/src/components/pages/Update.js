@@ -13,7 +13,7 @@ function Update() {
     axios.get('/articles')
     .then(res => setFeatures(res.data))
     .catch(error => console.log(error));
-  })
+  },[])
 
   // Delete article by ID
   const deleteArticle = id  => {
@@ -90,7 +90,7 @@ function Update() {
        <img src={spinner} alt="loading"/>
        ) : (
     features.map((article, key) => (
-        <div className='feature-border'>
+        <div className='feature-border' key={key}>
         <p >{article.title}</p>
         <p >{article.article}</p>
         <p >

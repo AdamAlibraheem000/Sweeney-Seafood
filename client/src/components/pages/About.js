@@ -10,13 +10,44 @@ export default function About() {
       <Helmet>
         <title>Sweeney’s - About Us</title>
       </Helmet>
-      <div class="back-img-about"></div>
+      <div className="back-img-about"></div>
       <section className="about-section">
         <FadeIn>
           <div className="about-people">
             <div className="d-flex justify-center align-center flex-column">
-              <h5>Lisa Long</h5>
-              <h6 className="italicized">General Manager & Owner</h6>
+            <p>Sweeney's Seafood is located in the heart of Centerville's historic
+              district. Parking located in rear of building. 
+            </p>
+            <p>Phone: (937) 291-3474 </p>
+            <p><a href="https://www.google.com/maps/place/8+W+Franklin+St,+Washington+Township,+OH+45459/@39.6282555,-84.161469,17z/data=!3m1!4b1!4m5!3m4!1s0x88408ee202bb3c83:0x26f79a12a106c16b!8m2!3d39.6282555!4d-84.1592803" 
+            target="_blank"
+            rel="noopener noreferrer"
+            > 
+            
+            8 W Franklin St, Dayton, OH 45459</a></p>
+            </div>
+            <div className="d-flex justify-center align-center flex-column">
+            <h1 className="italicized">Hours of Operation</h1>
+            <p> Monday's: Closed</p>
+             <p>Tuesday - Thursday's: 4pm - 9pm</p> 
+              <p>Friday's and Saturday's 4pm - 10pm</p>
+             <p>Sunday's 4pm - 8:30pm</p> 
+            </div>
+            <div className="d-flex justify-center align-center flex-column">
+            <h1 className="italicized">Holiday Hours</h1>
+            <p>Closed on:</p>
+            <p>Thanksgiving</p>
+            <p>Christmas</p>
+            <p>Easter</p>
+            <p>Super Bowl Sunday</p>
+            <p>July 4th</p>
+            <p>Mother's Day 12pm - 8pm</p>
+            <p>Christmas Eve 4pm - 8pm</p>
+            </div>
+
+            <div className="d-flex justify-center align-center flex-column">
+              <h1>Lisa Long</h1>
+              <h2 className="italicized">General Manager & Owner</h2>
             </div>
             <p>
               With a degree in hospitality management, comes to Sweeney’s
@@ -34,8 +65,8 @@ export default function About() {
           </div>
           <div className="about-people">
             <div className="d-flex justify-center align-center flex-column">
-              <h5>Larry Thompson</h5>
-              <h6 className="italicized">Managing Partner and Owner</h6>
+              <h1>Larry Thompson</h1>
+              <h2 className="italicized">Managing Partner and Owner</h2>
             </div>
             <p>
               A former college professor, has worked extensively in the
@@ -50,8 +81,8 @@ export default function About() {
           </div>
           <div className="about-people">
             <div className="d-flex justify-center align-center flex-column">
-              <h5>Holley Thompson</h5>
-              <h6 className="italicized">Operations Partner and Owner</h6>
+              <h1>Holley Thompson</h1>
+              <h2 className="italicized">Operations Partner and Owner</h2>
             </div>
             <p>
               Is a former practicing attorney and consultant and worked

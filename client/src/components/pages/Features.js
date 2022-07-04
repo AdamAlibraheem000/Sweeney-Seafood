@@ -15,7 +15,7 @@ export default function Features() {
     axios.get('/articles')
     .then(res => setArticles(res.data))
     .catch(error => console.log(error));
-  })
+  },[])
 
   
   return (
