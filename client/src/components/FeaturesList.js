@@ -13,10 +13,10 @@ const FeatureList = ({ articles }) => {
        <img src={spinner} alt="loading"/>
        ) : (
         articles.map((article, key) => (
-        <div className="feature-list" key={key}>
-        <p >{article.title}</p>
-        <p >{article.article}</p>
-        <p>
+        <div className="feature-food-div" key={key}>
+        <h1 className="feature-food-title" >{article.title}</h1>
+        <p className="feature-food-desc" >{article.article}</p>
+        <p className="feature-food-desc">
             ${article.authorname}
         </p>
         </div>

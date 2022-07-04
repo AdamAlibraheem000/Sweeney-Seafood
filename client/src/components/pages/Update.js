@@ -10,16 +10,17 @@ function Update() {
   const [features, setFeatures] = useState([]);
 
   useEffect(()=> {
-    axios.get('/articles')
+      axios.get('/articles')
     .then(res => setFeatures(res.data))
     .catch(error => console.log(error));
-  },[])
+    
+  },[features])
 
   // Delete article by ID
   const deleteArticle = id  => {
     axios.delete(`/articles/${id}`)
     .then(res => console.log(res.data))
-    setArticle(article.filter(elem => elem._id !== IDBCursor))
+    
   }
 
   const changeOnClick = e => {

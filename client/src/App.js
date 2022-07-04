@@ -26,11 +26,11 @@ const App = () =>
     <NavTabs></NavTabs>
     <Routes>
       <Route path="/" element={<Home />}/>
-      <Route path="features" element={<Features/>}/>
-      <Route path="menu" element={<Menu/>}/>
-      <Route path="bar" element={<Bar/>}/>
-      <Route path="about" element={<About/>}/>
-      <Route path="update" element={<Update/>}/>
+      <Route path="/features" element={<Features/>}/>
+      <Route path="/menu" element={<Menu/>}/>
+      <Route path="/bar" element={<Bar/>}/>
+      <Route path="/about" element={<About/>}/>
+      <Route path="/update" element={<Update/>}/>
     </Routes>
     <Footer></Footer>
     </Router>
