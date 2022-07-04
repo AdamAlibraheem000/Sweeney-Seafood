@@ -504,6 +504,10 @@ ul li {
   font-size: 2rem;
 }
 
+.about-p-styling{
+  padding: 0 10rem;
+}
+
 .about-people p a{
   font-size: 2rem;
   font-style: italic;
@@ -572,12 +576,28 @@ ul li {
   flex-direction: column;
 }
 
+/* Page Not Found styling */
+.not-found-div{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.not-found-div h1{
+  color: black;
+  font-size: 5rem;
+}
+
 /* SmartPhones */
 @media screen and (max-width: 992px) {
 
   /* ------------ HIDE MAIN NAV START ---------------  */
   
-
+  .update-container{
+    display: none;
+  }
 
   .full-nav {
     visibility: hidden;

@@ -49,7 +49,7 @@ export default function About() {
               <h1>Lisa Long</h1>
               <h2 className="italicized">General Manager & Owner</h2>
             </div>
-            <p>
+            <p className="about-p-styling">
               With a degree in hospitality management, comes to Sweeney’s
               Seafood Bar & Grill with an exemplary history at Sycamore Creek
               Country Club. When she resigned to become the day-to-day manager
@@ -68,7 +68,7 @@ export default function About() {
               <h1>Larry Thompson</h1>
               <h2 className="italicized">Managing Partner and Owner</h2>
             </div>
-            <p>
+            <p className="about-p-styling">
               A former college professor, has worked extensively in the
               legal/business publishing field (with McGraw-Hill, LexisNexis and
               Bloomberg Law). He held many positions within LexisNexis and
@@ -84,7 +84,7 @@ export default function About() {
               <h1>Holley Thompson</h1>
               <h2 className="italicized">Operations Partner and Owner</h2>
             </div>
-            <p>
+            <p className="about-p-styling">
               Is a former practicing attorney and consultant and worked
               extensively in the legal/business publishing field (LexisNexis).
               She has held many positions within LexisNexis and retired as

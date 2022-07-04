@@ -11,6 +11,7 @@ import Bar from './components/pages/Bar'
 import Update from './components/pages/Update'
 import Features from './components/pages/Features'
 import About from './components/pages/About'
+import PageNotFound from "./components/pages/PageNotFound";
 
 
 
@@ -30,7 +31,8 @@ const App = () =>
       <Route path="/menu" element={<Menu/>}/>
       <Route path="/bar" element={<Bar/>}/>
       <Route path="/about" element={<About/>}/>
-      <Route path="/update" element={<Update/>}/>
+      <Route path="/eatmorefish" element={<Update/>}/>
+      <Route path="*" element={<PageNotFound/>}/>
     </Routes>
     <Footer></Footer>
     </Router>

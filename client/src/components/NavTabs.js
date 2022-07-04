@@ -68,14 +68,7 @@ function NavTabs() {
             >
                Hours/Info
             </Link>
-          </li>
-          <li className="nav-item">
-            <Link to='update'
-            >
-              Update
-            </Link>
-          </li>
-          
+          </li>   
           <li className="nav-item">
             <a
               href="https://www.facebook.com/sweeneysseafood/"
